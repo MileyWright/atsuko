@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import Home from './components/Home/Home';
-import { homegoods } from './seed';
+import { techAccessories } from './seed';
 const App = () => {
-    const [data]= useState(homegoods)
+    const [data]= useState(techAccessories)
     console.log(data)
     return(
         <>

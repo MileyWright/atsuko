@@ -1532,3 +1532,265 @@ export const homegoods = [
         keywords: "Demon Slayer, 3D LED Lights"
     }
 ]
+
+export const techAccessories = [
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/naruto-head-airpod-cases.jpg",
+        name: "Naruto Head Airpod Cases",
+        price: 14.99,
+        keywords: "Naruto, Airpod Cases, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/sailor-moon-cat-airpod-cases.jpg",
+        name: "Sailor Moon Cat Airpod Cases",
+        price: 14.99,
+        keywords: "Sailor Moon, Airpod Cases, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/vaporwave-driving-iphone-case.jpg",
+        name: "Vaporwave Driving Iphone Case",
+        price: 14.99,
+        keywords: "Vaporwave, Phone Cases"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/one-piece-airpod-cases.jpg",
+        name: "One Piece Airpod Cases",
+        price: 14.99,
+        keywords: "One Piece, Airpod Cases, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/dragon-ball-z-airpod-cases.jpg",
+        name: "Dragon Ball Z Airpod Cases",
+        price: 14.99,
+        keywords: "Dragon Ball Z, Airpod Cases, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/i-hate-you-anime-iphone-case.jpg",
+        name: "I Hate You Anime Iphone Case",
+        price: 14.99,
+        keywords: "Kawaii, Phone Cases"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/dunks-coffee-airpod-case.jpg",
+        name: "Dunks Coffee Airpod Case",
+        price: 14.99,
+        keywords: "Airpod Cases, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/vaporwave-girl-anime-iphone-case.jpg",
+        name: "Vaporwave Girl Anime Iphone Case",
+        price: 14.99,
+        keywords: "Vaporwave, Kawaii, Phone Cases"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/spam-can-airpod-case.jpg",
+        name: "Spam Can Airpods Case",
+        price: 14.99,
+        keywords: "Airpod Cases, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/lucky-cat-airpods-1-and-2-case.jpg",
+        name: "Lucky Cat Airpods 1 And 2 Case",
+        price: 14.99,
+        keywords: "Airpod Cases, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/naruto-airpod-pro-cases.jpg",
+        name: "Naruto Airpods Pro Cases",
+        price: 14.99,
+        keywords: "Naruto, Airpod Cases, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/totoro-airpod-case.jpg",
+        name: "Totoro Airpods Case",
+        price: 14.99,
+        keywords: "Totoro, Airpod Cases, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/one-piece-head-airpod-cases.jpg",
+        name: "One Piece Head Airpod Cases",
+        price: 14.99,
+        keywords: "One Piece, Airpod Cases, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/kfc-airpod-case.jpg",
+        name: "KFC Airpod Case",
+        price: 14.99,
+        keywords: "Airpod Cases, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/vaporwave-city-iphone-case.jpg",
+        name: "Vaporwave City Iphone Case",
+        price: 14.99,
+        keywords: "Vaporwave, Phone Cases"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/black-ramen-airpod-case.jpg",
+        name: "Black Ramen Airpod Case",
+        price: 14.99,
+        keywords: "Airpod Cases, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/vaporwave-car-iphone-case.jpg",
+        name: "Vaporwave Car Iphone Case",
+        price: 14.99,
+        keywords: "Vaporwave, Phone Cases"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/dragon-ball-z-face-airpod-cases.jpg",
+        name: "Dragon Ball Z Face Airpod Cases",
+        price: 14.99,
+        keywords: "Dragon Ball Z, Airpod Cases, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/vaporwave-stoop-iphone-case.jpg",
+        name: "Vaporwave Stoop Iphone Case",
+        price: 14.99,
+        keywords: "Vaporwave, Phone Cases"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/vaporwave-rain-iphone-case.jpg",
+        name: "Vaporwave Rain Iphone Case",
+        price: 14.99,
+        keywords: "Vaporwave, Phone Cases"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/vaporwave-sun-iphone-case.jpg",
+        name: "Vaporwave Sun Iphone Case",
+        price: 14.99,
+        keywords: "Vaporwave, Phone Cases"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/sushi-rice-airpod-case.jpg",
+        name: "Sushi Rice Airpod Case",
+        price: 14.99,
+        keywords: "Airpod Cases, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/bao-airpod-case.jpg",
+        name: "Bao Airpod Case",
+        price: 14.99,
+        keywords: "Airpod Cases, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/vaporwave-couple-iphone-case.jpg",
+        name: "Vaporwave Couple Iphone Case",
+        price: 14.99,
+        keywords: "Vaporwave, Phone Cases"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/flavored-milk-airpod-case.jpg",
+        name: "Flavored Milk Airpod Case",
+        price: 14.99,
+        keywords: "Airpod Cases, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/ghost-iphone-case.jpg",
+        name: "Ghost Iphone Case",
+        price: 14.99,
+        keywords: "Vaporwave, Phone Cases"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/kawaii-girl-anime-iphone-case.jpg",
+        name: "Kawaii Girl Anime Iphone Case",
+        price: 14.99,
+        keywords: "Kawaii, Phone Cases"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/my-hero-academia-toga-iphone-case.jpg",
+        name: "My Hero Academia Toga Iphone Case",
+        price: 14.99,
+        keywords: "Vaporwave, Phone Cases"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/3d-lollipop-airpod-case.jpg",
+        name: "3D Lollipop Airpod Case",
+        price: 14.99,
+        keywords: "Airpod Cases, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/snickers-airpod-case.jpg",
+        name: "Snickers Airpod Case",
+        price: 14.99,
+        keywords: "Airpod Cases, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/vaporwave-smiling-girl-iphone-case.jpg",
+        name: "Vaporwave Smiling Girl Iphone Case",
+        price: 14.99,
+        keywords: "Vaporwave, Phone Cases"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/donut-airpod-case.jpg",
+        name: "Donut Airpod Case",
+        price: 14.99,
+        keywords: "Airpod Cases, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/avocado-airpod-1-and-2-case.jpg",
+        name: "Avocado Airpod 1 And 2 Case",
+        price: 14.99,
+        keywords: "Airpod Cases, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/spicy-noodle-cup-airpod-case.jpg",
+        name: "Spicy Noodle Cup Airpod Case",
+        price: 14.99,
+        keywords: "Airpod Cases, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/sexy-devil-girl-anime-iphone-case.jpg",
+        name: "Sexy Devil Girl Anime Iphone Case",
+        price: 14.99,
+        keywords: "Phone Cases"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/vaporwave-staircase-iphone-case.jpg",
+        name: "Vaporwave Staircase Iphone Case",
+        price: 14.99,
+        keywords: "Vaporwave, Phone Cases"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/tech-accessories/tabasco-bottle-airpod-case.jpg",
+        name: "Tabasco Bottle Airpod Case",
+        price: 14.99,
+        keywords: "Airpod Cases, Kawaii"
+    }
+]
