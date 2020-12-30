@@ -1276,3 +1276,259 @@ export const apparel = [
         keywords: "Nekomancer, Vaporwave, Shirt"
     },
 ]
+
+
+export const homegoods = [
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/kawaii-seal-plush-pillow.jpg",
+        name: "Kawaii Seal Plush Pillow",
+        price: 16.99,
+        keywords: "Pillow, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/boba-tea-plush-pillow.png",
+        name: "Boba Tea Plush Pillow",
+        price: 14.99,
+        keywords: "Pillow, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/kawaii-octopus-plush-pillow.jpg",
+        name: "Kawaii Octopus Plush Pillow",
+        price: 9.99,
+        keywords: "Pillow, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/hunter-x-hunter-hisoka-star-led-lamp.jpg",
+        name: "Hunter X Hunter Hisoka Star LED Lamp",
+        price: 24.99,
+        keywords: "Hunter X Hunter, 3D LED Lights"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/my-hero-academia-dabi-led-lamp.jpg",
+        name: "My Hero Academia Dabi LED Lamp",
+        price: 24.99,
+        keywords: "My Hero Academia, 3D LED Lights"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/kawaii-baby-panda-body-pillow.jpg",
+        name: "Kawaii Baby Panda Body Pillow",
+        price: 14.99,
+        keywords: "Kawaii, Pillow"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/attack-on-titan-logo-led-lamp.jpg",
+        name: "Attack On Titan Logo LED Lamp",
+        price: 24.99,
+        keywords: "Attack On Titan, 3D LED Lights"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/sailor-moon-plush-pillow.jpg",
+        name: "Sailor Moon Plush Pillow",
+        price: 19.99,
+        keywords: "Sailor Moon, Pillow, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/rascal-does-not-dream-of-bunny-girl-senpai-led-lamp.jpg",
+        name: "Rascal Does Not Dream Of Bunny Girl Senpai LED Lamp",
+        price: 24.99,
+        keywords: "Rascal Does Not Dream Of Bunny Girl Senpai, 3D LED Lights"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/hunter-x-hunter-killua-led-lamp.jpg",
+        name: "Hunter X Hunter Killua LED Lamp",
+        price: 24.99,
+        keywords: "Hunter X Hunter, 3D LED Lights"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/sandwich-pillow-plush.jpg",
+        name: "Sandwich Pillow Plush",
+        price: 15.99,
+        keywords: "Pillow, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/sleeping-fox-plush-pillow.jpg",
+        name: "Sleeping Fox Plush Pillow",
+        price: 16.99,
+        keywords: "Pillow, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/demon-slayer-zenitsu-led-lamp.jpg",
+        name: "Demon Slayer Zenitsu LED Lamp",
+        price: 24.99,
+        keywords: "Demon Slayer, 3D LED Lights"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/sushi-rice-pillow.jpg",
+        name: "Sushi Rice Pillow",
+        price: 17.99,
+        keywords: "Pillow, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/my-hero-academia-shoto-todoroki-led-lamp.jpg",
+        name: "My Hero Academia Shoto Todoroki LED Lamp",
+        price: 24.99,
+        keywords: "My Hero Academia, 3D LED Lights"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/hunter-x-hunter-hisoka-led-lamp.jpg",
+        name: "Hunter X Hunter Hisoka LED Lamp",
+        price: 24.99,
+        keywords: "Hunter X Hunter, 3D LED Lights"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/totoro-plush-pillow.jpg",
+        name: "Totoro Plush Pillow",
+        price: 19.99,
+        keywords: "Pillow, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/toto-pillow-and-blanket-combo.jpg",
+        name: "Toto Pillow And Blanket Combo",
+        price: 33.99,
+        keywords: "Pillow, Blanket, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/naruto-itachi-uchiha-led-lamp.jpg",
+        name: "Naruto Itachi Uchiha LED Lamp",
+        price: 24.99,
+        keywords: "Naruto, 3D LED Lights"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/naruto-kakashi-led-lamp.jpg",
+        name: "Naruto Kakashi LED Lamp",
+        price: 24.99,
+        keywords: "Naruto, 3D LED Lights"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/naruto-led-lamp.jpg",
+        name: "Naruto LED Lamp",
+        price: 24.99,
+        keywords: "Naruto, 3D LED Lights"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/kawaii-sushi-plush-pillow.jpg",
+        name: "Kawaii Sushi Plush Pillow",
+        price: 15.99,
+        keywords: "Kawaii, Pillow"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/one-piece-peace-led-lamp.jpg",
+        name: "One Piece Peace LED Lamp",
+        price: 24.99,
+        keywords: "One Piece, 3D LED Lights"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/ramen-bag-pillow-and-blanket-set.jpg",
+        name: "Ramen Bag Pillow And Blanket Set",
+        price: 59.99,
+        keywords: "Kawaii, Pillow, Blanket"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/naruto-logo-led-lamp.jpg",
+        name: "Naruto Logo LED Lamp",
+        price: 24.99,
+        keywords: "Naruto, 3D LED Lights"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/one-piece-roronoa-zoro-led-lamp.jpg",
+        name: "One Piece Roronoa Zoro LED Lamp",
+        price: 24.99,
+        keywords: "One Piece, 3D LED Lights"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/cheesy-puffs-pillow-plush.jpg",
+        name: "Cheesy Puffs Pillow Plush",
+        price: 37.99,
+        keywords: "Kawaii, Pillow"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/hunter-x-hunter-hisoka-playing-card-led-lamp.jpg",
+        name: "Hunter X Hunter Hisoka Playing Card LED Lamp",
+        price: 24.99,
+        keywords: "Hunter X Hunter, 3D LED Lights"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/colored-sushi-plush-pillow.jpg",
+        name: "Colored Sushi Plush Pillow",
+        price: 12.99,
+        keywords: "Pillow, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/fried-egg-plush-pillow.jpg",
+        name: "Fried Egg Plush Pillow",
+        price: 13.99,
+        keywords: "Pillow, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/one-piece-logo-led-lamp.jpg",
+        name: "One Piece Logo LED Lamp",
+        price: 24.99,
+        keywords: "One Piece, 3D LED Lights"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/hunter-x-hunter-led-lamp.jpg",
+        name: "Hunter X Hunter LED Lamp",
+        price: 24.99,
+        keywords: "Hunter X Hunter, 3D LED Lights"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/winking-avocado-plush-pillow.jpg",
+        name: "Winking Avocado Plush Pillow",
+        price: 15.99,
+        keywords: "Pillow, Kawaii"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/one-piece-thousand-sunny-ship-led-lamp.jpg",
+        name: "One Piece Thousand Sunny Ship LED Lamp.jpg",
+        price: 24.99,
+        keywords: "One Piece, 3D LED Lights"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/totoro-led-lamp.jpg",
+        name: "Totoro LED Lamp",
+        price: 24.99,
+        keywords: "Totoro, 3D LED Lamp"
+    },
+    {
+        id: uuid(),
+        photo: "/assets/images/homegoods/demon-slayer-logo-led-lamp.jpg",
+        name: "Demon Slayer Logo LED Lamp",
+        price: 24.99,
+        keywords: "Demon Slayer, 3D LED Lights"
+    }
+]
