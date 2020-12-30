@@ -1,17 +1,16 @@
-import React, {useState} from 'react';
-import Home from './components/Home/Home';
-import { techAccessories } from './seed';
+import { Help } from '@material-ui/icons';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {Home} from './components';
+import * as Routes from './Constants/Routes';
+
 const App = () => {
-    const [data]= useState(techAccessories)
-    console.log(data)
+    
     return(
-        <>
-        
-        {data.map(item=>( 
-            <Home item={item}/>
-        ))}
-        
-        </>
+        <Router>
+            <Switch>
+                <Route path={Routes.HOME} component={Home} />
+            </Switch>
+        </Router>
     )
 }
 

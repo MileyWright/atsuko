@@ -1,6 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-
+import { render } from 'react-dom';
+import 'normalize.css';
+import 'antd/dist/antd.css';
 import App from './App.js';
 
-ReactDOM.render(<App/>, document.getElementById('root'))
+render(
+    <>
+        <App/>
+    </>, document.getElementById('root')
+)
