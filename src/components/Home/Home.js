@@ -17,6 +17,7 @@ const Home = () => {
                 </div>
                 <img src={process.env.PUBLIC_URL + '/assets/images/2aa82214d9c3552fe1b25e0184978373.jpg'} />
             </div>
+            
         </>
     )
 }

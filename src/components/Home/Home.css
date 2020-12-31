@@ -38,7 +38,7 @@
     padding: 6px 12px;
     min-width: 90px;
     font-family: 'Montserrat', sans-serif;    
-    font-size: 0.82353em;
+    font-size: 0.8rem;
     animation: fade-in 7s ease 1.5s forwards;
     transition: padding-right 501.379ms ease 0ms, background 0s ease;
 }
