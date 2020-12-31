@@ -11,13 +11,15 @@ const Home = () => {
                 <div className='hero_container_title'>
                     <p>Stay Sugoi ツ</p>
                     <p>Only the best anime merch and inspiration</p>
-                    <Link to='/collection/anime-clothing-apparel' className='btn'>Treat Yourself 
-                    {/* <img className='arrow' src={process.env.PUBLIC_URL+'/assets/images/button-arrow.png'}/> */}
-                    </Link>
+                    <Link to='/collection/anime-clothing-apparel' className='btn'>Treat Yourself </Link>
                 </div>
                 <img src={process.env.PUBLIC_URL + '/assets/images/2aa82214d9c3552fe1b25e0184978373.jpg'} />
             </div>
-            
+            <div className='main_container'>
+                <div className='merch_container'>
+                    <p>atsuko Merch</p>
+                </div>
+            </div>
         </>
     )
 }
