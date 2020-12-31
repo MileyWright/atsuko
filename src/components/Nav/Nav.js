@@ -14,7 +14,7 @@ const Nav = () => {
     
     return (
         <div className='nav_container'>
-            <p className='logo'>atsuko</p>
+            <Link to='/' className='logo'>atsuko</Link>
 
             <nav classname='nav_links'>
                 <Dropdown overlay={apparel} className='nav_link'>

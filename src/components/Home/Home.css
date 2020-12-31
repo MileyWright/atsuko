@@ -1,0 +1,63 @@
+
+.hero_container {
+    background-color: #f9f9f9;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade-in 1s ease 1.5s forwards;
+    opacity: 0;
+
+}
+
+.hero_container .hero_container_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fade-in 2s ease 1.5s forwards;
+
+}
+.hero_container .hero_container_title p{
+    font-size: 1.3rem;
+    line-height: 0.9;
+    animation: fade-in 5s ease 1.5s forwards;
+}
+.hero_container .hero_container_title p:first-child{
+    font-size: 3.4rem;
+    font-family: 'Montserrat', sans-serif;    
+    font-weight: 900;
+}
+.hero_container .hero_container_title p:nth-child(2){
+   text-transform: uppercase;
+    letter-spacing: 0.2em; 
+}
+.hero_container .hero_container_title .btn{
+    color: black;
+    border: 2px solid black;
+    padding: 6px 12px;
+    min-width: 90px;
+    font-family: 'Montserrat', sans-serif;    
+    font-size: 0.82353em;
+    animation: fade-in 7s ease 1.5s forwards;
+    transition: padding-right 501.379ms ease 0ms, background 0s ease;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100%   { opacity: 1; }
+  }
+
+.hero_container .hero_container_title .btn .arrow:hover{
+    visibility: visible;
+  
+
+}
+.hero_container .hero_container_title .btn:hover{
+    padding-right: 51px;
+    background: url('/src/assets/button-arrow.png') no-repeat 150% 35%;
+    background-size: 29px;
+    background-position: 90% 49%;
+    
+    user-select: none;
+}

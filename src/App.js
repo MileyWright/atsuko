@@ -1,6 +1,6 @@
 import { Help } from '@material-ui/icons';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import {Home} from './components';
+import {Home, Shop} from './components';
 import * as Routes from './Constants/Routes';
 
 const App = () => {
@@ -8,7 +8,8 @@ const App = () => {
     return(
         <Router>
             <Switch>
-                <Route path={Routes.HOME} component={Home} />
+                <Route exact path={Routes.HOME} component={Home} />
+                <Route path={Routes.COLLECTION} component={Shop}/>
             </Switch>
         </Router>
     )
