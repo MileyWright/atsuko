@@ -1,8 +1,11 @@
 import Nav from '../Nav/Nav';
 import './Home.css';
 import { Link } from 'react-router-dom';
-
-
+import accessories from '../../assets/sailor-moon-cat-airpod-cases.jpg';
+import teeshirt from '../../assets/naruto-kakashi-hatake-shirt.jpg';
+import hoodie from '../../assets/attack-on-titan-logo-hoodie.jpg';
+import ledlight from '../../assets/hunter-x-hunter-killua-led-lamp.jpg';
+import pillow from '../../assets/kawaii-baby-panda-body-pillow.jpg';
 const Home = () => {
 
     return (
@@ -24,15 +27,15 @@ const Home = () => {
                     <div className='merch_grid first-row'>
                         <div className='grid_item overlay'>
                             <Link to='/collections/anime-tee-shirts' className='grid_link '>
-                                <img src={process.env.PUBLIC_URL + '/assets/images/apparel/naruto-kakashi-hatake-shirt.jpg'} />
+                                <img src={teeshirt} />
                                     <div className='collection_grid_text-wrapper'>
                                         <h3 className='collection_grid-title'>tee shirts</h3>
                                     </div> 
                             </Link>
                         </div>
-                        <div className='grid_item'>
+                        <div className='grid_item overlay'>
                             <Link to='/collections/anime-tee-shirts' className='grid_link'>
-                                <img src={process.env.PUBLIC_URL + '/assets/images/apparel/naruto-kakashi-hatake-shirt.jpg'} />
+                                <img src={accessories} alt='c'/>
                                     <div className='collection_grid_text-wrapper'>
                                         <h3 className='collection_grid-title'>accessories</h3>
                                     </div> 
@@ -40,25 +43,25 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='merch_grid second-row'>
-                        <div className='grid_item'>
+                        <div className='grid_item overlay'>
                             <Link to='/collections/anime-tee-shirts' className='grid_link'>
-                                <img src={process.env.PUBLIC_URL + '/assets/images/apparel/naruto-kakashi-hatake-shirt.jpg'} />
+                                <img src={hoodie} />
                                     <div className='collection_grid_text-wrapper'>
                                         <h3 className='collection_grid-title'>hoodies</h3>
                                     </div> 
                             </Link>
                         </div>
-                        <div className='grid_item'>
+                        <div className='grid_item overlay'>
                             <Link to='/collections/anime-tee-shirts' className='grid_link'>
-                                <img src={process.env.PUBLIC_URL + '/assets/images/apparel/naruto-kakashi-hatake-shirt.jpg'} />
+                                <img src={ledlight} />
                                     <div className='collection_grid_text-wrapper'>
                                         <h3 className='collection_grid-title'>led lights</h3>
                                     </div> 
                             </Link>
                         </div>
-                        <div className='grid_item'>
+                        <div className='grid_item overlay'>
                             <Link to='/collections/anime-tee-shirts' className='grid_link'>
-                                <img src={process.env.PUBLIC_URL + '/assets/images/apparel/naruto-kakashi-hatake-shirt.jpg'} />
+                                <img src={pillow} />
                                     <div className='collection_grid_text-wrapper'>
                                         <h3 className='collection_grid-title'>pillows, plushies, and blankets</h3>
                                     </div> 

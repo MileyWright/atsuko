@@ -16,7 +16,7 @@ const Nav = () => {
         <div className='nav_container'>
             <Link to='/' className='logo'>atsuko</Link>
 
-            <nav classname='nav_links'>
+            <nav className='nav_links'>
                 <Dropdown overlay={apparel} className='nav_link'>
                     <Link to='/collection/anime-clothing-apparel'>
                     Apparel <DownOutlined className='arrow'/>

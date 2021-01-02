@@ -76,8 +76,9 @@
     align-items: center;
     width: 100%;
 }
+
 .main_container .merch_container .merch_grid .grid_item{ /*parent */
-    width: 38%;
+    width: 45%;
     margin: 20px;
     height: 300px;
     overflow: hidden;
@@ -86,6 +87,9 @@
     cursor: pointer;
     border-radius: 7px;
     
+}
+.main_container .merch_container .second-row .grid_item{
+    width: 29%;
 }
 .main_container .merch_container .merch_grid .grid_item:hover img, .main_container .merch_container .merch_grid .grid_item:focus img{ 
     -ms-transform: scale(1.2);
