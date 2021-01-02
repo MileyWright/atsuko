@@ -52,94 +52,96 @@ const Home = () => {
                 <div className='merch_container'>
                     <p>atsuko merch</p>
                     <div className='merch_grid first-row'>
-                        <div className='grid_item overlay'>
-                            <Link to='/collections/anime-tee-shirts' className='grid_link '>
+                        <Link to='/collections/anime-tee-shirts' className='grid_item overlay'>
+                            <div>
                                 <img src={teeshirt} alt='kakashi_hoodie' />
                                     <div className='collection_grid_text-wrapper'>
                                         <h3 className='collection_grid-title'>tee shirts</h3>
-                                    </div> 
-                            </Link>
-                        </div>
-                        <div className='grid_item overlay'>
-                            <Link to='/collections/anime-tee-shirts' className='grid_link'>
+                                    </div>
+                            </div>
+                        </Link>
+                        <Link to='/collections/anime-tee-shirts' className='grid_item overlay'>
+                            <div>
                                 <img src={accessories} alt='sailor_moon_case'/>
                                     <div className='collection_grid_text-wrapper'>
                                         <h3 className='collection_grid-title'>accessories</h3>
                                     </div> 
-                            </Link>
-                        </div>
+                            </div>
+                        </Link>
                     </div>
                     <div className='merch_grid second-row'>
-                        <div className='grid_item overlay'>
-                            <Link to='/collections/anime-tee-shirts' className='grid_link'>
+                        <Link to='/collections/anime-tee-shirts' className='grid_item overlay'>
+                            <div>
                                 <img src={hoodie} alt='attack_on_titan_hoodie'/>
-                                    <div className='collection_grid_text-wrapper'>
-                                        <h3 className='collection_grid-title'>hoodies</h3>
-                                    </div> 
-                            </Link>
-                        </div>
-                        <div className='grid_item overlay'>
-                            <Link to='/collections/anime-tee-shirts' className='grid_link'>
+                                <div className='collection_grid_text-wrapper'>
+                                    <h3 className='collection_grid-title'>hoodies</h3>
+                                </div>
+                            </div>
+                        </Link>
+                        <Link to='/collections/anime-tee-shirts'className='grid_item overlay'>
+                            <div>
                                 <img src={ledlight} alt='hunter_x_hunter_led_light'/>
                                     <div className='collection_grid_text-wrapper'>
                                         <h3 className='collection_grid-title'>led lights</h3>
                                     </div> 
-                            </Link>
-                        </div>
-                        <div className='grid_item overlay'>
-                            <Link to='/collections/anime-tee-shirts' className='grid_link'>
+                            </div>
+                        </Link>
+                        <Link to='/collections/anime-tee-shirts' className='grid_item overlay'>
+                            <div>
                                 <img src={pillow} alt='panda_pillow'/>
                                     <div className='collection_grid_text-wrapper'>
                                         <h3 className='collection_grid-title'>pillows, plushies, and blankets</h3>
                                     </div> 
-                            </Link>
-                        </div>
+                            </div>
+                        </Link>   
                     </div>
+
                     <div className='break'></div>
+
                     <p>shop by aesthetic</p>
                     <div className='merch_grid first-row'>
-                        <div className='grid_item overlay'>
-                            <Link to='/collections/anime-tee-shirts' className='grid_link '>
-                                <img src={sadaesthetic} alt='darling_in_the_franxx_hoodie' />
+                        <Link to='/collections/anime-tee-shirts' className='grid_item overlay'>
+                            <div>
+                             <img src={sadaesthetic} alt='darling_in_the_franxx_hoodie' />
                                     <div className='collection_grid_text-wrapper'>
                                         <h3 className='collection_grid-title'>sad aesthetic</h3>
                                     </div> 
-                            </Link>
-                        </div>
-                        <div className='grid_item overlay'>
-                            <Link to='/collections/anime-tee-shirts' className='grid_link'>
+                            </div> 
+                        </Link>
+                        <Link to='/collections/anime-tee-shirts' className='grid_item overlay'>
+                            <div >
                                 <img src={vaporwave} alt='vaporwave_hoodie'/>
                                     <div className='collection_grid_text-wrapper'>
                                         <h3 className='collection_grid-title'>vaporwave</h3>
-                                    </div> 
-                            </Link>
-                        </div>
+                                    </div>
+                            </div> 
+                        </Link>
                     </div>
                     <div className='merch_grid second-row'>
-                        <div className='grid_item overlay'>
-                            <Link to='/collections/anime-tee-shirts' className='grid_link'>
+                        <Link to='/collections/anime-tee-shirts' className='grid_item overlay'>
+                            <div>
                                 <img src={nsfw} alt='sailor_moon_bandage'/>
                                     <div className='collection_grid_text-wrapper'>
                                         <h3 className='collection_grid-title'>nsfw</h3>
-                                    </div> 
-                            </Link>
-                        </div>
-                        <div className='grid_item overlay'>
-                            <Link to='/collections/anime-tee-shirts' className='grid_link'>
+                                    </div>
+                            </div>
+                        </Link>
+                        <Link to='/collections/anime-tee-shirts' className='grid_item overlay'>
+                            <div>
                                 <img src={kawaii} alt='boba_pillow'/>
                                     <div className='collection_grid_text-wrapper'>
                                         <h3 className='collection_grid-title'>kawaii</h3>
                                     </div> 
-                            </Link>
-                        </div>
-                        <div className='grid_item overlay'>
-                            <Link to='/collections/anime-tee-shirts' className='grid_link'>
+                            </div>        
+                        </Link>
+                       <Link to='/collections/anime-tee-shirts' className='grid_item overlay'>
+                            <div>
                                 <img src={waifu} alt='bunny_girl_led_light'/>
                                     <div className='collection_grid_text-wrapper'>
                                         <h3 className='collection_grid-title'>waifu</h3>
                                     </div> 
-                            </Link>
-                        </div>
+                            </div>
+                        </Link> 
                     </div>
                 </div>
             </div>

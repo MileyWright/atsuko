@@ -102,7 +102,7 @@
 .main_container .merch_container .merch_grid .grid_item:hover img:before, .main_container .merch_container .merch_grid .grid_item:focus img:before{
     display: block;
 }
- .main_container .merch_container .merch_grid .grid_item .grid_link img{ /*child */
+ .main_container .merch_container .merch_grid .grid_item img{ /*child */
     background-repeat: no-repeat;
     background-position: center !important;
     -webkit-transition: all .3s;
