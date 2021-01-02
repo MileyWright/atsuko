@@ -11,6 +11,9 @@ import vaporwave from '../../assets/vaporwave-girl-hoodie.png';
 import nsfw from '../../assets/sailor-moon-bondage-shirt.png';
 import kawaii from '../../assets/boba-tea-plush-pillow.png';
 import waifu from '../../assets/rascal-does-not-dream-of-bunny-girl-senpai-led-lamp.jpg';
+import { Input } from 'antd';
+import { MailOutlined } from '@ant-design/icons';
+const { Search } = Input;
 const Home = () => {
 
     return (
@@ -120,6 +123,12 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className='subscribe'>
+                <p>Subscribe To Our Newsletter</p>
+                <p>We promise to only send you cool stuff. And a coupon for 15% off your first order!</p>
+                <Search className='subscribeform' placeholder="your email" enterButton={<MailOutlined />} />
             </div>
         </>
     )

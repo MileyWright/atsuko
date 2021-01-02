@@ -176,3 +176,29 @@
 .main_container .merch_container .break{
     margin: 4%;
 }
+
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe p{
+    font-size: 1.3rem;
+    line-height: 0.9;
+    animation: fade-in 5s ease 1.5s forwards;
+}
+
+.subscribe p:first-child{
+    font-size: 1.9rem;
+    font-family: 'Montserrat', sans-serif;    
+    font-weight: 900;
+}
+.subscribe p:nth-child(2){
+   text-transform: uppercase;
+    letter-spacing: 0.2em; 
+    font-size: 0.9rem;
+}
+.subscribe .subscribeform{
+    width: 47%;
+}
