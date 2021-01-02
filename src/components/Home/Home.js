@@ -6,6 +6,11 @@ import teeshirt from '../../assets/naruto-kakashi-hatake-shirt.jpg';
 import hoodie from '../../assets/attack-on-titan-logo-hoodie.jpg';
 import ledlight from '../../assets/hunter-x-hunter-killua-led-lamp.jpg';
 import pillow from '../../assets/kawaii-baby-panda-body-pillow.jpg';
+import sadaesthetic from '../../assets/darling-in-the-franxx-zero-two-smile-hoodie.jpg';
+import vaporwave from '../../assets/vaporwave-girl-hoodie.png';
+import nsfw from '../../assets/sailor-moon-bondage-shirt.png';
+import kawaii from '../../assets/boba-tea-plush-pillow.png';
+import waifu from '../../assets/rascal-does-not-dream-of-bunny-girl-senpai-led-lamp.jpg';
 const Home = () => {
 
     return (
@@ -64,6 +69,52 @@ const Home = () => {
                                 <img src={pillow} />
                                     <div className='collection_grid_text-wrapper'>
                                         <h3 className='collection_grid-title'>pillows, plushies, and blankets</h3>
+                                    </div> 
+                            </Link>
+                        </div>
+                    </div>
+                    <div className='break'></div>
+                    <p>shop by aesthetic</p>
+                    <div className='merch_grid first-row'>
+                        <div className='grid_item overlay'>
+                            <Link to='/collections/anime-tee-shirts' className='grid_link '>
+                                <img src={sadaesthetic} />
+                                    <div className='collection_grid_text-wrapper'>
+                                        <h3 className='collection_grid-title'>sad aesthetic</h3>
+                                    </div> 
+                            </Link>
+                        </div>
+                        <div className='grid_item overlay'>
+                            <Link to='/collections/anime-tee-shirts' className='grid_link'>
+                                <img src={vaporwave} alt='c'/>
+                                    <div className='collection_grid_text-wrapper'>
+                                        <h3 className='collection_grid-title'>vaporwave</h3>
+                                    </div> 
+                            </Link>
+                        </div>
+                    </div>
+                    <div className='merch_grid second-row'>
+                        <div className='grid_item overlay'>
+                            <Link to='/collections/anime-tee-shirts' className='grid_link'>
+                                <img src={nsfw} />
+                                    <div className='collection_grid_text-wrapper'>
+                                        <h3 className='collection_grid-title'>nsfw</h3>
+                                    </div> 
+                            </Link>
+                        </div>
+                        <div className='grid_item overlay'>
+                            <Link to='/collections/anime-tee-shirts' className='grid_link'>
+                                <img src={kawaii} />
+                                    <div className='collection_grid_text-wrapper'>
+                                        <h3 className='collection_grid-title'>kawaii</h3>
+                                    </div> 
+                            </Link>
+                        </div>
+                        <div className='grid_item overlay'>
+                            <Link to='/collections/anime-tee-shirts' className='grid_link'>
+                                <img src={waifu} />
+                                    <div className='collection_grid_text-wrapper'>
+                                        <h3 className='collection_grid-title'>waifu</h3>
                                     </div> 
                             </Link>
                         </div>
