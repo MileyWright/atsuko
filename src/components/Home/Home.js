@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import Nav from '../Nav/Nav';
+import { Nav, Footer } from '../index';
 import './Home.css';
 import { Link } from 'react-router-dom';
 import accessories from '../../assets/sailor-moon-cat-airpod-cases.jpg';
@@ -158,6 +158,8 @@ const Home = () => {
                     </Button>
                 </Form> }
             </div>
+
+            <Footer/>
         </>
     )
 }
