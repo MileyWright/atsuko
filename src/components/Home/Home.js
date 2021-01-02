@@ -60,7 +60,7 @@ const Home = () => {
                                     </div>
                             </div>
                         </Link>
-                        <Link to='/collections/anime-tee-shirts' className='grid_item overlay'>
+                        <Link to='/collections/accessories' className='grid_item overlay'>
                             <div>
                                 <img src={accessories} alt='sailor_moon_case'/>
                                     <div className='collection_grid_text-wrapper'>
@@ -70,7 +70,7 @@ const Home = () => {
                         </Link>
                     </div>
                     <div className='merch_grid second-row'>
-                        <Link to='/collections/anime-tee-shirts' className='grid_item overlay'>
+                        <Link to='/collections/anime-hoodies-and-sweatshirts' className='grid_item overlay'>
                             <div>
                                 <img src={hoodie} alt='attack_on_titan_hoodie'/>
                                 <div className='collection_grid_text-wrapper'>
@@ -78,7 +78,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </Link>
-                        <Link to='/collections/anime-tee-shirts'className='grid_item overlay'>
+                        <Link to='/collections/3d-led-anime-bedroom-lights-lamps'className='grid_item overlay'>
                             <div>
                                 <img src={ledlight} alt='hunter_x_hunter_led_light'/>
                                     <div className='collection_grid_text-wrapper'>
@@ -86,7 +86,7 @@ const Home = () => {
                                     </div> 
                             </div>
                         </Link>
-                        <Link to='/collections/anime-tee-shirts' className='grid_item overlay'>
+                        <Link to='/collections/pillows-plushies-and-blankets' className='grid_item overlay'>
                             <div>
                                 <img src={pillow} alt='panda_pillow'/>
                                     <div className='collection_grid_text-wrapper'>
@@ -100,7 +100,7 @@ const Home = () => {
 
                     <p>shop by aesthetic</p>
                     <div className='merch_grid first-row'>
-                        <Link to='/collections/anime-tee-shirts' className='grid_item overlay'>
+                        <Link to='/collections/sad-aesthetic' className='grid_item overlay'>
                             <div>
                              <img src={sadaesthetic} alt='darling_in_the_franxx_hoodie' />
                                     <div className='collection_grid_text-wrapper'>
@@ -108,7 +108,7 @@ const Home = () => {
                                     </div> 
                             </div> 
                         </Link>
-                        <Link to='/collections/anime-tee-shirts' className='grid_item overlay'>
+                        <Link to='/collections/vaporwave-aesthetic-clothing-tees-hoodies-merch' className='grid_item overlay'>
                             <div >
                                 <img src={vaporwave} alt='vaporwave_hoodie'/>
                                     <div className='collection_grid_text-wrapper'>
@@ -118,7 +118,7 @@ const Home = () => {
                         </Link>
                     </div>
                     <div className='merch_grid second-row'>
-                        <Link to='/collections/anime-tee-shirts' className='grid_item overlay'>
+                        <Link to='/collections/nsfw-anime-merch' className='grid_item overlay'>
                             <div>
                                 <img src={nsfw} alt='sailor_moon_bandage'/>
                                     <div className='collection_grid_text-wrapper'>
@@ -126,7 +126,7 @@ const Home = () => {
                                     </div>
                             </div>
                         </Link>
-                        <Link to='/collections/anime-tee-shirts' className='grid_item overlay'>
+                        <Link to='/collections/kawaii-livestyle-accessories' className='grid_item overlay'>
                             <div>
                                 <img src={kawaii} alt='boba_pillow'/>
                                     <div className='collection_grid_text-wrapper'>
@@ -134,7 +134,7 @@ const Home = () => {
                                     </div> 
                             </div>        
                         </Link>
-                       <Link to='/collections/anime-tee-shirts' className='grid_item overlay'>
+                       <Link to='/collections/japanese-waifu-shirts-and-hoodies' className='grid_item overlay'>
                             <div>
                                 <img src={waifu} alt='bunny_girl_led_light'/>
                                     <div className='collection_grid_text-wrapper'>
