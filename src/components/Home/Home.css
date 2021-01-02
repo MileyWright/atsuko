@@ -57,7 +57,6 @@
     justify-content: center;
     align-items: center;
     animation: fade-in 9s ease 1.5s forwards;
-    /* opacity: 0; */
 }
 .main_container .merch_container{
     display: flex;
@@ -159,7 +158,6 @@
     display: block
 }
 .main_container .merch_container .merch_grid .grid_item .collection_grid-title{
-    /* display: none; */
     font-size: 35px;
     color: #fff !important;
     font-family: 'Oleo Script Swash Caps', cursive;
@@ -173,110 +171,3 @@
     height: 50px;
     z-index: 1;
 }
-/* .main_container .merch_container .merch_grid .grid_item:hover{
-    width: 30vw;
-    min-height: 300px;
-    /* transform: scale(1.1); 
-    border-radius: 7px;
-    width: 31.5vw;
-    min-height: 300px;
-    background-size: cover;
-    background-position: center;
-    transition: all 0.3s ease;
-}*/
-/*
-
-
-
-.main_container .merch_container .merch_grid .grid_item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.main_container .merch_container .merch_grid .grid_item .first{
-    background-image: url('../../assets/naruto-kakashi-hatake-shirt.jpg');
-    border-radius: 7px;
-    width: 31.5vw;
-    min-height: 300px;
-    background-size: cover;
-    background-position: center;
-    transition: all 0.3s ease;
-   
-}
-.main_container .merch_container .merch_grid .grid_item .first:hover{
-    width: 30vw;
-    min-height: 300px;
-    transform: scale(1.1);
-}
-.main_container .merch_container .merch_grid .grid_item .grid_link{
-    height: 100%;
-    position: relative;
-    transition: all 0.3s ease;
-    outline: none !important;
-    color: white !important;
-    text-decoration: none;
-    background: transparent;
-}
-.main_container .merch_container .merch_grid .collection_grid_item{
-    position: relative;
-    margin-bottom: 30px;
-    margin-left: 30px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.main_container .merch_container .merch_grid .grid_item .grid_link .collection_grid_item .overlay {
-    position: relative;
-}
-.main_container .merch_container .merch_grid .overlay::after{
-    background-color: #202020;
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.5;
-    border-radius: 7px;
-   
-}
-.overlay h3{
-    color: white;
-    opacity: 1;
-}
-.main_container .merch_container .merch_grid .row_two{
-    /* width: 100%; */
-/* }
-.main_container .merch_container .merch_grid .row_two img{
-    width: 20.6vw;
-    max-height: 300px;
-}
-.main_container .merch_container .merch_grid .grid_item .grid_link .collection_grid_item .collection_grid_inner{
-    width: 100%;
-    padding: 0 16px;
-    z-index: 1;
-    color: white;
-    /* position: absolute; */
-/* }
-.main_container .merch_container .merch_grid .collection_grid_item .collection_grid_inner .collection_grid_text-wrapper{
-    text-align: center;
-}
-.main_container .merch_container .merch_grid .grid_item .grid_link .collection_grid_item .collection_grid_inner .collection_grid_text-wrapper .collection_grid-title{
-    margin-bottom: 0;
-    font-size: 27px;
-    letter-spacing: 1.4px;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-family: 'Montserrat', sans-serif;
-    display: block;
-    margin-top: 0px;
-    line-height: 1.2;
-    
-}   */ 

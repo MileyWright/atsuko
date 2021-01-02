@@ -69,64 +69,6 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                        {/* <div className='grid_item first'>
-                            <Link to='/collections/anime-tee-shirts' className='grid_link'>
-                                    
-                                            <div className='collection_grid_text-wrapper'>
-                                                <h3 className='collection_grid-title'>Tee Shirts</h3>
-                                            </div>
-                                     
-                            </Link>
-                        </div>
-                        <div className='grid_item'>
-                            <Link to='/collections/anime-tee-shirts'>
-                                    <div className='collection_grid_item overlay first'>
-                                        <div className='collection_grid_inner'>
-                                            <div className='collection_grid_text-wrapper'>
-                                                <h3 className='collection_grid-title'>Tee Shirts</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </Link>
-                        </div>
-                        <div className='grid_item'>
-                            <Link to='/collections/anime-tee-shirts'>
-                                    <div className='collection_grid_item row_two overlay'>
-                                        <img src={process.env.PUBLIC_URL + '/assets/images/apparel/naruto-kakashi-hatake-shirt.jpg'} />
-                                        <div className='collection_grid_inner'>
-                                            <div className='collection_grid_text-wrapper'>
-                                                <h3 className='collection_grid-title'>Tee Shirts</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </Link>
-                        </div>
-                        <div className='grid_item'>
-                            <Link to='/collections/anime-tee-shirts'>
-                                    <div className='collection_grid_item row_two overlay'>
-                                        <img src={process.env.PUBLIC_URL + '/assets/images/apparel/naruto-kakashi-hatake-shirt.jpg'} />
-                                        <div className='collection_grid_inner'>
-                                            <div className='collection_grid_text-wrapper'>
-                                                <h3 className='collection_grid-title'>Tee Shirts</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </Link>
-                        </div>
-                        <div className='grid_item'>
-                            <Link to='/collections/anime-tee-shirts'>
-                                    <div className='collection_grid_item row_two overlay'>
-                                        <img src={process.env.PUBLIC_URL + '/assets/images/apparel/naruto-kakashi-hatake-shirt.jpg'} />
-                                        <div className='collection_grid_inner'>
-                                            <div className='collection_grid_text-wrapper'>
-                                                <h3 className='collection_grid-title'>Tee Shirts</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </Link>
-                        </div> */}
-                    
-                
             </div>
         </>
     )
