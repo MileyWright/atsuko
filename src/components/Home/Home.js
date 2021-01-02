@@ -1,3 +1,4 @@
+import {useState} from 'react';
 import Nav from '../Nav/Nav';
 import './Home.css';
 import { Link } from 'react-router-dom';
@@ -13,8 +14,29 @@ import kawaii from '../../assets/boba-tea-plush-pillow.png';
 import waifu from '../../assets/rascal-does-not-dream-of-bunny-girl-senpai-led-lamp.jpg';
 import { Input } from 'antd';
 import { MailOutlined } from '@ant-design/icons';
-const { Search } = Input;
+import { Form, Button } from 'antd';
+
+const layout = {
+    labelCol: { span: 8 },
+    wrapperCol: { span: 24 },
+};
+
+const validateMessages = {
+    types: {
+      email: 'Please enter a valid email.',
+    }
+};
+const intialState= false;
 const Home = () => {
+    const [subscribed, setSubscribed] = useState(intialState);
+
+
+    const onChange = () => {
+        setSubscribed(!subscribed);
+        
+    }
+
+    console.log(subscribed)
 
     return (
         <>
@@ -128,7 +150,15 @@ const Home = () => {
             <div className='subscribe'>
                 <p>Subscribe To Our Newsletter</p>
                 <p>We promise to only send you cool stuff. And a coupon for 15% off your first order!</p>
-                <Search className='subscribeform' placeholder="your email" enterButton={<MailOutlined />} />
+                {subscribed ? <div className='subscribed'><MailOutlined/> Thanks for subscribing</div> : <Form {...layout} onFinish={onChange}  validateMessages={validateMessages} >
+                    <Form.Item className='subscribeform' name="email"   rules={[{ type: 'email' }]}>
+                        <Input placeholder="your email"/>   
+                    </Form.Item>
+                    <Button type="primary" >
+                        <MailOutlined />
+                    </Button>
+                </Form> }
+                
             </div>
         </>
     )
