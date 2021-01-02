@@ -33,10 +33,7 @@ const Home = () => {
 
     const onChange = () => {
         setSubscribed(!subscribed);
-        
     }
-
-    console.log(subscribed)
 
     return (
         <>
@@ -150,7 +147,7 @@ const Home = () => {
             <div className='subscribe'>
                 <p>Subscribe To Our Newsletter</p>
                 <p>We promise to only send you cool stuff. And a coupon for 15% off your first order!</p>
-                {subscribed ? <div className='subscribed'><MailOutlined/> Thanks for subscribing</div> : <Form {...layout} onFinish={onChange}  validateMessages={validateMessages} >
+                { subscribed ? <div className='subscribed'><MailOutlined/> Thanks for subscribing</div> : <Form {...layout} onFinish={onChange}  validateMessages={validateMessages} >
                     <Form.Item className='subscribeform' name="email"   rules={[{ type: 'email' }]}>
                         <Input placeholder="your email"/>   
                     </Form.Item>
@@ -158,7 +155,6 @@ const Home = () => {
                         <MailOutlined />
                     </Button>
                 </Form> }
-                
             </div>
         </>
     )
