@@ -27,5 +27,35 @@
     padding: 10px;
 }
 .footer{
-    
+    background-color: #202020;
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+}
+.footer .grid_list{
+    display: flex;
+    flex-direction: column;
+    color: #f9f9f9;
+}
+.footer .grid_list .box_item{
+    color: #f9f9f9;
+    font-family: 'PT Sans', sans-serif;
+    letter-spacing: 1px; 
+    font-size: 0.9rem;
+    padding: 0.5%;
+    white-space: nowrap;
+}
+.footer .grid_list .box_item:first-child{
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+.footer .grid_list .link{
+    padding-top: 9px;
+}
+.footer .grid_list .link:hover{
+    color: #909090;
+}
+.icon{
+    font-size: 1.3rem;
+    padding-right: 4px;
 }
