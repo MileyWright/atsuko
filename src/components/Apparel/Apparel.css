@@ -3,6 +3,15 @@
     font-family: 'Montserrat', sans-serif;    
     font-weight: 900;
     text-align: center;
+    margin-top: 1%;
+}
+.product_page{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    overflow: hidden;
 }
 .container{
     display: flex;
@@ -10,7 +19,32 @@
     justify-content: center;
     align-items: center;
     margin: 5%;
+    width: 80%;
+    overflow: hidden;
 }
+.container .link{
+    margin: 1%;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    border-radius: 7px;
+    
+}
+.container .link:hover .product_page, .container .link:focus .product_page{
+    display: block;
+}
+.container .link .product_card::before{
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow: hidden;
+}
+
 .pagination{
     text-align: center;
     margin-bottom: 3%;
