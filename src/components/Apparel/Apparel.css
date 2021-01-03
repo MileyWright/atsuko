@@ -4,3 +4,14 @@
     font-weight: 900;
     text-align: center;
 }
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+.pagination{
+    text-align: center;
+    margin-bottom: 3%;
+}
