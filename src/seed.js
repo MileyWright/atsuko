@@ -269,7 +269,7 @@ export const apparel = [
     },
     {
         id: uuid(),
-        photo: "/assets/images/apparel/my-hero-acedemia-toga-waifu-smile-hoodie.jpg",
+        photo: "/assets/images/apparel/my-hero-academia-toga-waifu-smile-hoodie.jpg",
         name: "My Hero Acedemia Toga Waifu Smile Hoodie",
         price: 34.99,
         keywords: "My Hero Acedemia, Hoodie, Waifu, NSFW"
@@ -311,14 +311,14 @@ export const apparel = [
     },
     {
         id: uuid(),
-        photo: "/assets/images/apparel/my-hero-acedemia-suzy-hoodie.jpg",
+        photo: "/assets/images/apparel/my-hero-academia-suzy-hoodie.jpg",
         name: "My Hero Academia Suzy Hoodie",
         price: 34.99,
         keywords: "My Hero Academia, Hoodie"
     },
     {
         id: uuid(),
-        photo: "/assets/images/apparel/my-hero-acedemia-shoto-todoroki-face-hoodie.jpg",
+        photo: "/assets/images/apparel/my-hero-academia-shoto-todoroki-face-hoodie.jpg",
         name: "My Hero Academia Shoto Todoroki Face Hoodie",
         price: 34.99,
         keywords: "My Hero Academia, Hoodie"
@@ -332,7 +332,7 @@ export const apparel = [
     },
     {
         id: uuid(),
-        photo: "/assets/images/apparel/my-hero-acedemia-mina-waifu-hoodie.jpg",
+        photo: "/assets/images/apparel/my-hero-academia-mina-waifu-hoodie.jpg",
         name: "My Hero Academia Mina Waifu Hoodie",
         price: 34.99,
         keywords: "My Hero Academia, Hoodie, NSFW, Waifu"
@@ -381,7 +381,7 @@ export const apparel = [
     },
     {
         id: uuid(),
-        photo: "/assets/images/apparel/my-hero-acedemia-toga-sugoi-schoolgirl-hoodie.jpg",
+        photo: "/assets/images/apparel/my-hero-academia-toga-sugoi-schoolgirl-hoodie.jpg",
         name: "My Hero Academia Toga Sugoi Schoolgirl Hoodie",
         price: 34.99,
         keywords: "My Hero Academia, Hoodie, NSFW, "
@@ -829,7 +829,7 @@ export const apparel = [
     },
     {
         id: uuid(),
-        photo: "/assets/images/apparel/my-hero-acedemia-toga-sugoi-crazy-smile-hoodie.jpg",
+        photo: "/assets/images/apparel/my-hero-academia-toga-sugoi-crazy-smile-hoodie.jpg",
         name: "My Hero Academia Toga Sugoi Crazy Smile Hoodie",
         price: 34.99,
         keywords: "My Hero Academia, Hoodie, NSFW"
@@ -850,7 +850,7 @@ export const apparel = [
     },
     {
         id: uuid(),
-        photo: "/assets/images/apparel/my-hero-acedemia-bakugou-hoodie.jpg",
+        photo: "/assets/images/apparel/my-hero-academia-bakugou-hoodie.jpg",
         name: "My Hero Academia Bakugou Hoodie",
         price: 34.99,
         keywords: "My Hero Academia, Hoodie"
@@ -871,7 +871,7 @@ export const apparel = [
     },
     {
         id: uuid(),
-        photo: "/assets/images/apparel/my-hero-acedemia-toga-sugoi-hoodie.jpg",
+        photo: "/assets/images/apparel/my-hero-academia-toga-sugoi-hoodie.jpg",
         name: "My Hero Academia Toga Sugoi Hoodie",
         price: 34.99,
         keywords: "My Hero Academia, Hoodie, NSFW"
@@ -892,7 +892,7 @@ export const apparel = [
     },
     {
         id: uuid(),
-        photo: "/assets/images/apparel/my-hero-acedemia-dabi-villains-hoodie.jpg",
+        photo: "/assets/images/apparel/my-hero-academia-dabi-villains-hoodie.jpg",
         name: "My Hero Academia Dabi Villains Hoodie",
         price: 34.99,
         keywords: "My Hero Academia, Hoodie"
@@ -920,7 +920,7 @@ export const apparel = [
     },
     {
         id: uuid(),
-        photo: "/assets/images/apparel/my-hero-acedemia-toga-laughing-hoodie.jpg",
+        photo: "/assets/images/apparel/my-hero-academia-toga-laughing-hoodie.jpg",
         name: "My Hero Academia Toga Laughing Hoodie",
         price: 34.99,
         keywords: "My Hero Academia, Hoodie, NSFW"
