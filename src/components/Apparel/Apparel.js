@@ -13,7 +13,7 @@ const Apparel = () => {
     const [minValue, setMinValue] = useState(0)
     const [maxValue, setMaxValue] = useState(numEachPage)
 
-    const onChange = value => {
+    const filterOnChange = value => {
         if(value === 'All'){
             return setData(intialState)
         } else{
@@ -22,7 +22,18 @@ const Apparel = () => {
         setData(filter)
         }
       }
-    console.log(data)
+    const sortByOnChange = value => {
+        if(value === 'Best selling'){
+            return data
+        } else if (value === 'Alphabetically, A-Z') {
+            setData(data.sort((a, b) => {
+                return a.name - b.name
+            }))
+        } else{
+            return "no"
+        }
+        console.log(data)
+    }   
     const handleChange = value => {
         if (value <= 1) {
             setMinValue(0)
@@ -39,8 +50,8 @@ const Apparel = () => {
             <div className='product_page'>
                 <div className='title'> Apparel</div>
 
-                <div className='filter'>Filter By: 
-                    <Select defaultValue="All" style={{ width: 320 }} onChange={onChange}>
+                <div className='filter'>Filter by 
+                    <Select defaultValue="All" style={{ width: 320 }} onChange={filterOnChange}>
                         <Option value="All">All</Option>
                         <Option value="Attack On Titan">Attack On Titan</Option>
                         <Option value="Cosplay">Cosplay</Option>
@@ -66,10 +77,19 @@ const Apparel = () => {
                         <Option value="Waifu">Waifu</Option>
                     </Select>
                 </div>
+                <div className='sortBy'> Sort by
+                <Select defaultValue="Best selling" style={{ width: 320 }} onChange={sortByOnChange}>
+                        <Option value="Best selling">Best selling</Option>
+                        <Option value="Alphabetically, A-Z">Alphabetically, A-Z</Option>
+                        <Option value="Alphabetically, Z-A">Alphabetically, Z-A</Option>
+                        <Option value="Price, low to high">Price, low to high</Option>
+                        <Option value="Price, high to low">Price, high to low</Option>
+                    </Select>
+                </div>
                 <div className='container'>
                     {data && data.length > 0 &&
                     data.slice(minValue, maxValue).map(item => 
-                        <Link to={`/collections/anime-clothing-apparel/products/${item.id}`} className='link overlay'>
+                        <Link to={`/collections/anime-clothing-apparel/products/${item.id}`} className='link overlay'key={item.id}>
                             <Card className='product_card 'item={item} key={item.id}/>
                         </Link>
                     )}

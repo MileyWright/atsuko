@@ -3,11 +3,11 @@ import {apparel} from '../../seed';
 
 const ProductPage = () => {
     const {id} = useParams();
-
     const filteredProduct = apparel.find(item=> {
-        return item.id === id
-    })
-
+        
+        return item.id == id
+        })
+console.log(filteredProduct)
     return(
         <>
         product
