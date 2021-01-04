@@ -1,9 +1,8 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import {Home, Apparel, ProductPage} from './components';
 import * as Routes from './Constants/Routes';
-
+import { commerce } from './lib/commerce';
 const App = () => {
-    
     return(
         <Router>
             <Switch>

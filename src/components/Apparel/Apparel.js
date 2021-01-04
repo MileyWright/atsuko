@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {Nav, Footer, Card} from '../index';
 import './Apparel.css';
 import {apparel} from '../../seed';
 import { Pagination, Select } from 'antd';
 import { Link } from 'react-router-dom';
+import {commerce} from '../../lib/commerce';
 const { Option } = Select;
 
 const intialState = apparel
@@ -12,8 +13,19 @@ const Apparel = () => {
     const [data, setData] = useState(intialState);
     const [minValue, setMinValue] = useState(0)
     const [maxValue, setMaxValue] = useState(numEachPage)
+    const [products, setProducts] = useState([]);
 
-    const filterOnChange = value => {
+    const fetchProducts = async () => {
+        const { data } = await commerce.products.list();
+        setProducts(data);
+    }
+    useEffect(() => {
+        fetchProducts();
+    }, [])
+    
+    console.log(products)
+    
+    const filterOnChange = value => {   //                                           !!!Need to rework !!!
         if(value === 'All'){
             return setData(intialState)
         } else{
@@ -22,7 +34,8 @@ const Apparel = () => {
         setData(filter)
         }
       }
-    const sortByOnChange = value => {
+     
+    const sortByOnChange = value => { //                                           !!!Need to rework !!!
         if(value === 'Best selling'){
             const sorting = data.sort((a, b) => {
                 if (a.id < b.id) //sort string ascending
@@ -141,7 +154,7 @@ const Apparel = () => {
                         <Option value="Price, high to low">Price, high to low</Option>
                     </Select>
                 </div>
-                <div className='container'>
+                {/* <div className='container'>
                     {data && data.length > 0 &&
                     data.slice(minValue, maxValue).map(item => 
                         <Link to={`/collections/anime-clothing-apparel/products/${item.id}`} className='link overlay'key={item.id}>
@@ -156,8 +169,25 @@ const Apparel = () => {
                     showSizeChanger={false}
                     onChange={handleChange}
                     total={data.length}
+                /> */}
+                <div className='container'>
+                    {products && products.length > 0 &&
+                    products.slice(minValue, maxValue).map(item => 
+                        <Link to={`/collections/anime-clothing-apparel/products/${item.id}`} className='link overlay'key={item.id}>
+                            <Card className='product_card 'item={item} key={item.id}/>
+                        </Link>
+                    )}
+                </div>
+                <Pagination
+                    className='pagination'
+                    defaultCurrent={1}
+                    defaultPageSize={numEachPage}
+                    showSizeChanger={false}
+                    onChange={handleChange}
+                    total={products.length}
                 />
             </div>
+
             <Footer/>
         </>
     )
