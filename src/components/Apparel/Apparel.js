@@ -24,15 +24,46 @@ const Apparel = () => {
       }
     const sortByOnChange = value => {
         if(value === 'Best selling'){
-            return data
+            const sorting = data.sort((a, b) => {
+                if (a.id < b.id) //sort string ascending
+                    return -1 
+                if (a.id > b.id)
+                    return 1
+            })
+            const newArr=[]
+            for(let i = 0; i < sorting.length; i++){
+                newArr.push(sorting[i])
+            }
+            setData(newArr)
         } else if (value === 'Alphabetically, A-Z') {
-            setData(data.sort((a, b) => {
-                return a.name - b.name
-            }))
+            const sorting = data.sort((a, b) => {
+                const nameA= a.name.toLowerCase(), nameB= b.name.toLowerCase();
+                if (nameA < nameB) //sort string ascending
+                    return -1 
+                if (nameA > nameB)
+                    return 1
+            })
+            const newArr=[]
+            for(let i = 0; i < sorting.length; i++){
+                newArr.push(sorting[i])
+            }
+            setData(newArr)
+        } else if (value === 'Alphabetically, Z-A') {
+            const sorting = data.sort((a, b) => {
+                const nameA= a.name.toLowerCase(), nameB= b.name.toLowerCase();
+                if (nameA > nameB) //sort string descending
+                    return -1 
+                if (nameA < nameB)
+                    return 1
+            })
+            const newArr=[]
+            for(let i = 0; i < sorting.length; i++){
+                newArr.push(sorting[i])
+            }
+            setData(newArr)
         } else{
-            return "no"
+            console.log("no")
         }
-        console.log(data)
     }   
     const handleChange = value => {
         if (value <= 1) {
