@@ -1,12 +1,11 @@
 .title{
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-family: 'Knewave', cursive;   
     font-weight: 900;
     text-align: center;
-    margin-top: 1%;
+    margin-top: 3%;
     text-transform: uppercase;
     letter-spacing: 0.1em; 
-
 }
 .product_page{
     display:flex;
@@ -15,6 +14,7 @@
     align-items: center;
     background-color: #fff;
     overflow: hidden;
+    white-space: nowrap;
 }
 .product_page .filter{
     font-family: 'PT Sans', sans-serif;  
@@ -22,11 +22,13 @@
     letter-spacing: 0.1em;
     margin: 1%;
 }
-.product_page .sortby{
+.product_page .sortBy{
     font-family: 'PT Sans', sans-serif;  
     font-weight: 700;
     letter-spacing: 0.1em;
-    margin: 1%;
+}
+.product_page .select{
+    margin-left: 3%;
 }
 .container{
     display: flex;

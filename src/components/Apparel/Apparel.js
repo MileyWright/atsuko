@@ -61,6 +61,30 @@ const Apparel = () => {
                 newArr.push(sorting[i])
             }
             setData(newArr)
+        } else if (value === 'Price, low to high') {
+            const sorting = data.sort((a, b) => {
+                if (a.price < b.price) //sort string ascending
+                    return -1 
+                if (a.price > b.price)
+                    return 1
+            })
+            const newArr=[]
+            for(let i = 0; i < sorting.length; i++){
+                newArr.push(sorting[i])
+            }
+            setData(newArr)
+        } else if (value === 'Price, high to low') {
+            const sorting = data.sort((a, b) => {
+                if (a.price > b.price) //sort string descending
+                    return -1 
+                if (a.price > b.price)
+                    return 1
+            })
+            const newArr=[]
+            for(let i = 0; i < sorting.length; i++){
+                newArr.push(sorting[i])
+            }
+            setData(newArr)
         } else{
             console.log("no")
         }
@@ -82,7 +106,7 @@ const Apparel = () => {
                 <div className='title'> Apparel</div>
 
                 <div className='filter'>Filter by 
-                    <Select defaultValue="All" style={{ width: 320 }} onChange={filterOnChange}>
+                    <Select defaultValue="All" style={{ width: 320 }} onChange={filterOnChange} className='select'>
                         <Option value="All">All</Option>
                         <Option value="Attack On Titan">Attack On Titan</Option>
                         <Option value="Cosplay">Cosplay</Option>
@@ -109,7 +133,7 @@ const Apparel = () => {
                     </Select>
                 </div>
                 <div className='sortBy'> Sort by
-                <Select defaultValue="Best selling" style={{ width: 320 }} onChange={sortByOnChange}>
+                <Select defaultValue="Best selling" style={{ width: 170 }} onChange={sortByOnChange} className='select' >
                         <Option value="Best selling">Best selling</Option>
                         <Option value="Alphabetically, A-Z">Alphabetically, A-Z</Option>
                         <Option value="Alphabetically, Z-A">Alphabetically, Z-A</Option>
