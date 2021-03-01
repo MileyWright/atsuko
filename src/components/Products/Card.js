@@ -1,12 +1,12 @@
 import './Card.css';
 
 const Card = (props) => {
-    console.log(props.item.media.source)
+    console.log(props.item.name)
     return(
         <div className='card'>
-            <img src={props.item.media.source} alt={props.item.name}/>
+            <img src={props.item.photo} alt={props.item.name}/>
             <p>{props.item.name}</p>
-            <p>{props.item.price.formatted_with_symbol}</p>
+            <p>{props.item.price}</p>
         </div>
     )
 }

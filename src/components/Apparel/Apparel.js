@@ -15,15 +15,16 @@ const Apparel = () => {
     const [maxValue, setMaxValue] = useState(numEachPage)
     const [products, setProducts] = useState([]);
 
-    const fetchProducts = async () => {
-        const { data } = await commerce.products.list();
-        setProducts(data);
-    }
-    useEffect(() => {
-        fetchProducts();
-    }, [])
+    // const fetchProducts = async () => {
+    //     const { data } = await commerce.products.list();
+    //     setProducts(data);
+    // }
+    // useEffect(() => {
+    //     fetchProducts();
+    // }, [])
     
-    console.log(products)
+    // console.log(products)
+    console.log(data)
     
     const filterOnChange = value => {   //                                           !!!Need to rework !!!
         if(value === 'All'){
@@ -154,7 +155,7 @@ const Apparel = () => {
                         <Option value="Price, high to low">Price, high to low</Option>
                     </Select>
                 </div>
-                {/* <div className='container'>
+                <div className='container'>
                     {data && data.length > 0 &&
                     data.slice(minValue, maxValue).map(item => 
                         <Link to={`/collections/anime-clothing-apparel/products/${item.id}`} className='link overlay'key={item.id}>
@@ -169,8 +170,8 @@ const Apparel = () => {
                     showSizeChanger={false}
                     onChange={handleChange}
                     total={data.length}
-                /> */}
-                <div className='container'>
+                />
+                {/* <div className='container'>
                     {products && products.length > 0 &&
                     products.slice(minValue, maxValue).map(item => 
                         <Link to={`/collections/anime-clothing-apparel/products/${item.id}`} className='link overlay'key={item.id}>
@@ -185,7 +186,7 @@ const Apparel = () => {
                     showSizeChanger={false}
                     onChange={handleChange}
                     total={products.length}
-                />
+                /> */}
             </div>
 
             <Footer/>
