@@ -13,17 +13,7 @@ const Apparel = () => {
     const [data, setData] = useState(intialState);
     const [minValue, setMinValue] = useState(0)
     const [maxValue, setMaxValue] = useState(numEachPage)
-    const [products, setProducts] = useState([]);
 
-    // const fetchProducts = async () => {
-    //     const { data } = await commerce.products.list();
-    //     setProducts(data);
-    // }
-    // useEffect(() => {
-    //     fetchProducts();
-    // }, [])
-    
-    // console.log(products)
     console.log(data)
     
     const filterOnChange = value => {   //                                           !!!Need to rework !!!

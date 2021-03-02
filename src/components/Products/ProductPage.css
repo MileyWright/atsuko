@@ -1,0 +1,54 @@
+.product_container{
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.product_image{
+    width: 35%;
+}
+.right{
+    margin: 1%;
+    width: 22%;
+}
+.top_right p{
+    /* text-transform: uppercase; */
+    letter-spacing: 0.1em;
+    color: #53585f; 
+    font-size: 1.2rem;
+}
+.top_right p:first-child{
+    font-weight: 600;
+}
+.top_right p:nth-child(2){
+    font-weight: 700;
+}
+.top_right .size{
+    font-size: 1.0rem;
+}
+.ant-radio-button-wrapper{
+    margin: 1%;
+    width: 60px;
+    text-align: center;
+}
+.ant-radio-button-wrapper:hover{
+    color: #000000;
+
+}
+.ant-radio-button-wrapper .ant-radio-button-checked{
+    background: #000000;
+    border: #53585f;
+}
+.ant-radio-button-wrapper .ant-radio-button-checked:hover{
+    color: #ffffff;
+}
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled){
+    background: #53585f !important; 
+    border-color: #ffffff !important;
+}
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover::before{
+    background: none;
+}
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before{
+    background: none;
+}
