@@ -1,26 +1,68 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import {apparel} from '../../seed';
 import {Nav, Footer} from '../index';
 import {Link} from 'react-router-dom';
-import {Modal, Radio, Table } from 'antd';
-import {renderContent, columns, tShirtData, longTShirtData, sweatshirtData} from './ModalData';
+import {Modal, Radio, Table} from 'antd';
+import {HeartOutlined} from '@ant-design/icons';
+import {columns, tShirtData, longTShirtData, sweatshirtData} from './ModalData';
 import './ProductPage.css';
 
+const intialState = {dayName:null, month: null, dayNumber: null};
 const ProductPage = () => {
     const {id} = useParams();
     const [size, setSize] = useState();
     const [visible, setVisible] = useState(false);
+    const [standardShipping, setStandardShipping] = useState(intialState);
+    const [overnightShipping, setOvernightShipping] = useState(intialState);
 
     const filteredProduct = apparel.find(item=> {
         return item.id == id
         })
-    console.log(filteredProduct)
 
     const handleChange = value => {
         setSize(value.target.value)
     }
-    console.log(size)
+
+    const today = new Date()
+    var standard = new Date(today)
+    standard.setDate(standard.getDate() + 5)
+    
+    var overnight = new Date(today)
+    overnight.setDate(overnight.getDate() + 1)
+
+    var standardDay = standard.getDay();
+    var overnightDay = overnight.getDay();
+
+    const dayOfTheWeek = (value) => {
+        if(value === 0){
+            return 'Sun'
+        } else if (value === 1){
+            return 'Mon'
+        } else if(value === 2){
+            return 'Tues'
+        } else if(value === 3){
+            return 'Wed'
+        } else if(value === 4){
+            return 'Thur'
+        } else if(value === 5){
+            return 'Fri'
+        } else if(value === 6){
+            return 'Sat'
+        }
+    } 
+    let monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
+
+    let standardMonth = monthNames[standard.getMonth()];
+    let overnightMonth = monthNames[overnight.getMonth()];
+
+    useEffect(() => {
+        setStandardShipping({dayName: dayOfTheWeek(standardDay), month: standardMonth, dayNumber: standard.getDate()})
+    }, [])
+
+    useEffect(() => {
+        setOvernightShipping({dayName: dayOfTheWeek(overnightDay), month: overnightMonth, dayNumber: overnight.getDate()})
+    }, [])
 
     return(
         <>
@@ -76,8 +118,21 @@ const ProductPage = () => {
                         <Radio.Button value="3X">3X</Radio.Button>
                     </Radio.Group>
                 </div>
-                <div className='bottom_right'>
-                <Link to='/'>Checkout</Link>
+                <div className='cart_container'>
+                    <Link to='/' className='cart_button'>ADD TO CART</Link>
+                    <button className='heart_button'>
+                        <HeartOutlined className='heart'/>
+                    </button>
+                </div>
+                <div className='shipping'>
+                    <p>
+                        <img src={process.env.PUBLIC_URL + '/assets/icons/travelling.svg'} alt='traveling'/>
+                        Get it by {standardShipping.dayName}, {standardShipping.month} {standardShipping.dayNumber}
+                    </p>
+                    <p>
+                        <img src={process.env.PUBLIC_URL + '/assets/icons/rocket.svg'} alt='rocket'/>
+                        Get it by {overnightShipping.dayName}, {overnightShipping.month} {overnightShipping.dayNumber}
+                    </p>
                 </div>
             </div>
         </div> 
