@@ -9,7 +9,7 @@ export const renderContent = (value, row, index) => {
 
 export const columns = [
     {
-      title: 'Size',
+      title: 'SIZE',
       dataIndex: 'size',
       render: renderContent,
     },

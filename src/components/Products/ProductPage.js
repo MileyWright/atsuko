@@ -45,7 +45,9 @@ const ProductPage = () => {
                                 visible={visible}
                                 onCancel={() => setVisible(false)}
                                 width={1000}
+                                
                             >
+                                <div className='modal_tables' style={{ height: '500'}}>
                                 <div className='modal_table'>
                                     <h2 className='modal_header'> Adult Tee Size Chart </h2>
                                     <Table columns={columns} dataSource={tShirtData} bordered pagination={false}/>
@@ -57,6 +59,7 @@ const ProductPage = () => {
                                 <div className='modal_table'>
                                     <h2 className='modal_header'> Adult Hooded Sweatshirt Size Chart </h2>
                                     <Table columns={columns} dataSource={sweatshirtData} bordered pagination={false}/>
+                                </div>
                                 </div>
                             </Modal>
                         </div>

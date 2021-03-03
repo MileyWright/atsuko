@@ -51,11 +51,28 @@
     font-weight: 700;
 }
 
+.modal{
+    height: 60%;
+    overflow-y: scroll;
+}
+
+.ant-modal-content .ant-modal-body .modal_table {
+    margin: 5%;
+}
+
 .ant-modal-content .ant-modal-body .modal_header{
     text-align: center;
     margin-top: 1%;
     text-transform: uppercase;
     letter-spacing: 0.06em;
+}
+.ant-table-thead > tr > th {
+ background: #000000;
+ color:#ffffff;
+}
+
+.ant-table-content .ant-table-tbody .ant-table-row .ant-table-cell:first-child{
+    font-weight: 500;
 }
 
 .top_right .radio_button {
