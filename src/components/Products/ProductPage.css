@@ -9,7 +9,7 @@
 }
 .right{
     margin: 1%;
-    width: 22%;
+    width: 18.3%;
 }
 .top_right p{
     /* text-transform: uppercase; */
@@ -23,8 +23,43 @@
 .top_right p:nth-child(2){
     font-weight: 700;
 }
+
 .top_right .size{
     font-size: 1.0rem;
+}
+.top_right .size_container{
+    display: flex;
+    justify-content: space-between;
+}
+.top_right .size_container img{
+    width: 25%;
+}
+
+.top_right .size_container .size_container_right{
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+    height: 25px;
+    text-align: center;
+}
+
+.top_right .size_container .size_container_right button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.ant-modal-content .ant-modal-body .modal_header{
+    text-align: center;
+    margin-top: 1%;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.top_right .radio_button {
+    width: 334px;
 }
 .ant-radio-button-wrapper{
     margin: 1%;
