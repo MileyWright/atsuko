@@ -16,7 +16,7 @@ const ProductPage = () => {
     const [standardShipping, setStandardShipping] = useState(intialState);
     const [overnightShipping, setOvernightShipping] = useState(intialState);
 
-    const filteredProduct = apparel.find(item=> {
+    const filteredProduct = apparel.find(item => {
         return item.id == id
         })
 
@@ -55,14 +55,15 @@ const ProductPage = () => {
 
     let standardMonth = monthNames[standard.getMonth()];
     let overnightMonth = monthNames[overnight.getMonth()];
-
+    let standardDate = standard.getDate();
+    
     useEffect(() => {
-        setStandardShipping({dayName: dayOfTheWeek(standardDay), month: standardMonth, dayNumber: standard.getDate()})
-    }, [])
+        setStandardShipping({dayName: dayOfTheWeek(standardDay), month: standardMonth, dayNumber: standardDate})
+    }, [standardDay, standardMonth])
 
     useEffect(() => {
         setOvernightShipping({dayName: dayOfTheWeek(overnightDay), month: overnightMonth, dayNumber: overnight.getDate()})
-    }, [])
+    }, [overnightDay, overnightMonth])
 
     return(
         <>
@@ -127,11 +128,11 @@ const ProductPage = () => {
                 <div className='shipping'>
                     <p>
                         <img src={process.env.PUBLIC_URL + '/assets/icons/travelling.svg'} alt='traveling'/>
-                        Get it by {standardShipping.dayName}, {standardShipping.month} {standardShipping.dayNumber}
+                        Get it by {standardShipping.dayName}, {standardShipping.month} {standardShipping.dayNumber} with standard shipping
                     </p>
                     <p>
                         <img src={process.env.PUBLIC_URL + '/assets/icons/rocket.svg'} alt='rocket'/>
-                        Get it by {overnightShipping.dayName}, {overnightShipping.month} {overnightShipping.dayNumber}
+                        Get it by {overnightShipping.dayName}, {overnightShipping.month} {overnightShipping.dayNumber} with overnight shipping
                     </p>
                 </div>
             </div>

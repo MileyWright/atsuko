@@ -143,12 +143,20 @@
 }
 
 .shipping{
-
+    line-height: 2;
+    width: 100%;
+    margin: 2%;
 }
 
 .shipping p{
-
+    font-size: 10px;
+    letter-spacing: 0.01em;
+    margin: 0!important;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
 }
 .shipping p img{
-    width: 5%;
+    width: 7%;
+    padding-right: 8px;
 }
