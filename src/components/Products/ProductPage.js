@@ -8,6 +8,7 @@ import {HeartOutlined} from '@ant-design/icons';
 import {columns, tShirtData, longTShirtData, sweatshirtData} from './ModalData';
 import './ProductPage.css';
 
+
 const intialState = {dayName:null, month: null, dayNumber: null};
 
 const contentStyle = {
@@ -82,7 +83,7 @@ const ProductPage = () => {
     const shuffled = combineProduct.sort(() => 0.5 - Math.random());
 
     // Get sub-array of first n elements after shuffled
-    let selected = shuffled.slice(0, 3);
+    let selected = shuffled.slice(0, 6);
     
     return(
         <>
@@ -163,6 +164,7 @@ const ProductPage = () => {
         <div className='random_product'>
             <div className='title'> You may also like</div>
             <p>Customers who brought this item also brought</p>
+
             <div className='container'>
                     {selected.map(item => {
                         const productUrl = item => {
@@ -179,7 +181,7 @@ const ProductPage = () => {
                             <Card className='product_card 'item={item} key={item.id}/>
                         </Link>
                     )})}
-                </div>
+            </div>
         
            
         </div>

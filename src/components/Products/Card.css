@@ -20,9 +20,12 @@
 }
 .card p{
     color: #000000;
-    font-family: 'Montserrat', sans-serif;    
+    font-family: 'Montserrat', sans-serif !important;    
     text-transform: uppercase;
     padding-top: 5%;
     white-space: nowrap;
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
+}
+.card p:nth-child(3){
+    padding-top: 0;
 }
