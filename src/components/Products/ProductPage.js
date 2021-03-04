@@ -176,7 +176,6 @@ const ProductPage = () => {
                             <Link to={`/collections/${productUrl(item)}/products/${item.id}`} className='link overlay'key={item.id}>
                                 <ScrollTo selector={`#product`}><Card className='product_card' item={item} key={item.id}/></ScrollTo>
                             </Link>
-                        
                     )})}
             </div> 
         </div>

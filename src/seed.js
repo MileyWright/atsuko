@@ -702,6 +702,7 @@ export const apparel = [
         name: "Attack On Titan Logo Hoodie",
         price: 34.99,
         keywords: "Attack On Titan, Hoodie",
+        category: "apparel"
     },
     {
         id: 2100243456,
