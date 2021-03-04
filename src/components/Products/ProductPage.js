@@ -18,7 +18,7 @@ var combineProduct = combineProduct.concat(techAccessories)
 
 const ProductPage = () => {
     const {id} = useParams();
-    const [size, setSize] = useState();
+    const [size, setSize] = useState(null);
     const [visible, setVisible] = useState(false);
     const [standardShipping, setStandardShipping] = useState(intialState);
     const [overnightShipping, setOvernightShipping] = useState(intialState);
@@ -27,11 +27,15 @@ const ProductPage = () => {
         return item.id == id
         })
     
-
+    
     const handleChange = value => {
         setSize(value.target.value)
     }
+    const resetSize = () =>{
+        setSize(null)
+    }
 
+    
     const today = new Date()
     var standard = new Date(today)
     standard.setDate(standard.getDate() + 5)
@@ -175,7 +179,7 @@ const ProductPage = () => {
                         return(
                         
                             <Link to={`/collections/${productUrl(item)}/products/${item.id}`} className='link overlay'key={item.id}>
-                                <ScrollTo selector={`#product`}><Card className='product_card' mini={'miniTop'} item={item} key={item.id}/></ScrollTo>
+                                <ScrollTo selector={`#product`} onClick={resetSize}><Card className='product_card' mini={'miniTop'} item={item} key={item.id}/></ScrollTo>
                             </Link>
                     )})}
             </div> 

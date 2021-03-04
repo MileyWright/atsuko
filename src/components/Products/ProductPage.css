@@ -174,7 +174,7 @@ quadpay-widget {
 }
 
 .random_product{
-    background-color: #e0e0e0;
+    background-color: #e4e4e4;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -223,4 +223,8 @@ quadpay-widget {
     font-size: 17px;
     letter-spacing: 0.05em;
     margin: 1%;
+}
+
+.similar_products .container{
+    margin:1% 0 3% 0;
 }
