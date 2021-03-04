@@ -9,6 +9,7 @@ import {columns, tShirtData, longTShirtData, sweatshirtData} from './ModalData';
 import ScrollTo from 'react-scroll-into-view';
 import './ProductPage.css';
 import '../Nav/Nav.css';
+import '../Apparel/Apparel.css';
 
 const intialState = {dayName:null, month: null, dayNumber: null};
 
@@ -174,7 +175,7 @@ const ProductPage = () => {
                         return(
                         
                             <Link to={`/collections/${productUrl(item)}/products/${item.id}`} className='link overlay'key={item.id}>
-                                <ScrollTo selector={`#product`}><Card className='product_card' item={item} key={item.id}/></ScrollTo>
+                                <ScrollTo selector={`#product`}><Card className='product_card' mini={'miniTop'} item={item} key={item.id}/></ScrollTo>
                             </Link>
                     )})}
             </div> 
@@ -197,10 +198,11 @@ const ProductPage = () => {
                         }
                         return(
                         <Link to={`/collections/${productUrl(item)}/products/${item.id}`} className='link overlay'key={item.id}>
-                            <ScrollTo selector={`#product`}><Card className='product_card' item={item} key={item.id}/></ScrollTo>
+                            <ScrollTo selector={`#product`}><Card className='product_card' mini={'mini'} item={item} key={item.id}/></ScrollTo>
                         </Link>
                     )})}
             </div>
+            
         </div>
         <Footer/> 
         </>

@@ -4,12 +4,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 400px;
 }
 .card img{
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s ease-in-out;
+    width: 400px;
 }
 .card img:hover{
     -ms-transform: scale(1.1);
@@ -23,9 +25,24 @@
     font-family: 'Montserrat', sans-serif !important;    
     text-transform: uppercase;
     padding-top: 5%;
-    white-space: nowrap;
+    white-space: normal;
+    text-align: left !important;
     font-size: 0.9rem !important;
+}
+#mini p:nth-child(2){
+    font-size: 0.7rem !important;
+}
+#miniTop p:nth-child(2){
+    font-size: 0.8rem !important;
 }
 .card p:nth-child(3){
     padding-top: 0;
+}
+#mini{
+    width: 300px;
+    margin: 1%;
+}
+
+#mini img{
+    width: 100%;
 }
