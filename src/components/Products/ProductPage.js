@@ -12,14 +12,6 @@ import '../Nav/Nav.css';
 
 const intialState = {dayName:null, month: null, dayNumber: null};
 
-const contentStyle = {
-    height: '160px',
-    color: '#000000',
-   
-    background: '#000000',
- 
-};
-
 var combineProduct = apparel.concat(homegoods);
 var combineProduct = combineProduct.concat(techAccessories)
 
@@ -88,10 +80,6 @@ const ProductPage = () => {
     
     const randomApparel = apparel.sort(() => 0.5 - Math.random()).slice(0,4);
 
-    function refreshPage() {
-        window.scrollTo(0, 0)
-    }
-    const scroll = `product`;
     return(
         <>
         <Nav />
