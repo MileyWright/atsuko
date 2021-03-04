@@ -19,7 +19,8 @@ const ProductPage = () => {
     const filteredProduct = apparel.find(item => {
         return item.id == id
         })
-
+    
+    const fourPayments = filteredProduct.price/4 + 1;
     const handleChange = value => {
         setSize(value.target.value)
     }
@@ -74,6 +75,9 @@ const ProductPage = () => {
                 <div className='top_right'>
                     <p>{filteredProduct.name}</p>
                     <p>${filteredProduct.price} USD</p>
+                    <p className='fourPayments'> 
+                       <quadpay-widget className='quadpay' logoColor="#1d75ec"/>
+                    </p>
                     <div className='size_container'>
                         <p className='size'>Size: {size} </p>
                         <div className='size_container_right'>

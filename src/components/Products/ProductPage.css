@@ -12,7 +12,6 @@
     width: 18.3%;
 }
 .top_right p{
-    /* text-transform: uppercase; */
     letter-spacing: 0.1em;
     color: #53585f; 
     font-size: 1.2rem;
@@ -23,10 +22,28 @@
 .top_right p:nth-child(2){
     font-weight: 700;
 }
+.top_right .fourPayments{
+    font-size: 1rem;
+    letter-spacing: 0.03em;
+}
+
+.top_right .fourPayments span{
+    font-weight: 700;
+}
+
+quadpay-widget span{
+    /* display: none; */
+}
+
+quadpay-widget {
+    font-size: 0.8rem;
+    
+}
 
 .top_right .size{
     font-size: 1.0rem;
 }
+
 .top_right .size_container{
     display: flex;
     justify-content: space-between;
