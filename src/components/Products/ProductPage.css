@@ -200,3 +200,27 @@ quadpay-widget {
 .random_product .container{
     margin:1%;
 }
+
+.similar_products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.similar_products .title{
+    font-size: 1.6rem;
+    font-family: 'Knewave', cursive;   
+    font-weight: 900;
+    text-align: center;
+    margin-top: 3%;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.similar_products p{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 17px;
+    letter-spacing: 0.05em;
+    margin: 1%;
+}

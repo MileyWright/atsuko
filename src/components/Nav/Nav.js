@@ -13,7 +13,7 @@ const IconFont = createFromIconfontCN({
 const Nav = () => {
     
     return (
-        <div className='nav_container'>
+        <div className='nav_container' id='product'>
             <Link to='/' className='logo'>atsuko</Link>
 
             <nav className='nav_links'>

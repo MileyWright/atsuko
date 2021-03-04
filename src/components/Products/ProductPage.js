@@ -6,8 +6,9 @@ import {Link} from 'react-router-dom';
 import {Modal, Radio, Table} from 'antd';
 import {HeartOutlined} from '@ant-design/icons';
 import {columns, tShirtData, longTShirtData, sweatshirtData} from './ModalData';
+import ScrollTo from 'react-scroll-into-view';
 import './ProductPage.css';
-
+import '../Nav/Nav.css';
 
 const intialState = {dayName:null, month: null, dayNumber: null};
 
@@ -82,9 +83,15 @@ const ProductPage = () => {
    // Shuffle array
     const shuffled = combineProduct.sort(() => 0.5 - Math.random());
 
-    // Get sub-array of first n elements after shuffled
+    // Get sub-array of first 6 elements after shuffled
     let selected = shuffled.slice(0, 6);
     
+    const randomApparel = apparel.sort(() => 0.5 - Math.random()).slice(0,4);
+
+    function refreshPage() {
+        window.scrollTo(0, 0)
+    }
+    const scroll = `product`;
     return(
         <>
         <Nav />
@@ -160,7 +167,7 @@ const ProductPage = () => {
                 </div>
             </div>
         </div>
-
+        
         <div className='random_product'>
             <div className='title'> You may also like</div>
             <p>Customers who brought this item also brought</p>
@@ -177,17 +184,36 @@ const ProductPage = () => {
                             }
                         }
                         return(
+                        
+                            <Link to={`/collections/${productUrl(item)}/products/${item.id}`} className='link overlay'key={item.id}>
+                                <ScrollTo selector={`#product`}><Card className='product_card' item={item} key={item.id}/></ScrollTo>
+                            </Link>
+                        
+                    )})}
+            </div> 
+        </div>
+        
+        <div className='similar_products'>
+            <div className='title'> Similar Products</div>
+            <p>Customers who viewed this item also viewed</p>
+            
+            <div className='container'>
+                    {randomApparel.map(item => {
+                        const productUrl = item => {
+                            if (item.category === 'apparel'){
+                            return 'anime-clothing-apparel'
+                            } else if (item.category === 'homegoods'){
+                                return 'anime-homegoods'
+                            } else if (item.category === 'techAccessories'){
+                                return 'anime-tech-accessories'
+                            }
+                        }
+                        return(
                         <Link to={`/collections/${productUrl(item)}/products/${item.id}`} className='link overlay'key={item.id}>
-                            <Card className='product_card 'item={item} key={item.id}/>
+                            <ScrollTo selector={`#product`}><Card className='product_card' item={item} key={item.id}/></ScrollTo>
                         </Link>
                     )})}
             </div>
-        
-           
-        </div>
-
-        <div className='similar_products'>
-
         </div>
         <Footer/> 
         </>
