@@ -4,7 +4,6 @@ import './Apparel.css';
 import {apparel} from '../../seed';
 import { Pagination, Select } from 'antd';
 import { Link } from 'react-router-dom';
-import {commerce} from '../../lib/commerce';
 const { Option } = Select;
 
 const intialState = apparel

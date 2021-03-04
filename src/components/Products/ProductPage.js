@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
-import {apparel} from '../../seed';
-import {Nav, Footer} from '../index';
+import {apparel, homegoods, techAccessories} from '../../seed';
+import {Nav, Footer, Card} from '../index';
 import {Link} from 'react-router-dom';
 import {Modal, Radio, Table} from 'antd';
 import {HeartOutlined} from '@ant-design/icons';
@@ -9,6 +9,18 @@ import {columns, tShirtData, longTShirtData, sweatshirtData} from './ModalData';
 import './ProductPage.css';
 
 const intialState = {dayName:null, month: null, dayNumber: null};
+
+const contentStyle = {
+    height: '160px',
+    color: '#000000',
+   
+    background: '#000000',
+ 
+};
+
+var combineProduct = apparel.concat(homegoods);
+var combineProduct = combineProduct.concat(techAccessories)
+
 const ProductPage = () => {
     const {id} = useParams();
     const [size, setSize] = useState();
@@ -20,7 +32,7 @@ const ProductPage = () => {
         return item.id == id
         })
     
-    const fourPayments = filteredProduct.price/4 + 1;
+
     const handleChange = value => {
         setSize(value.target.value)
     }
@@ -66,6 +78,12 @@ const ProductPage = () => {
         setOvernightShipping({dayName: dayOfTheWeek(overnightDay), month: overnightMonth, dayNumber: overnight.getDate()})
     }, [overnightDay, overnightMonth])
 
+   // Shuffle array
+    const shuffled = combineProduct.sort(() => 0.5 - Math.random());
+
+    // Get sub-array of first n elements after shuffled
+    let selected = shuffled.slice(0, 3);
+    
     return(
         <>
         <Nav />
@@ -140,7 +158,25 @@ const ProductPage = () => {
                     </p>
                 </div>
             </div>
-        </div> 
+        </div>
+
+        <div className='random_product'>
+            <div className='title'> You may also like</div>
+            <p>Customers who brought this item also brought</p>
+            <div className='container'>
+                    {selected.map(item => 
+                        <Link to={`/collections/anime-clothing-apparel/products/${item.id}`} className='link overlay'key={item.id}>
+                            <Card className='product_card 'item={item} key={item.id}/>
+                        </Link>
+                    )}
+                </div>
+        
+           
+        </div>
+
+        <div className='similar_products'>
+
+        </div>
         <Footer/> 
         </>
     )
