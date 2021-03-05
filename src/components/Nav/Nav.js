@@ -18,7 +18,7 @@ const Nav = () => {
 
             <nav className='nav_links' >
                 <Dropdown overlay={apparel} className='nav_link'>
-                    <Link to='/collection/anime-clothing-apparel'>
+                    <Link to='/collections/anime-clothing-apparel'>
                     Apparel <DownOutlined className='arrow'/>
                     </Link>
                 </Dropdown>
@@ -28,17 +28,17 @@ const Nav = () => {
                     </Link>
                 </Dropdown>
                 <Dropdown overlay={lifestyle} className='nav_link'>
-                    <Link to='/collection/vaporwave-aesthetic-clothing-tees-hoodies-merch'>
+                    <Link to='/collections/vaporwave-aesthetic-clothing-tees-hoodies-merch'>
                     Lifestyle <DownOutlined className='arrow'/>
                     </Link>
                 </Dropdown>
                 <Dropdown overlay={techAccessories} className='nav_link'>
-                    <Link to='/collection/anime-tech-accessories'>
+                    <Link to='/collections/anime-tech-accessories'>
                     Tech Accessories <DownOutlined className='arrow'/>
                     </Link>
                 </Dropdown>
                 <Dropdown overlay={byAnime} className='nav_link'>
-                    <Link to='/collection/all-anime-merch'>
+                    <Link to='/collections/all-anime-merch'>
                     By Anime <DownOutlined className='arrow'/>
                     </Link>
                 </Dropdown>

@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {Nav, Footer, Card} from '../index';
 import './Apparel.css';
 import {apparel} from '../../seed';
 import { Pagination, Select } from 'antd';
 import { Link } from 'react-router-dom';
+
 const { Option } = Select;
 
 const intialState = apparel;
@@ -13,11 +14,14 @@ const Apparel = () => {
     const [minValue, setMinValue] = useState(0);
     const [maxValue, setMaxValue] = useState(numEachPage);
     
+    useEffect(()=> {
+        
+    })
     const filterOnChange = value => { 
         if(value === 'All'){
             return setData(intialState)
         } else{
-        const filter = apparel.filter(item=> {
+        const filter = data.filter(item=> {
             return item.keywords.includes(value)})
         setData(filter)
         }
@@ -75,10 +79,7 @@ const Apparel = () => {
                     return 1
                 return 0;
             })
-            const newArr=[]
-            for(let i = 0; i < sorting.length; i++){
-                newArr.push(sorting[i])
-            }
+            const newArr=[...sorting]
             setData(newArr)
         } else if (value === 'Price, high to low') {
             const sorting = data.sort((a, b) => {
@@ -88,10 +89,7 @@ const Apparel = () => {
                     return 1
                 return 0;
             })
-            const newArr=[]
-            for(let i = 0; i < sorting.length; i++){
-                newArr.push(sorting[i])
-            }
+            const newArr = [...sorting]
             setData(newArr)
         } else{
             console.log("no")

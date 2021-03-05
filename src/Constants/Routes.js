@@ -1,4 +1,4 @@
 export const HOME = '/';
-export const COLLECTION = '/collection/anime-clothing-apparel';
-export const COLLECTION2 = '/collection/anime-clothing-apparel/products';
+export const APPARELCOLLECTION = '/collections/anime-clothing-apparel';
+export const APPARELCOLLECTIONPRODUCT = '/collections/anime-clothing-apparel/products/:id';
 

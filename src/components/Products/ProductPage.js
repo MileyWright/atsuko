@@ -11,23 +11,23 @@ import './ProductPage.css';
 import '../Nav/Nav.css';
 import '../Apparel/Apparel.css';
 
-const intialState = {dayName:null, month: null, dayNumber: null};
 
-var combineProduct = apparel.concat(homegoods);
-var combineProduct = combineProduct.concat(techAccessories);
-
+const initialState = apparel;
 const ProductPage = () => {
     const {id} = useParams();
+    const [data] = useState(initialState);
     const [size, setSize] = useState(null);
     const [visible, setVisible] = useState(false);
-    const [standardShipping, setStandardShipping] = useState(intialState);
-    const [overnightShipping, setOvernightShipping] = useState(intialState);
+    const [standardShipping, setStandardShipping] = useState({dayName:null, month: null, dayNumber: null});
+    const [overnightShipping, setOvernightShipping] = useState({dayName:null, month: null, dayNumber: null});
     const [randomProduct, setRandomProduct] = useState([]);
     const [randomApparel, setRandomApparel] = useState([]);
     const [filteredProduct, setFilteredProduct] = useState([]);
 
+    const combineProduct = data.concat(homegoods).concat(techAccessories);
+
     useEffect(() => {
-        setFilteredProduct(apparel.find(item => {
+        setFilteredProduct(data.find(item => {
             return item.id == id
         }))
     },[id]);
@@ -35,7 +35,7 @@ const ProductPage = () => {
     const handleChange = e => {
         setSize(e.target.value)
     };
-    
+
     const today = new Date();
     var standard = new Date(today);
     standard.setDate(standard.getDate() + 5);
@@ -80,7 +80,8 @@ const ProductPage = () => {
 
     useEffect(() => {
         setRandomProduct(combineProduct.sort(() => 0.5 - Math.random()).slice(0, 6));
-        setRandomApparel(apparel.sort(() => 0.5 - Math.random()).slice(0,4));
+        const dataCopy = [...data];
+        setRandomApparel(dataCopy.sort(() => 0.5 - Math.random()).slice(0,4));
     }, [filteredProduct]);
 
     return(
@@ -127,7 +128,7 @@ const ProductPage = () => {
                             </Modal>
                         </div>
                     </div>
-                    <Radio.Group className='radio_button' buttonStyle="solid" onChange={handleChange}>
+                    <Radio.Group className='radio_button' buttonStyle="solid" checked={false} onChange={handleChange}>
                         <Radio.Button value="XS">XS</Radio.Button>
                         <Radio.Button value="S">S</Radio.Button>
                         <Radio.Button value="M">M</Radio.Button>
