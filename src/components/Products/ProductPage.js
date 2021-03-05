@@ -14,7 +14,7 @@ import '../Apparel/Apparel.css';
 const intialState = {dayName:null, month: null, dayNumber: null};
 
 var combineProduct = apparel.concat(homegoods);
-var combineProduct = combineProduct.concat(techAccessories)
+var combineProduct = combineProduct.concat(techAccessories);
 
 const ProductPage = () => {
     const {id} = useParams();
@@ -22,26 +22,26 @@ const ProductPage = () => {
     const [visible, setVisible] = useState(false);
     const [standardShipping, setStandardShipping] = useState(intialState);
     const [overnightShipping, setOvernightShipping] = useState(intialState);
+    const [randomProduct, setRandomProduct] = useState([]);
+    const [randomApparel, setRandomApparel] = useState([]);
+    const [filteredProduct, setFilteredProduct] = useState([]);
 
-    const filteredProduct = apparel.find(item => {
-        return item.id == id
-        })
-    
-    
-    const handleChange = value => {
-        setSize(value.target.value)
-    }
-    const resetSize = () =>{
-        setSize(null)
-    }
+    useEffect(() => {
+        setFilteredProduct(apparel.find(item => {
+            return item.id == id
+        }))
+    },[id]);
 
+    const handleChange = e => {
+        setSize(e.target.value)
+    };
     
-    const today = new Date()
-    var standard = new Date(today)
-    standard.setDate(standard.getDate() + 5)
+    const today = new Date();
+    var standard = new Date(today);
+    standard.setDate(standard.getDate() + 5);
     
-    var overnight = new Date(today)
-    overnight.setDate(overnight.getDate() + 1)
+    var overnight = new Date(today);
+    overnight.setDate(overnight.getDate() + 1);
 
     var standardDay = standard.getDay();
     var overnightDay = overnight.getDay();
@@ -62,7 +62,8 @@ const ProductPage = () => {
         } else if(value === 6){
             return 'Sat'
         }
-    } 
+    };
+
     let monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
 
     let standardMonth = monthNames[standard.getMonth()];
@@ -71,19 +72,16 @@ const ProductPage = () => {
     
     useEffect(() => {
         setStandardShipping({dayName: dayOfTheWeek(standardDay), month: standardMonth, dayNumber: standardDate})
-    }, [standardDay, standardMonth])
+    }, [standardDay, standardMonth]);
 
     useEffect(() => {
         setOvernightShipping({dayName: dayOfTheWeek(overnightDay), month: overnightMonth, dayNumber: overnight.getDate()})
-    }, [overnightDay, overnightMonth])
+    }, [overnightDay, overnightMonth]);
 
-   // Shuffle array
-    const shuffled = combineProduct.sort(() => 0.5 - Math.random());
-
-    // Get sub-array of first 6 elements after shuffled
-    let selected = shuffled.slice(0, 6);
-    
-    const randomApparel = apparel.sort(() => 0.5 - Math.random()).slice(0,4);
+    useEffect(() => {
+        setRandomProduct(combineProduct.sort(() => 0.5 - Math.random()).slice(0, 6));
+        setRandomApparel(apparel.sort(() => 0.5 - Math.random()).slice(0,4));
+    }, [filteredProduct]);
 
     return(
         <>
@@ -110,8 +108,7 @@ const ProductPage = () => {
                                 centered
                                 visible={visible}
                                 onCancel={() => setVisible(false)}
-                                width={1000}
-                                
+                                width={1000}   
                             >
                                 <div className='modal_tables' style={{ height: '500'}}>
                                 <div className='modal_table'>
@@ -130,7 +127,6 @@ const ProductPage = () => {
                             </Modal>
                         </div>
                     </div>
-                    
                     <Radio.Group className='radio_button' buttonStyle="solid" onChange={handleChange}>
                         <Radio.Button value="XS">XS</Radio.Button>
                         <Radio.Button value="S">S</Radio.Button>
@@ -166,7 +162,7 @@ const ProductPage = () => {
             <p>Customers who brought this item also brought</p>
 
             <div className='container'>
-                    {selected.map(item => {
+                    {randomProduct.map(item => {
                         const productUrl = item => {
                             if (item.category === 'apparel'){
                             return 'anime-clothing-apparel'
@@ -177,9 +173,8 @@ const ProductPage = () => {
                             }
                         }
                         return(
-                        
                             <Link to={`/collections/${productUrl(item)}/products/${item.id}`} className='link overlay'key={item.id}>
-                                <ScrollTo selector={`#product`} onClick={resetSize}><Card className='product_card' mini={'miniTop'} item={item} key={item.id}/></ScrollTo>
+                                <ScrollTo selector={`#product`} ><Card className='product_card' mini={'miniTop'} item={item} key={item.id}/></ScrollTo>
                             </Link>
                     )})}
             </div> 
@@ -205,8 +200,7 @@ const ProductPage = () => {
                             <ScrollTo selector={`#product`}><Card className='product_card' mini={'mini'} item={item} key={item.id}/></ScrollTo>
                         </Link>
                     )})}
-            </div>
-            
+            </div> 
         </div>
         <Footer/> 
         </>
