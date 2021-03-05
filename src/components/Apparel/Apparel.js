@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import {Nav, Footer, Card} from '../index';
 import './Apparel.css';
 import {apparel} from '../../seed';
@@ -12,10 +12,8 @@ const Apparel = () => {
     const [data, setData] = useState(intialState);
     const [minValue, setMinValue] = useState(0);
     const [maxValue, setMaxValue] = useState(numEachPage);
-
-    console.log(data)
     
-    const filterOnChange = value => {   //                                           !!!Need to rework !!!
+    const filterOnChange = value => { 
         if(value === 'All'){
             return setData(intialState)
         } else{
@@ -25,13 +23,16 @@ const Apparel = () => {
         }
       }
      
-    const sortByOnChange = value => { //                                           !!!Need to rework !!!
+    const sortByOnChange = value => {
         if(value === 'Best selling'){
             const sorting = data.sort((a, b) => {
-                if (a.id < b.id) //sort string ascending
-                    return -1 
-                if (a.id > b.id)
+                if (a.id < b.id) {//sort string ascending
+                    return -1
+                } 
+                if (a.id > b.id){
                     return 1
+                }
+                return 0;
             })
             const newArr=[]
             for(let i = 0; i < sorting.length; i++){
@@ -41,10 +42,11 @@ const Apparel = () => {
         } else if (value === 'Alphabetically, A-Z') {
             const sorting = data.sort((a, b) => {
                 const nameA= a.name.toLowerCase(), nameB= b.name.toLowerCase();
-                if (nameA < nameB) //sort string ascending
-                    return -1 
-                if (nameA > nameB)
-                    return 1
+                if (nameA < nameB){ //sort string ascending
+                    return -1 }
+                if (nameA > nameB){
+                    return 1}
+                return 0;
             })
             const newArr=[]
             for(let i = 0; i < sorting.length; i++){
@@ -58,6 +60,7 @@ const Apparel = () => {
                     return -1 
                 if (nameA < nameB)
                     return 1
+                return 0;
             })
             const newArr=[]
             for(let i = 0; i < sorting.length; i++){
@@ -70,6 +73,7 @@ const Apparel = () => {
                     return -1 
                 if (a.price > b.price)
                     return 1
+                return 0;
             })
             const newArr=[]
             for(let i = 0; i < sorting.length; i++){
@@ -82,6 +86,7 @@ const Apparel = () => {
                     return -1 
                 if (a.price > b.price)
                     return 1
+                return 0;
             })
             const newArr=[]
             for(let i = 0; i < sorting.length; i++){
@@ -160,22 +165,6 @@ const Apparel = () => {
                     onChange={handleChange}
                     total={data.length}
                 />
-                {/* <div className='container'>
-                    {products && products.length > 0 &&
-                    products.slice(minValue, maxValue).map(item => 
-                        <Link to={`/collections/anime-clothing-apparel/products/${item.id}`} className='link overlay'key={item.id}>
-                            <Card className='product_card 'item={item} key={item.id}/>
-                        </Link>
-                    )}
-                </div>
-                <Pagination
-                    className='pagination'
-                    defaultCurrent={1}
-                    defaultPageSize={numEachPage}
-                    showSizeChanger={false}
-                    onChange={handleChange}
-                    total={products.length}
-                /> */}
             </div>
 
             <Footer/>
