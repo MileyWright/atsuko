@@ -9,10 +9,10 @@ const { Option } = Select;
 
 const intialState = apparel;
 const Apparel = () => {
-    const numEachPage = 18;
+    const numOnEachPage = 18;
     const [data, setData] = useState(intialState);
     const [minValue, setMinValue] = useState(0);
-    const [maxValue, setMaxValue] = useState(numEachPage);
+    const [maxValue, setMaxValue] = useState(numOnEachPage);
     
     useEffect(()=> {
         
@@ -98,13 +98,13 @@ const Apparel = () => {
     const handleChange = value => {
         if (value <= 1) {
             setMinValue(0)
-            setMaxValue(numEachPage)
+            setMaxValue(numOnEachPage)
         } else {
-            setMinValue((value-1) * numEachPage) 
-            setMaxValue(value*numEachPage)
-            
+            setMinValue((value-1) * numOnEachPage) 
+            setMaxValue(value*numOnEachPage)
         }
     }
+
     return (
         <>
             <Nav/>
@@ -157,14 +157,12 @@ const Apparel = () => {
                 </div>
                 <Pagination
                     className='pagination'
-                    defaultCurrent={1}
-                    defaultPageSize={numEachPage}
+                    defaultPageSize={numOnEachPage}
                     showSizeChanger={false}
                     onChange={handleChange}
                     total={data.length}
                 />
             </div>
-
             <Footer/>
         </>
     )
