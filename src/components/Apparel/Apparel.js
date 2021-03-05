@@ -6,12 +6,12 @@ import { Pagination, Select } from 'antd';
 import { Link } from 'react-router-dom';
 const { Option } = Select;
 
-const intialState = apparel
+const intialState = apparel;
 const Apparel = () => {
     const numEachPage = 18;
     const [data, setData] = useState(intialState);
-    const [minValue, setMinValue] = useState(0)
-    const [maxValue, setMaxValue] = useState(numEachPage)
+    const [minValue, setMinValue] = useState(0);
+    const [maxValue, setMaxValue] = useState(numEachPage);
 
     console.log(data)
     
