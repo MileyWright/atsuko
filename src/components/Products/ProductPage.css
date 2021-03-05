@@ -63,9 +63,10 @@ quadpay-widget {
     font-weight: 700;
 }
 
-.modal{
-    height: 60%;
+.modal_tables {
     overflow-y: scroll;
+    height: 500px;
+    margin-top: 3%;
 }
 
 .ant-modal-content .ant-modal-body .modal_table {
