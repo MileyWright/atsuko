@@ -149,11 +149,31 @@ const Apparel = () => {
                 </div>
                 <div className='container'>
                     {data && data.length > 0 &&
-                    data.slice(minValue, maxValue).map(item => 
-                        <Link to={`/collections/anime-clothing-apparel/products/${item.id}`} className='link overlay'key={item.id}>
-                            <Card className='product_card 'item={item} key={item.id}/>
-                        </Link>
-                    )}
+                    data.slice(minValue, maxValue).map(item => {
+                        const productUrl = item => {
+                            if (item.category === 'apparel' ){
+                                if(item.keywords.includes('Shirt')){
+                                    return 'anime-tee-shirts'
+                                } else if(item.keywords.includes('Hoodie')){
+                                    return 'anime-hoodies-and-sweatshirts'
+                                } else if(item.keywords.includes('Socks')){
+                                    return 'anime-socks'
+                                } else if(item.keywords.includes('Cosplay')){
+                                    return 'anime-weeb-cosplay-accessories'
+                                }
+                            
+                            } else if (item.category === 'homegoods'){
+                                return 'anime-homegoods'
+                            } else if (item.category === 'techAccessories'){
+                                return 'anime-tech-accessories'
+                            }
+                        }
+                        return(
+                            <Link to={`/collections/${productUrl(item)}/products/${item.id}`} className='link overlay'key={item.id}>
+                                <Card className='product_card 'item={item} key={item.id}/>
+                            </Link>
+                        )
+                    })}
                 </div>
                 <Pagination
                     className='pagination'
