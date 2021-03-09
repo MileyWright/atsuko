@@ -131,7 +131,7 @@ const Socks = () => {
                 <div className='container'>
                     {data && data.length > 0 &&
                     data.slice(minValue, maxValue).map(item => 
-                        <Link to={`/collections/anime-tee-shirts/products/${item.id}`} className='link overlay'key={item.id}>
+                        <Link to={`/collections/anime-socks/products/${item.id}`} className='link overlay'key={item.id}>
                             <Card className='product_card 'item={item} key={item.id}/>
                         </Link>
                     )}
