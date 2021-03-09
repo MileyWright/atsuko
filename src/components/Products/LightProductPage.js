@@ -3,9 +3,7 @@ import { useParams } from 'react-router-dom';
 import {apparel, homegoods, techAccessories} from '../../seed';
 import {Nav, Footer, Card} from '../index';
 import {Link} from 'react-router-dom';
-import {Modal, Radio, Table} from 'antd';
 import {HeartOutlined} from '@ant-design/icons';
-import {columns, tShirtData, longTShirtData, sweatshirtData} from './ModalData';
 import ScrollTo from 'react-scroll-into-view';
 import './ProductPage.css';
 import '../Nav/Nav.css';
@@ -16,8 +14,6 @@ const initialState = homegoods;
 const LightProductPage = () => {
     const {id} = useParams();
     const [data] = useState(initialState);
-    const [size, setSize] = useState(null);
-    const [visible, setVisible] = useState(false);
     const [standardShipping, setStandardShipping] = useState({dayName:null, month: null, dayNumber: null});
     const [overnightShipping, setOvernightShipping] = useState({dayName:null, month: null, dayNumber: null});
     const [randomProduct, setRandomProduct] = useState([]);
@@ -31,10 +27,6 @@ const LightProductPage = () => {
             return item.id == id
         }))
     },[id]);
-
-    const handleChange = e => {
-        setSize(e.target.value)
-    };
 
     const today = new Date();
     var standard = new Date(today);
