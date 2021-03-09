@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {Nav, Footer, Card} from '../../index';
 import '../Apparel.css';
 import {apparel} from '../../../seed';
@@ -7,26 +7,27 @@ import { Link } from 'react-router-dom';
 
 const { Option } = Select;
 
-const intialState = apparel.filter(item => {
-    return item.keywords.includes('Sock')
+const initialState = apparel.filter(item => {
+    return item.keywords.includes('Socks')
 });
 
 const Socks = () => {
     const numOnEachPage = 18;
-    const [data, setData] = useState(intialState);
+    const [data, setData] = useState(initialState);
     const [minValue, setMinValue] = useState(0);
     const [maxValue, setMaxValue] = useState(numOnEachPage);
     
     const filterOnChange = value => { 
         if(value === 'All'){
-            return setData(intialState)
-        } else{
-        const filter = data.filter(item=> {
-            return item.keywords.includes(value)})
-        setData(filter)
+            return setData(initialState)
+        } else{ 
+            const filteredData = initialState;
+            const filter = filteredData.filter(item => {
+                return item.keywords.includes(value)});
+            return setData(filter);
         }
       }
-     
+
     const sortByOnChange = value => {
         if(value === 'Best selling'){
             const sorting = data.sort((a, b) => {
