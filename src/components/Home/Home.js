@@ -42,7 +42,7 @@ const Home = () => {
                 <div className='hero_container_title'>
                     <p>Stay Sugoi ツ</p>
                     <p>Only the best anime merch and inspiration</p>
-                    <Link to='/collection/anime-clothing-apparel' className='btn'>Treat Yourself </Link>
+                    <Link to='/collections/anime-clothing-apparel' className='btn'>Treat Yourself </Link>
                 </div>
                 <img src={process.env.PUBLIC_URL + '/assets/images/2aa82214d9c3552fe1b25e0184978373.jpg'} style={{backgroundPosition: "center", backgroundSize: 'center'}} alt='hero_img_girl'/>
             </div>
@@ -86,7 +86,7 @@ const Home = () => {
                                     </div> 
                             </div>
                         </Link>
-                        <Link to='/collections/pillows-plushies-and-blankets' className='grid_item overlay'>
+                        <Link to='/collections/anime-kawaii-cartoon-bedroom-pillows' className='grid_item overlay'>
                             <div>
                                 <img src={pillow} alt='panda_pillow'/>
                                     <div className='collection_grid_text-wrapper'>
