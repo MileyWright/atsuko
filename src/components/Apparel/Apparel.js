@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom';
 
 const { Option } = Select;
 
-const intialState = apparel;
+const initialState = apparel;
 const Apparel = () => {
     const numOnEachPage = 18;
-    const [data, setData] = useState(intialState);
+    const [data, setData] = useState(initialState);
     const [minValue, setMinValue] = useState(0);
     const [maxValue, setMaxValue] = useState(numOnEachPage);
     
@@ -19,11 +19,12 @@ const Apparel = () => {
     })
     const filterOnChange = value => { 
         if(value === 'All'){
-            return setData(intialState)
+            return setData(initialState)
         } else{
-        const filter = data.filter(item=> {
-            return item.keywords.includes(value)})
-        setData(filter)
+            const filteredData = initialState;
+            const filter = filteredData.filter(item => {
+                return item.keywords.includes(value)});
+            return setData(filter);
         }
       }
      
