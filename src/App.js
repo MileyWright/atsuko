@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import {Home, Apparel, ApparelProductPage, TeeShirts, ShirtProductPage} from './components';
+import {Home, Apparel, HoodieProductPage, TeeShirts, ShirtProductPage} from './components';
 import * as Routes from './Constants/Routes';
 import ScrollToTop from './ScrollToTop';
 
@@ -9,7 +9,7 @@ const App = () => {
             <ScrollToTop>
             <Switch>
                 <Route exact path={Routes.HOME} component={Home} />
-                <Route path={Routes.APPARELCOLLECTIONPRODUCT} component={ApparelProductPage}/>
+                <Route path={Routes.APPARELHOODIECOLLECTIONPRODUCT} component={HoodieProductPage}/>
                 <Route path={Routes.APPARELTSHIRTCOLLECTIONPRODUCT} component={ShirtProductPage}/>
                 <Route path={Routes.APPARELCOLLECTION} component={Apparel}/>
                 

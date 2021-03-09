@@ -3,7 +3,7 @@ export { default as Apparel } from './Apparel/Apparel.js';
 export { default as Nav } from './Nav/Nav';
 export { default as Footer } from './Footer/Footer';
 export { default as Card } from './Products/Card';
-export { default as ApparelProductPage } from './Products/ApparelProductPage';
+export { default as HoodieProductPage } from './Products/HoodieProductPage';
 export { default as Cosplay } from './Apparel/Cosplay/Cosplay';
 export { default as Hoodies } from './Apparel/Hoodies/Hoodies';
 export { default as Socks } from './Apparel/Socks/Socks';

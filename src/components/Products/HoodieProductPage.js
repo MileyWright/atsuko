@@ -13,7 +13,7 @@ import '../Apparel/Apparel.css';
 
 
 const initialState = apparel;
-const ProductPage = () => {
+const HoodieProductPage = () => {
     const {id} = useParams();
     const [data] = useState(initialState);
     const [size, setSize] = useState(null);
@@ -165,8 +165,17 @@ const ProductPage = () => {
             <div className='container'>
                     {randomProduct.map(item => {
                         const productUrl = item => {
-                            if (item.category === 'apparel'){
-                            return 'anime-clothing-apparel'
+                            if (item.category === 'apparel' ){
+                                if(item.keywords.includes('Shirt')){
+                                    return 'anime-tee-shirts'
+                                } else if(item.keywords.includes('Hoodie')){
+                                    return 'anime-hoodies-and-sweatshirts'
+                                } else if(item.keywords.includes('Socks')){
+                                    return 'anime-socks'
+                                } else if(item.keywords.includes('Cosplay')){
+                                    return 'anime-weeb-cosplay-accessories'
+                                }
+                            
                             } else if (item.category === 'homegoods'){
                                 return 'anime-homegoods'
                             } else if (item.category === 'techAccessories'){
@@ -188,8 +197,16 @@ const ProductPage = () => {
             <div className='container'>
                     {randomApparel.map(item => {
                         const productUrl = item => {
-                            if (item.category === 'apparel'){
-                            return 'anime-clothing-apparel'
+                            if (item.category === 'apparel' ){
+                                if(item.keywords.includes('Shirt')){
+                                    return 'anime-tee-shirts'
+                                } else if(item.keywords.includes('Hoodie')){
+                                    return 'anime-hoodies-and-sweatshirts'
+                                } else if(item.keywords.includes('Socks')){
+                                    return 'anime-socks'
+                                } else if(item.keywords.includes('Cosplay')){
+                                    return 'anime-weeb-cosplay-accessories'
+                                }
                             } else if (item.category === 'homegoods'){
                                 return 'anime-homegoods'
                             } else if (item.category === 'techAccessories'){
@@ -208,4 +225,4 @@ const ProductPage = () => {
     )
 }
 
-export default ProductPage;
+export default HoodieProductPage;
