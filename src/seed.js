@@ -1593,7 +1593,7 @@ export const homegoods = [
         photo: "/assets/images/homegoods/totoro-plush-pillow.jpg",
         name: "Totoro Plush Pillow",
         price: 19.99,
-        keywords: "Pillow, Kawaii",
+        keywords: "Pillow, Kawaii, Totoro",
         category: "homegoods"
     },
     {
