@@ -853,7 +853,7 @@ export const apparel = [
         photo: "/assets/images/apparel/naruto-sensei-shirt.jpg",
         name: "Naruto Sensei Shirt",
         price: 34.99,
-        keywords: "Naruto, Shirt",
+        keywords: "Naruto, Hoodie",
         category: "apparel"
     },
     {

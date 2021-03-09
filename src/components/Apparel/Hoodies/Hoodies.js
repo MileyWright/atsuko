@@ -117,16 +117,12 @@ const Hoodies = () => {
                         <Option value="Attack On Titan">Attack On Titan</Option>
                         <Option value="Cosplay">Cosplay</Option>
                         <Option value="Darling In The Franxx">Darling In The Franxx</Option>
-                        <Option value="Death Note">Death Note</Option>
                         <Option value="Demon Slayer">Demon Slayer</Option>
                         <Option value="Dragon Ball Z">Dragon Ball Z</Option>
                         <Option value="Hunter X Hunter">Hunter X Hunter</Option>
-                        <Option value="Jojos Bizarre Adventure">Jojos Bizarre Adventure</Option>
-                        <Option value="Junji Ito">Junji Ito</Option>
                         <Option value="Kawaii">Kawaii</Option>
                         <Option value="My Hero Academia">My Hero Academia</Option>
                         <Option value="Naruto">Naruto</Option>
-                        <Option value="Nekomancer">Nekomancer</Option>
                         <Option value="NSFW">NSFW</Option>
                         <Option value="One Piece">One Piece</Option>
                         <Option value="Sad Aesthetic">Sad Aesthetic</Option>

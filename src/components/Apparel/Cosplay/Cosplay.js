@@ -114,9 +114,6 @@ const Cosplay = () => {
                 <div className='filter'>Filter by 
                     <Select defaultValue="All" style={{ width: 320 }} onChange={filterOnChange} className='select'>
                         <Option value="All">All</Option>
-                        <Option value="Dragon Ball Z">Dragon Ball Z</Option>
-                        <Option value="Naruto">Naruto</Option>
-                        <Option value="Sailor Moon">Sailor Moon</Option>
                     </Select>
                 </div>
                 <div className='sortBy'> Sort by
@@ -131,7 +128,7 @@ const Cosplay = () => {
                 <div className='container'>
                     {data && data.length > 0 &&
                     data.slice(minValue, maxValue).map(item => 
-                        <Link to={`/collections/anime-socks/products/${item.id}`} className='link overlay'key={item.id}>
+                        <Link to={`/collections/anime-weeb-cosplay-accessories/products/${item.id}`} className='link overlay'key={item.id}>
                             <Card className='product_card 'item={item} key={item.id}/>
                         </Link>
                     )}
