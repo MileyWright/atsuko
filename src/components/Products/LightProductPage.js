@@ -96,41 +96,7 @@ const LightProductPage = () => {
                     <p className='fourPayments'> 
                        <quadpay-widget className='quadpay' logoColor="#1d75ec"/>
                     </p>
-                    <div className='size_container'>
-                        <p className='size'>Size: {size} </p>
-                        <div className='size_container_right'>
-                            <img src={process.env.PUBLIC_URL + '/assets/icons/ruler.svg'} alt='ruler'/>
-                            <button onClick={() => setVisible(true)}>
-                                Size Chart
-                            </button>
-                            <Modal
-                                className='modal'
-                                footer={null}
-                                centered
-                                visible={visible}
-                                onCancel={() => setVisible(false)}
-                                width={1000}   
-                            >
-                                <div className='modal_tables' style={{ height: '500'}}>
-                                <div className='modal_table'>
-                                    <h2 className='modal_header'> Adult Tee Size Chart </h2>
-                                    <Table columns={columns} dataSource={tShirtData} bordered pagination={false}/>
-                                </div>
-                                <div className='modal_table'>
-                                    <h2 className='modal_header'> Adult Long-Sleeve Tee Size Chart </h2>
-                                    <Table columns={columns} dataSource={longTShirtData} bordered pagination={false}/>
-                                </div>
-                                <div className='modal_table'>
-                                    <h2 className='modal_header'> Adult Hooded Sweatshirt Size Chart </h2>
-                                    <Table columns={columns} dataSource={sweatshirtData} bordered pagination={false}/>
-                                </div>
-                                </div>
-                            </Modal>
-                        </div>
-                    </div>
-                    <Radio.Group className='radio_button' buttonStyle="solid" onChange={handleChange}>
-                        <Radio.Button value="OS">OS</Radio.Button>
-                    </Radio.Group>
+                   
                 </div>
                 <div className='cart_container'>
                     <Link to='/' className='cart_button'>ADD TO CART</Link>
