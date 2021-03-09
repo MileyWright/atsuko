@@ -112,7 +112,7 @@ const TeeShirts = () => {
         <>
             <Nav/>
             <div className='product_page'>
-                <div className='title'> Apparel</div>
+                <div className='title'> Tee Shirts</div>
 
                 <div className='filter'>Filter by 
                     <Select defaultValue="All" style={{ width: 320 }} onChange={filterOnChange} className='select'>

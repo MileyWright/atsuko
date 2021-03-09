@@ -13,7 +13,7 @@ export const apparel = (
         </Link>
       </Menu.Item>
       <Menu.Item>
-        <Link to="/collection/anime-hoodies-and-sweatshirts">
+        <Link to="/collections/anime-hoodies-and-sweatshirts">
           Hoodies
         </Link>
       </Menu.Item>
