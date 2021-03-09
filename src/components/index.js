@@ -9,3 +9,5 @@ export { default as Hoodies } from './Apparel/Hoodies/Hoodies';
 export { default as Socks } from './Apparel/Socks/Socks';
 export { default as TeeShirts } from './Apparel/TeeShirts/TeeShirts'; 
 export { default as ShirtProductPage } from './Products/ShirtProductPage';
+export { default as SockProductPage } from './Products/SockProductPage';
+export { default as CosplayProductPage } from './Products/CosplayProductPage';
