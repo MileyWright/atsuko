@@ -13,7 +13,7 @@ import '../Apparel/Apparel.css';
 
 
 const initialState = apparel;
-const HoodieProductPage = () => {
+const SockProductPage = () => {
     const {id} = useParams();
     const [data] = useState(initialState);
     const [size, setSize] = useState(null);
@@ -170,7 +170,11 @@ const HoodieProductPage = () => {
                                 }
                             
                             } else if (item.category === 'homegoods'){
-                                return 'anime-homegoods'
+                                if(item.keywords.includes('Pillow')){
+                                    return 'anime-kawaii-cartoon-bedroom-pillows'
+                                } else if(item.keywords.includes('Lights')){
+                                    return '3d-led-anime-bedroom-lights-lamps'
+                                }
                             } else if (item.category === 'techAccessories'){
                                 return 'anime-tech-accessories'
                             }
@@ -201,7 +205,11 @@ const HoodieProductPage = () => {
                                     return 'anime-weeb-cosplay-accessories'
                                 }
                             } else if (item.category === 'homegoods'){
-                                return 'anime-homegoods'
+                                if(item.keywords.includes('Pillow')){
+                                    return 'anime-kawaii-cartoon-bedroom-pillows'
+                                } else if(item.keywords.includes('Lights')){
+                                    return '3d-led-anime-bedroom-lights-lamps'
+                                }
                             } else if (item.category === 'techAccessories'){
                                 return 'anime-tech-accessories'
                             }
@@ -218,4 +226,4 @@ const HoodieProductPage = () => {
     )
 }
 
-export default HoodieProductPage;
+export default SockProductPage;

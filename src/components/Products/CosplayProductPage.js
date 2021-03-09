@@ -177,7 +177,11 @@ const CosplayProductPage = () => {
                                 }
                             
                             } else if (item.category === 'homegoods'){
-                                return 'anime-homegoods'
+                                if(item.keywords.includes('Pillow')){
+                                    return 'anime-kawaii-cartoon-bedroom-pillows'
+                                } else if(item.keywords.includes('Lights')){
+                                    return '3d-led-anime-bedroom-lights-lamps'
+                                }
                             } else if (item.category === 'techAccessories'){
                                 return 'anime-tech-accessories'
                             }
@@ -208,7 +212,11 @@ const CosplayProductPage = () => {
                                     return 'anime-weeb-cosplay-accessories'
                                 }
                             } else if (item.category === 'homegoods'){
-                                return 'anime-homegoods'
+                                if(item.keywords.includes('Pillow')){
+                                    return 'anime-kawaii-cartoon-bedroom-pillows'
+                                } else if(item.keywords.includes('Lights')){
+                                    return '3d-led-anime-bedroom-lights-lamps'
+                                }
                             } else if (item.category === 'techAccessories'){
                                 return 'anime-tech-accessories'
                             }

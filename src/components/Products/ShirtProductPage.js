@@ -177,7 +177,11 @@ const ShirtProductPage = () => {
                                 }
                             
                             } else if (item.category === 'homegoods'){
-                                return 'anime-homegoods'
+                                if(item.keywords.includes('Pillow')){
+                                    return 'anime-kawaii-cartoon-bedroom-pillows'
+                                } else if(item.keywords.includes('Lights')){
+                                    return '3d-led-anime-bedroom-lights-lamps'
+                                }
                             } else if (item.category === 'techAccessories'){
                                 return 'anime-tech-accessories'
                             }
@@ -197,10 +201,23 @@ const ShirtProductPage = () => {
             <div className='container'>
                     {randomApparel.map(item => {
                         const productUrl = item => {
-                            if (item.category === 'apparel'){
-                            return 'anime-clothing-apparel'
+                            if (item.category === 'apparel' ){
+                                if(item.keywords.includes('Shirt')){
+                                    return 'anime-tee-shirts'
+                                } else if(item.keywords.includes('Hoodie')){
+                                    return 'anime-hoodies-and-sweatshirts'
+                                } else if(item.keywords.includes('Socks')){
+                                    return 'anime-socks'
+                                } else if(item.keywords.includes('Cosplay')){
+                                    return 'anime-weeb-cosplay-accessories'
+                                }
+                            
                             } else if (item.category === 'homegoods'){
-                                return 'anime-homegoods'
+                                if(item.keywords.includes('Pillow')){
+                                    return 'anime-kawaii-cartoon-bedroom-pillows'
+                                } else if(item.keywords.includes('Lights')){
+                                    return '3d-led-anime-bedroom-lights-lamps'
+                                }
                             } else if (item.category === 'techAccessories'){
                                 return 'anime-tech-accessories'
                             }
