@@ -1737,7 +1737,7 @@ export const homegoods = [
         photo: "/assets/images/homegoods/totoro-led-lamp.jpg",
         name: "Totoro LED Lamp",
         price: 24.99,
-        keywords: "Totoro, 3D LED Lamp",
+        keywords: "Totoro, 3D LED Lights",
         category: "homegoods"
     },
     {

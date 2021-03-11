@@ -13,7 +13,7 @@ export const HOMEGOODSLIGHTSCOLLECTION = '/collections/3d-led-anime-bedroom-ligh
 export const HOMEGOODSLIGHTSCOLLECTIONPRODUCT = '/collections/3d-led-anime-bedroom-lights-lamps/products/:id';
 export const HOMEGOODSPILLOWSCOLLECTION = '/collections/anime-kawaii-cartoon-bedroom-pillows';
 export const HOMEGOODSPILLOWSCOLLECTIONPRODUCT = '/collections/anime-kawaii-cartoon-bedroom-pillows/products/:id';
-
+export const LIFESTYLEVAPORWAVECOLLECTION = '/collections/vaporwave-aesthetic-clothing-tees-hoodies-merch';
 
 
 

@@ -1,5 +1,3 @@
-import { faRoad } from '@fortawesome/free-solid-svg-icons';
-
 export { default as Home } from './Home/Home';
 export { default as Apparel } from './Apparel/Apparel.js';
 export { default as Nav } from './Nav/Nav';
@@ -18,3 +16,4 @@ export { default as Lights } from './Homegoods/Lights/Lights';
 export { default as Pillows } from './Homegoods/Pillows/Pillows';
 export { default as LightProductPage } from './Products/LightProductPage';
 export { default as PillowProductPage } from './Products/PillowProductPage';
+export { default as Vaporwave } from './Lifestyle/Vaporwave/Vaporwave';
