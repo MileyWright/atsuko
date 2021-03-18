@@ -15,10 +15,16 @@ export const HOMEGOODSPILLOWSCOLLECTION = '/collections/anime-kawaii-cartoon-bed
 export const HOMEGOODSPILLOWSCOLLECTIONPRODUCT = '/collections/anime-kawaii-cartoon-bedroom-pillows/products/:id';
 export const LIFESTYLEVAPORWAVECOLLECTION = '/collections/vaporwave-aesthetic-clothing-tees-hoodies-merch';
 export const LIFESTYLESADAESTHETICCOLLECTION = '/collections/sad-aesthetic';
+export const LIFESTYLESADAESTHETICCOLLECTIONPRODUCT = '/collections/sad-aesthetic/products/:id';
 export const LIFESTYLENSFWCOLLECTION = '/collections/nsfw-anime-merch';
+export const LIFESTYLENSFWCOLLECTIONPRODUCT = '/collections/nsfw-anime-merch/products/:id';
 export const LIFESTYLEWAIFUCOLLECTION = '/collections/japanese-waifu-shirts-and-hoodies';
+export const LIFESTYLEWAIFUCOLLECTIONPRODUCT = '/collections/japanese-waifu-shirts-and-hoodies/products/:id';
 export const LIFESTYLECOSPLAYCOLLECTION = '/collections/anime-cosplay-accessories';
+export const LIFESTYLECOSPLAYCOLLECTIONPRODUCT = '/collections/anime-cosplay-accessories/products/:id';
 export const LIFESTYLEKAWAIICOLLECTION = '/collections/kawaii-livestyle-accessories';
+export const LIFESTYLEKAWAIICOLLECTIONPRODUCT = '/collections/kawaii-livestyle-accessories/products/:id';
 export const LIFESTYLESENPAICOLLECTION = '/collections/japanese-senpai-shirts-and-hoodies';
+export const LIFESTYLESENPAICOLLECTIONPRODUCT = '/collections/japanese-senpai-shirts-and-hoodies/products/:id';
 
 
