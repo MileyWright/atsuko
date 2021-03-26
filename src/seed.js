@@ -413,7 +413,7 @@ export const apparel = [
         photo: "/assets/images/apparel/sad-panda-vaporwave-girl-shirt.jpg",
         name: "Sad Panda Vaporwave Girl Shirt",
         price: 19.99,
-        keywords: "Vaporwave, Sad Girl, Sad Aesthetic",
+        keywords: "Vaporwave, Sad Girl, Sad Aesthetic, Shirt",
         category: "apparel"
     },
     {
