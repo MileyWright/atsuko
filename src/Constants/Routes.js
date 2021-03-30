@@ -14,6 +14,7 @@ export const HOMEGOODSLIGHTSCOLLECTIONPRODUCT = '/collections/3d-led-anime-bedro
 export const HOMEGOODSPILLOWSCOLLECTION = '/collections/anime-kawaii-cartoon-bedroom-pillows';
 export const HOMEGOODSPILLOWSCOLLECTIONPRODUCT = '/collections/anime-kawaii-cartoon-bedroom-pillows/products/:id';
 export const LIFESTYLEVAPORWAVECOLLECTION = '/collections/vaporwave-aesthetic-clothing-tees-hoodies-merch';
+export const LIFESTYLEVAPORWAVECOLLECTIONPRODUCT = '/collections/vaporwave-aesthetic-clothing-tees-hoodies-merch/products/:id';
 export const LIFESTYLESADAESTHETICCOLLECTION = '/collections/sad-aesthetic';   //start here down
 export const LIFESTYLESADAESTHETICCOLLECTIONPRODUCT = '/collections/sad-aesthetic/products/:id';
 export const LIFESTYLENSFWCOLLECTION = '/collections/nsfw-anime-merch';

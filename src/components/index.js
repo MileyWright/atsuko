@@ -17,3 +17,4 @@ export { default as Pillows } from './Homegoods/Pillows/Pillows';
 export { default as LightProductPage } from './Products/LightProductPage';
 export { default as PillowProductPage } from './Products/PillowProductPage';
 export { default as Vaporwave } from './Lifestyle/Vaporwave/Vaporwave';
+export { default as VaporwaveProductPage } from './Products/VaporwaveProductPage';

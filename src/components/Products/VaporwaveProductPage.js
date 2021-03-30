@@ -13,7 +13,7 @@ import '../Apparel/Apparel.css';
 
 
 const initialState = apparel;
-const ShirtProductPage = () => {
+const VaporwaveProductPage = () => {
     const {id} = useParams();
     const [data] = useState(initialState);
     const [size, setSize] = useState(null);
@@ -264,4 +264,4 @@ const ShirtProductPage = () => {
     )
 }
 
-export default ShirtProductPage;
+export default VaporwaveProductPage;

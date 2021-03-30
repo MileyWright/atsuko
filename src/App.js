@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import {Home, Apparel, HoodieProductPage, TeeShirts, ShirtProductPage, Hoodies, Socks, Cosplay, SockProductPage, CosplayProductPage, Homegoods, Lights, Pillows, LightProductPage, PillowProductPage, Vaporwave} from './components';
+import {Home, Apparel, HoodieProductPage, TeeShirts, ShirtProductPage, Hoodies, Socks, Cosplay, SockProductPage, CosplayProductPage, Homegoods, Lights, Pillows, LightProductPage, PillowProductPage, Vaporwave, VaporwaveProductPage} from './components';
 import * as Routes from './Constants/Routes';
 import ScrollToTop from './ScrollToTop';
 
@@ -15,6 +15,7 @@ const App = () => {
                 <Route path={Routes.APPARELCOSPLAYCOLLECTIONPRODUCT} component={CosplayProductPage}/>
                 <Route path={Routes.HOMEGOODSLIGHTSCOLLECTIONPRODUCT} component={LightProductPage}/>
                 <Route path={Routes.HOMEGOODSPILLOWSCOLLECTIONPRODUCT} component={PillowProductPage}/>
+                <Route path={Routes.LIFESTYLEVAPORWAVECOLLECTIONPRODUCT} component={VaporwaveProductPage}/>
 
                 <Route path={Routes.APPARELCOLLECTION} component={Apparel}/>
                 <Route path={Routes.APPARELHOODIECOLLECTION} component={Hoodies} />

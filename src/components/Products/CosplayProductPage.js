@@ -165,25 +165,40 @@ const CosplayProductPage = () => {
             <div className='container'>
                     {randomProduct.map(item => {
                         const productUrl = item => {
-                            if (item.category === 'apparel' ){
-                                if(item.keywords.includes('Shirt')){
+                            if (item.category === 'apparel'){
+                                if(item.keywords.includes('Vaporwave')){
+                                    return 'vaporwave-aesthetic-clothing-tees-hoodies-merch'
+                                } else if(item.keywords.includes('Sad Aesthetic')){
+                                    return 'sad-aesthetic'
+                                } else if(item.keywords.includes('NSFW')){
+                                    return 'nsfw-anime-merch'
+                                } else if(item.keywords.includes('Kawaii')){
+                                    return 'kawaii-livestyle-accessories'
+                                } else if(item.keywords.includes('Senpai')){
+                                    return 'japanese-senpai-shirts-and-hoodies'
+                                } else if(item.keywords.includes('Waifu')){
+                                    return 'japanese-waifu-shirts-and-hoodies'
+                                } else if(item.keywords.includes('Cosplay')){
+                                    return 'anime-weeb-cosplay-accessories'
+                                } else if(item.keywords.includes('Shirt')){
                                     return 'anime-tee-shirts'
                                 } else if(item.keywords.includes('Hoodie')){
                                     return 'anime-hoodies-and-sweatshirts'
                                 } else if(item.keywords.includes('Socks')){
                                     return 'anime-socks'
-                                } else if(item.keywords.includes('Cosplay')){
-                                    return 'anime-weeb-cosplay-accessories'
                                 }
-                            
                             } else if (item.category === 'homegoods'){
-                                if(item.keywords.includes('Pillow')){
-                                    return 'anime-kawaii-cartoon-bedroom-pillows'
-                                } else if(item.keywords.includes('Lights')){
+                                if (item.keywords.includes('Lights')){
                                     return '3d-led-anime-bedroom-lights-lamps'
+                                } else if (item.keywords.includes('Pillow')){
+                                    return 'anime-kawaii-cartoon-bedroom-pillows'
                                 }
                             } else if (item.category === 'techAccessories'){
-                                return 'anime-tech-accessories'
+                                if (item.keywords.includes('Airpod')){
+                                    return 'anime-airpod-1-2-pro-cases'
+                                } else if (item.keywords.includes('Phone')){
+                                    return 'anime-phone-cases'
+                                }
                             }
                         }
                         return(
@@ -200,27 +215,43 @@ const CosplayProductPage = () => {
             
             <div className='container'>
                     {randomApparel.map(item => {
-                        const productUrl = item => {
-                            if (item.category === 'apparel' ){
-                                if(item.keywords.includes('Shirt')){
-                                    return 'anime-tee-shirts'
-                                } else if(item.keywords.includes('Hoodie')){
-                                    return 'anime-hoodies-and-sweatshirts'
-                                } else if(item.keywords.includes('Socks')){
-                                    return 'anime-socks'
-                                } else if(item.keywords.includes('Cosplay')){
-                                    return 'anime-weeb-cosplay-accessories'
-                                }
-                            } else if (item.category === 'homegoods'){
-                                if(item.keywords.includes('Pillow')){
-                                    return 'anime-kawaii-cartoon-bedroom-pillows'
-                                } else if(item.keywords.includes('Lights')){
-                                    return '3d-led-anime-bedroom-lights-lamps'
-                                }
-                            } else if (item.category === 'techAccessories'){
-                                return 'anime-tech-accessories'
+                       const productUrl = item => {
+                        if (item.category === 'apparel'){
+                            if(item.keywords.includes('Vaporwave')){
+                                return 'vaporwave-aesthetic-clothing-tees-hoodies-merch'
+                            } else if(item.keywords.includes('Sad Aesthetic')){
+                                return 'sad-aesthetic'
+                            } else if(item.keywords.includes('NSFW')){
+                                return 'nsfw-anime-merch'
+                            } else if(item.keywords.includes('Kawaii')){
+                                return 'kawaii-livestyle-accessories'
+                            } else if(item.keywords.includes('Senpai')){
+                                return 'japanese-senpai-shirts-and-hoodies'
+                            } else if(item.keywords.includes('Waifu')){
+                                return 'japanese-waifu-shirts-and-hoodies'
+                            } else if(item.keywords.includes('Cosplay')){
+                                return 'anime-weeb-cosplay-accessories'
+                            } else if(item.keywords.includes('Shirt')){
+                                return 'anime-tee-shirts'
+                            } else if(item.keywords.includes('Hoodie')){
+                                return 'anime-hoodies-and-sweatshirts'
+                            } else if(item.keywords.includes('Socks')){
+                                return 'anime-socks'
+                            }
+                        } else if (item.category === 'homegoods'){
+                            if (item.keywords.includes('Lights')){
+                                return '3d-led-anime-bedroom-lights-lamps'
+                            } else if (item.keywords.includes('Pillow')){
+                                return 'anime-kawaii-cartoon-bedroom-pillows'
+                            }
+                        } else if (item.category === 'techAccessories'){
+                            if (item.keywords.includes('Airpod')){
+                                return 'anime-airpod-1-2-pro-cases'
+                            } else if (item.keywords.includes('Phone')){
+                                return 'anime-phone-cases'
                             }
                         }
+                    }
                         return(
                         <Link to={`/collections/${productUrl(item)}/products/${item.id}`} className='link overlay'key={item.id}>
                             <ScrollTo selector={`#product`}><Card className='product_card' mini={'mini'} item={item} key={item.id}/></ScrollTo>
