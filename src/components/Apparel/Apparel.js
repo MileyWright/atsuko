@@ -152,15 +152,27 @@ const Apparel = () => {
                     {data && data.length > 0 &&
                     data.slice(minValue, maxValue).map(item => {
                         const productUrl = item => {
-                            if (item.category === 'apparel' ){
-                                if(item.keywords.includes('Shirt')){
+                            if (item.category === 'apparel'){
+                                if(item.keywords.includes('Vaporwave')){
+                                    return 'vaporwave-aesthetic-clothing-tees-hoodies-merch'
+                                } else if(item.keywords.includes('Sad Aesthetic')){
+                                    return 'sad-aesthetic'
+                                } else if(item.keywords.includes('NSFW')){
+                                    return 'nsfw-anime-merch'
+                                } else if(item.keywords.includes('Kawaii')){
+                                    return 'kawaii-livestyle-accessories'
+                                } else if(item.keywords.includes('Senpai')){
+                                    return 'japanese-senpai-shirts-and-hoodies'
+                                } else if(item.keywords.includes('Waifu')){
+                                    return 'japanese-waifu-shirts-and-hoodies'
+                                } else if(item.keywords.includes('Cosplay')){
+                                    return 'anime-weeb-cosplay-accessories'
+                                } else if(item.keywords.includes('Shirt')){
                                     return 'anime-tee-shirts'
                                 } else if(item.keywords.includes('Hoodie')){
                                     return 'anime-hoodies-and-sweatshirts'
                                 } else if(item.keywords.includes('Socks')){
                                     return 'anime-socks'
-                                } else if(item.keywords.includes('Cosplay')){
-                                    return 'anime-weeb-cosplay-accessories'
                                 }
                             
                             } else if (item.category === 'homegoods'){
