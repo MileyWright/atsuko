@@ -9,7 +9,7 @@ const { Option } = Select;
 
 const combineProduct = apparel.concat(homegoods).concat(techAccessories).sort(()=> Math.random() - 0.5);
 const initialState = combineProduct.filter(item => {
-    return item.keywords.includes('Vaporwave')
+    return item.keywords.includes('Sad Aesthetic')
 });
 
 const SadAesthetic = () => {
@@ -114,31 +114,17 @@ const SadAesthetic = () => {
         <>
             <Nav/>
             <div className='product_page'>
-                <div className='title'>Vaporwave</div>
+                <div className='title'>Sad Aesthetic</div>
 
                 <div className='filter'>Filter by 
                     <Select defaultValue="All" style={{ width: 320 }} onChange={filterOnChange} className='select'>
                         <Option value="All">All</Option>
-                        <Option value="Attack On Titan">Attack On Titan</Option>
                         <Option value="Darling In The Franxx">Darling In The Franxx</Option>
-                        <Option value="Death Note">Death Note</Option>
-                        <Option value="Demon Slayer">Demon Slayer</Option>
-                        <Option value="Dragon Ball Z">Dragon Ball Z</Option>
-                        <Option value="Hunter X Hunter">Hunter X Hunter</Option>
-                        <Option value="Jojos Bizarre Adventure">Jojos Bizarre Adventure</Option>
                         <Option value="Junji Ito">Junji Ito</Option>
-                        <Option value="Kawaii">Kawaii</Option>
-                        <Option value="Naruto">Naruto</Option>
-                        <Option value="Nekomancer">Nekomancer</Option>
-                        <Option value="NSFW">NSFW</Option>
-                        <Option value="One Piece">One Piece</Option>
                         <Option value="Sad Aesthetic">Sad Aesthetic</Option>
                         <Option value="Sad Girl">Sad Girl</Option>
                         <Option value="Sailor Moon">Sailor Moon</Option>
-                        <Option value="Senpai">Senpai</Option>
-                        <Option value="Tokyo Ghoul">Tokyo Ghoul</Option>
                         <Option value="Vaporwave">Vaporwave</Option>
-                        <Option value="Waifu">Waifu</Option>
                     </Select>
                 </div>
                 <div className='sortBy'> Sort by
@@ -155,20 +141,39 @@ const SadAesthetic = () => {
                         data.slice(minValue, maxValue).map(item => {
                             const productUrl = item => {
                                 if (item.category === 'apparel' ){
-                                    if(item.keywords.includes('Shirt')){
+                                    if(item.keywords.includes('Vaporwave')){
+                                        return 'vaporwave-aesthetic-clothing-tees-hoodies-merch'
+                                    } else if(item.keywords.includes('Sad Aesthetic')){
+                                        return 'sad-aesthetic'
+                                    } else if(item.keywords.includes('NSFW')){
+                                        return 'nsfw-anime-merch'
+                                    } else if(item.keywords.includes('Kawaii')){
+                                        return 'kawaii-livestyle-accessories'
+                                    } else if(item.keywords.includes('Senpai')){
+                                        return 'japanese-senpai-shirts-and-hoodies'
+                                    } else if(item.keywords.includes('Waifu')){
+                                        return 'japanese-waifu-shirts-and-hoodies'
+                                    } else if(item.keywords.includes('Cosplay')){
+                                        return 'anime-weeb-cosplay-accessories'
+                                    } else if(item.keywords.includes('Shirt')){
                                         return 'anime-tee-shirts'
                                     } else if(item.keywords.includes('Hoodie')){
                                         return 'anime-hoodies-and-sweatshirts'
                                     } else if(item.keywords.includes('Socks')){
                                         return 'anime-socks'
-                                    } else if(item.keywords.includes('Cosplay')){
-                                        return 'anime-weeb-cosplay-accessories'
                                     }
-                                
                                 } else if (item.category === 'homegoods'){
-                                    return 'anime-homegoods'
+                                    if (item.keywords.includes('Lights')){
+                                        return '3d-led-anime-bedroom-lights-lamps'
+                                    } else if (item.keywords.includes('Pillow')){
+                                        return 'anime-kawaii-cartoon-bedroom-pillows'
+                                    }
                                 } else if (item.category === 'techAccessories'){
-                                    return 'anime-tech-accessories'
+                                    if (item.keywords.includes('Airpod')){
+                                        return 'anime-airpod-1-2-pro-cases'
+                                    } else if (item.keywords.includes('Phone')){
+                                        return 'anime-phone-cases'
+                                    }
                                 }
                             }
                             return(

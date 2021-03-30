@@ -175,11 +175,18 @@ const TeeShirts = () => {
                                 } else if(item.keywords.includes('Socks')){
                                     return 'anime-socks'
                                 }
-                            
                             } else if (item.category === 'homegoods'){
-                                return 'anime-homegoods'
+                                if (item.keywords.includes('Lights')){
+                                    return '3d-led-anime-bedroom-lights-lamps'
+                                } else if (item.keywords.includes('Pillow')){
+                                    return 'anime-kawaii-cartoon-bedroom-pillows'
+                                }
                             } else if (item.category === 'techAccessories'){
-                                return 'anime-tech-accessories'
+                                if (item.keywords.includes('Airpod')){
+                                    return 'anime-airpod-1-2-pro-cases'
+                                } else if (item.keywords.includes('Phone')){
+                                    return 'anime-phone-cases'
+                                }
                             }
                         }
                         return(

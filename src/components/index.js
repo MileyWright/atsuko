@@ -1,3 +1,5 @@
+import { faRProject } from '@fortawesome/free-brands-svg-icons';
+
 export { default as Home } from './Home/Home';
 export { default as Apparel } from './Apparel/Apparel.js';
 export { default as Nav } from './Nav/Nav';
@@ -18,3 +20,5 @@ export { default as LightProductPage } from './Products/LightProductPage';
 export { default as PillowProductPage } from './Products/PillowProductPage';
 export { default as Vaporwave } from './Lifestyle/Vaporwave/Vaporwave';
 export { default as VaporwaveProductPage } from './Products/VaporwaveProductPage';
+export { default as SadAesthetic } from './Lifestyle/SadAesthetic/SadAesthetic';
+export { default as SadAestheticProductPage } from './Products/SadAestheticProductPage';
