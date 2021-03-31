@@ -7,7 +7,10 @@ import { Link } from 'react-router-dom';
 
 const { Option } = Select;
 
-const initialState = techAccessories;
+const initialState = techAccessories.filter(item => {
+    return item.keywords.includes('Phone')
+});
+
 const PhoneCase = () => {
     const numOnEachPage = 18;
     const [data, setData] = useState(initialState);
@@ -115,11 +118,7 @@ const PhoneCase = () => {
                 <div className='filter'>Filter by 
                     <Select defaultValue="All" style={{ width: 320 }} onChange={filterOnChange} className='select'>
                         <Option value="All">All</Option>
-                        <Option value="Dragon Ball Z">Dragon Ball Z</Option>
                         <Option value="Kawaii">Kawaii</Option>
-                        <Option value="Naruto">Naruto</Option>
-                        <Option value="One Piece">One Piece</Option>
-                        <Option value="Sailor Moon">Sailor Moon</Option>
                         <Option value="Vaporwave">Vaporwave</Option>
                     </Select>
                 </div>
