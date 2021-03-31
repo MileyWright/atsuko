@@ -82,7 +82,7 @@ export const apparel = (
         </Link>
       </Menu.Item>
       <Menu.Item>
-        <Link to="/collections/anime-cosplay-accessories">
+        <Link to="/collections/anime-weeb-cosplay-accessories">
           Cosplay
         </Link>
       </Menu.Item>
