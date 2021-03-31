@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import {Home, Apparel, HoodieProductPage, TeeShirts, ShirtProductPage, Hoodies, Socks, Cosplay, SockProductPage, CosplayProductPage, Homegoods, Lights, Pillows, LightProductPage, PillowProductPage, Vaporwave, VaporwaveProductPage, SadAesthetic, SadAestheticProductPage, NSFW, NSFWProductPage, Kawaii, KawaiiProductPage, Waifu, WaifuProductPage, SenpaiProductPage, Senpai} from './components';
+import {Home, Apparel, HoodieProductPage, TeeShirts, ShirtProductPage, Hoodies, Socks, Cosplay, SockProductPage, CosplayProductPage, Homegoods, Lights, Pillows, LightProductPage, PillowProductPage, Vaporwave, VaporwaveProductPage, SadAesthetic, SadAestheticProductPage, NSFW, NSFWProductPage, Kawaii, KawaiiProductPage, Waifu, WaifuProductPage, SenpaiProductPage, Senpai, TechAccessories} from './components';
 import * as Routes from './Constants/Routes';
 import ScrollToTop from './ScrollToTop';
 
@@ -37,6 +37,7 @@ const App = () => {
                 <Route path={Routes.LIFESTYLEKAWAIICOLLECTION} component={Kawaii}/>
                 <Route path={Routes.LIFESTYLESENPAICOLLECTION} component={Senpai}/>
                 <Route path={Routes.LIFESTYLEWAIFUCOLLECTION} component={Waifu}/>
+                <Route path={Routes.TECHACCESSORIESCOLLECTION} component={TechAccessories}/>
 
             </Switch> 
             </ScrollToTop>

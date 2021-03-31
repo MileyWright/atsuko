@@ -30,3 +30,4 @@ export { default as Waifu } from './Lifestyle/Waifu/Waifu';
 export { default as WaifuProductPage } from './Products/WaifuProductPage';
 export { default as Senpai } from './Lifestyle/Senpai/Senpai';
 export { default as SenpaiProductPage } from './Products/SenpaiProductPage';
+export { default as TechAccessories } from './TechAccessories/TechAccessories';
