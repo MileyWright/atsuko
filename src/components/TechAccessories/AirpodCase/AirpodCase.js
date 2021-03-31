@@ -1,13 +1,15 @@
 import { useState, useEffect } from 'react';
-import {Nav, Footer, Card} from '../index';
-import '../Apparel/Apparel.css';
-import {techAccessories} from '../../seed';
+import {Nav, Footer, Card} from '../../index';
+import '../../Apparel/Apparel.css';
+import {techAccessories} from '../../../seed';
 import { Pagination, Select } from 'antd';
 import { Link } from 'react-router-dom';
 
 const { Option } = Select;
 
-const initialState = techAccessories;
+const initialState = techAccessories.filter(item => {
+    return item.keywords.includes('Airpod')
+});
 const AirpodCase = () => {
     const numOnEachPage = 18;
     const [data, setData] = useState(initialState);
@@ -110,7 +112,7 @@ const AirpodCase = () => {
         <>
             <Nav/>
             <div className='product_page'>
-                <div className='title'> Tech Accessories</div>
+                <div className='title'>Airpod Cases</div>
 
                 <div className='filter'>Filter by 
                     <Select defaultValue="All" style={{ width: 320 }} onChange={filterOnChange} className='select'>
@@ -120,7 +122,6 @@ const AirpodCase = () => {
                         <Option value="Naruto">Naruto</Option>
                         <Option value="One Piece">One Piece</Option>
                         <Option value="Sailor Moon">Sailor Moon</Option>
-                        <Option value="Vaporwave">Vaporwave</Option>
                     </Select>
                 </div>
                 <div className='sortBy'> Sort by

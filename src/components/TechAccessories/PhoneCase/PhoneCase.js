@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import {Nav, Footer, Card} from '../index';
-import '../Apparel/Apparel.css';
-import {techAccessories} from '../../seed';
+import {Nav, Footer, Card} from '../../index';
+import '../../Apparel/Apparel.css';
+import {techAccessories} from '../../../seed';
 import { Pagination, Select } from 'antd';
 import { Link } from 'react-router-dom';
 
@@ -110,7 +110,7 @@ const PhoneCase = () => {
         <>
             <Nav/>
             <div className='product_page'>
-                <div className='title'> Tech Accessories</div>
+                <div className='title'>Phone Cases</div>
 
                 <div className='filter'>Filter by 
                     <Select defaultValue="All" style={{ width: 320 }} onChange={filterOnChange} className='select'>
