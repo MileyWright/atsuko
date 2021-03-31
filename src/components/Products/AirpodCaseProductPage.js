@@ -3,9 +3,8 @@ import { useParams } from 'react-router-dom';
 import {apparel, homegoods, techAccessories} from '../../seed';
 import {Nav, Footer, Card} from '../index';
 import {Link} from 'react-router-dom';
-import {Modal, Radio, Table} from 'antd';
+import {Radio} from 'antd';
 import {HeartOutlined} from '@ant-design/icons';
-import {columns, tShirtData, longTShirtData, sweatshirtData} from './ModalData';
 import ScrollTo from 'react-scroll-into-view';
 import './ProductPage.css';
 import '../Nav/Nav.css';
@@ -17,14 +16,13 @@ const AirpodCaseProductPage = () => {
     const {id} = useParams();
     const [data] = useState(initialState);
     const [size, setSize] = useState(null);
-    const [visible, setVisible] = useState(false);
     const [standardShipping, setStandardShipping] = useState({dayName:null, month: null, dayNumber: null});
     const [overnightShipping, setOvernightShipping] = useState({dayName:null, month: null, dayNumber: null});
     const [randomProduct, setRandomProduct] = useState([]);
     const [randomApparel, setRandomApparel] = useState([]);
     const [filteredProduct, setFilteredProduct] = useState([]);
 
-    const combineProduct = data.concat(homegoods).concat(techAccessories);
+    const combineProduct = data.concat(homegoods).concat(apparel);
 
     useEffect(() => {
         setFilteredProduct(data.find(item => {

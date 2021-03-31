@@ -91,10 +91,14 @@ quadpay-widget {
 .top_right .radio_button {
     width: 334px;
 }
+
 .ant-radio-button-wrapper{
     margin: 1%;
     width: 60px;
     text-align: center;
+}
+.phone_button{
+    width: 150px;
 }
 .ant-radio-button-wrapper:hover{
     color: #000000;
