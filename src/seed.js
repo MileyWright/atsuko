@@ -307,9 +307,9 @@ export const apparel = [
     {
         id: 2474396510,
         photo: "/assets/images/apparel/my-hero-academia-toga-waifu-smile-hoodie.jpg",
-        name: "My Hero Acedemia Toga Waifu Smile Hoodie",
+        name: "My Hero Academia Toga Waifu Smile Hoodie",
         price: 34.99,
-        keywords: "My Hero Acedemia, Hoodie, Waifu, NSFW",
+        keywords: "My Hero Academia, Hoodie, Waifu, NSFW",
         category: "apparel"
     },
     {

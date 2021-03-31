@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import {Home, Apparel, HoodieProductPage, TeeShirts, ShirtProductPage, Hoodies, Socks, Cosplay, SockProductPage, CosplayProductPage, Homegoods, Lights, Pillows, LightProductPage, PillowProductPage, Vaporwave, VaporwaveProductPage, SadAesthetic, SadAestheticProductPage} from './components';
+import {Home, Apparel, HoodieProductPage, TeeShirts, ShirtProductPage, Hoodies, Socks, Cosplay, SockProductPage, CosplayProductPage, Homegoods, Lights, Pillows, LightProductPage, PillowProductPage, Vaporwave, VaporwaveProductPage, SadAesthetic, SadAestheticProductPage, NSFW, NSFWProductPage, Kawaii, KawaiiProductPage, Waifu, WaifuProductPage, SenpaiProductPage, Senpai} from './components';
 import * as Routes from './Constants/Routes';
 import ScrollToTop from './ScrollToTop';
 
@@ -17,6 +17,10 @@ const App = () => {
                 <Route path={Routes.HOMEGOODSPILLOWSCOLLECTIONPRODUCT} component={PillowProductPage}/>
                 <Route path={Routes.LIFESTYLEVAPORWAVECOLLECTIONPRODUCT} component={VaporwaveProductPage}/>
                 <Route path={Routes.LIFESTYLESADAESTHETICCOLLECTIONPRODUCT} component={SadAestheticProductPage}/>
+                <Route path={Routes.LIFESTYLENSFWCOLLECTIONPRODUCT} component={NSFWProductPage}/>
+                <Route path={Routes.LIFESTYLEKAWAIICOLLECTIONPRODUCT} component={KawaiiProductPage}/>
+                <Route path={Routes.LIFESTYLESENPAICOLLECTIONPRODUCT} component={SenpaiProductPage}/>
+                <Route path={Routes.LIFESTYLEWAIFUCOLLECTIONPRODUCT} component={WaifuProductPage}/>
 
 
                 <Route path={Routes.APPARELCOLLECTION} component={Apparel}/>
@@ -29,6 +33,10 @@ const App = () => {
                 <Route path={Routes.HOMEGOODSPILLOWSCOLLECTION} component={Pillows}/>
                 <Route path={Routes.LIFESTYLEVAPORWAVECOLLECTION} component={Vaporwave}/>
                 <Route path={Routes.LIFESTYLESADAESTHETICCOLLECTION} component={SadAesthetic}/>
+                <Route path={Routes.LIFESTYLENSFWCOLLECTION} component={NSFW}/>
+                <Route path={Routes.LIFESTYLEKAWAIICOLLECTION} component={Kawaii}/>
+                <Route path={Routes.LIFESTYLESENPAICOLLECTION} component={Senpai}/>
+                <Route path={Routes.LIFESTYLEWAIFUCOLLECTION} component={Waifu}/>
 
             </Switch> 
             </ScrollToTop>
