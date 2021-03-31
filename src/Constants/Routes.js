@@ -30,3 +30,4 @@ export const TECHACCESSORIESPHONECASECOLLECTION = '/collections/anime-phone-case
 export const TECHACCESSORIESPHONECASECOLLECTIONPRODUCT = '/collections/anime-phone-cases/products/:id';
 export const TECHACCESSORIESAIRPODCASECOLLECTION = '/collections/anime-airpod-1-2-pro-cases';
 export const TECHACCESSORIESAIRPODCASECOLLECTIONPRODUCT = '/collections/anime-airpod-1-2-pro-cases/products/:id';
+export const BYANIMECOLLECTION = '/collections/all-anime-merch';

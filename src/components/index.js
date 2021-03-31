@@ -35,3 +35,4 @@ export { default as AirpodCase } from './TechAccessories/AirpodCase/AirpodCase';
 export { default as AirpodCaseProductPage } from './Products/AirpodCaseProductPage';
 export { default as PhoneCase } from './TechAccessories/PhoneCase/PhoneCase';
 export { default as PhoneCaseProductPage } from './Products/PhoneCaseProductPage';
+export { default as ByAnime } from './ByAnime/ByAnime';

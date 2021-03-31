@@ -81,7 +81,6 @@ const AirpodCaseProductPage = () => {
         const dataCopy = [...data];
         setRandomApparel(dataCopy.sort(() => 0.5 - Math.random()).slice(0,4));
     }, [filteredProduct]);
-   console.log(filteredProduct);
     return(
         <>
         <Nav />

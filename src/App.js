@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import {Home, Apparel, HoodieProductPage, TeeShirts, ShirtProductPage, Hoodies, Socks, Cosplay, SockProductPage, CosplayProductPage, Homegoods, Lights, Pillows, LightProductPage, PillowProductPage, Vaporwave, VaporwaveProductPage, SadAesthetic, SadAestheticProductPage, NSFW, NSFWProductPage, Kawaii, KawaiiProductPage, Waifu, WaifuProductPage, SenpaiProductPage, Senpai, TechAccessories, AirpodCase, AirpodCaseProductPage, PhoneCase, PhoneCaseProductPage} from './components';
+import {Home, Apparel, HoodieProductPage, TeeShirts, ShirtProductPage, Hoodies, Socks, Cosplay, SockProductPage, CosplayProductPage, Homegoods, Lights, Pillows, LightProductPage, PillowProductPage, Vaporwave, VaporwaveProductPage, SadAesthetic, SadAestheticProductPage, NSFW, NSFWProductPage, Kawaii, KawaiiProductPage, Waifu, WaifuProductPage, SenpaiProductPage, Senpai, TechAccessories, AirpodCase, AirpodCaseProductPage, PhoneCase, PhoneCaseProductPage, ByAnime} from './components';
 import * as Routes from './Constants/Routes';
 import ScrollToTop from './ScrollToTop';
 
@@ -41,6 +41,7 @@ const App = () => {
                 <Route path={Routes.TECHACCESSORIESCOLLECTION} component={TechAccessories}/>
                 <Route path={Routes.TECHACCESSORIESAIRPODCASECOLLECTION} component={AirpodCase}/>
                 <Route path={Routes.TECHACCESSORIESPHONECASECOLLECTION} component={PhoneCase}/>
+                <Route path={Routes.BYANIMECOLLECTION}  component={ByAnime}/>
 
             </Switch> 
             </ScrollToTop>
