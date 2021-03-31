@@ -88,7 +88,6 @@ const LightProductPage = () => {
                     <p className='fourPayments'> 
                        <quadpay-widget className='quadpay' logoColor="#1d75ec"/>
                     </p>
-                   
                 </div>
                 <div className='cart_container'>
                     <Link to='/' className='cart_button'>ADD TO CART</Link>
