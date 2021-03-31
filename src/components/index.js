@@ -31,3 +31,7 @@ export { default as WaifuProductPage } from './Products/WaifuProductPage';
 export { default as Senpai } from './Lifestyle/Senpai/Senpai';
 export { default as SenpaiProductPage } from './Products/SenpaiProductPage';
 export { default as TechAccessories } from './TechAccessories/TechAccessories';
+export { default as AirpodCase } from './TechAccessories/AirpodCase/AirpodCase';
+export { default as AirpodCaseProductPage } from './Products/AirpodCaseProductPage';
+export { default as PhoneCase } from './TechAccessories/PhoneCase/PhoneCase';
+export { default as PhoneCaseProductPage } from './Products/PhoneCaseProductPage';
