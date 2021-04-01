@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const { Option } = Select;
 const combineProduct = apparel.concat(homegoods).concat(techAccessories).filter(item=> {
-    return item.keywords.includes('Darling In The Franxx')
+    return item.keywords.includes('My Hero Academia')
 });
 
 const initialState = combineProduct.sort((a, b) => {
@@ -19,7 +19,7 @@ const initialState = combineProduct.sort((a, b) => {
     }
     return 0
 });
-const DarlingInTheFranxx = () => {
+const MyHeroAcademia = () => {
     const numOnEachPage = 18;
     const [data, setData] = useState(initialState);
     const [minValue, setMinValue] = useState(0);
@@ -121,13 +121,13 @@ const DarlingInTheFranxx = () => {
         <>
             <Nav/>
             <div className='product_page'>
-                <div className='title'>Darling In The Franxx</div>
+                <div className='title'>My Hero Academia</div>
 
                 <div className='filter'>Filter by 
                     <Select defaultValue="All" style={{ width: 320 }} onChange={filterOnChange} className='select'>
                         <Option value="All">All</Option>
-                        <Option value="Sad Girl">Sad Girl</Option>
-                        <Option value="Vaporwave">Vaporwave</Option>
+                        <Option value="NSFW">NSFW</Option>
+                        <Option value="Waifu">Waifu</Option>
                     </Select>
                 </div>
                 <div className='sortBy'> Sort by
@@ -200,4 +200,4 @@ const DarlingInTheFranxx = () => {
     )
 }
 
-export default DarlingInTheFranxx;
+export default MyHeroAcademia;
