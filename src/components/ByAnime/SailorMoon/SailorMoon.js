@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const { Option } = Select;
 const combineProduct = apparel.concat(homegoods).concat(techAccessories).filter(item=> {
-    return item.keywords.includes('Darling In The Franxx')
+    return item.keywords.includes('Sailor Moon')
 });
 
 const initialState = combineProduct.sort((a, b) => {
@@ -19,7 +19,7 @@ const initialState = combineProduct.sort((a, b) => {
     }
     return 0
 });
-const DarlingInTheFranxx = () => {
+const SailorMoon = () => {
     const numOnEachPage = 18;
     const [data, setData] = useState(initialState);
     const [minValue, setMinValue] = useState(0);
@@ -121,12 +121,12 @@ const DarlingInTheFranxx = () => {
         <>
             <Nav/>
             <div className='product_page'>
-                <div className='title'>Darling In The Franxx</div>
+                <div className='title'>Sailor Moon</div>
 
                 <div className='filter'>Filter by 
                     <Select defaultValue="All" style={{ width: 320 }} onChange={filterOnChange} className='select'>
                         <Option value="All">All</Option>
-                        <Option value="Sad Girl">Sad Girl</Option>
+                        <Option value="NSFW">NSFW</Option>
                         <Option value="Vaporwave">Vaporwave</Option>
                     </Select>
                 </div>
@@ -150,6 +150,8 @@ const DarlingInTheFranxx = () => {
                                     return 'sad-aesthetic'
                                 } else if(item.keywords.includes('NSFW')){
                                     return 'nsfw-anime-merch'
+                                } else if(item.keywords.includes('Socks')){
+                                    return 'anime-socks'
                                 } else if(item.keywords.includes('Kawaii')){
                                     return 'kawaii-livestyle-accessories'
                                 } else if(item.keywords.includes('Senpai')){
@@ -162,8 +164,6 @@ const DarlingInTheFranxx = () => {
                                     return 'anime-tee-shirts'
                                 } else if(item.keywords.includes('Hoodie')){
                                     return 'anime-hoodies-and-sweatshirts'
-                                } else if(item.keywords.includes('Socks')){
-                                    return 'anime-socks'
                                 }
                             
                             } else if (item.category === 'homegoods'){
@@ -200,4 +200,4 @@ const DarlingInTheFranxx = () => {
     )
 }
 
-export default DarlingInTheFranxx;
+export default SailorMoon;
