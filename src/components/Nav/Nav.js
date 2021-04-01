@@ -2,7 +2,7 @@ import { apparel, homegoods, lifestyle, techAccessories, byAnime } from './Dropd
 import './Nav.css';
 import { Link } from 'react-router-dom';
 import { Dropdown } from 'antd';
-import { DownOutlined, SearchOutlined, HeartFilled, createFromIconfontCN } from '@ant-design/icons';
+import { DownOutlined, SearchOutlined, HeartFilled, createFromIconfontCN, UserOutlined } from '@ant-design/icons';
 
 const IconFont = createFromIconfontCN({
     scriptUrl: [
@@ -45,6 +45,7 @@ const Nav = () => {
             </nav>
 
             <div className='nav_icons'>
+                <UserOutlined className='nav_icon'/>
                 <SearchOutlined className='nav_icon'/>
                 <HeartFilled className='nav_icon'/>
                 <IconFont type="icon-shoppingcart" className='nav_icon'/>
