@@ -1,5 +1,11 @@
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import {Home, Apparel, HoodieProductPage, TeeShirts, ShirtProductPage, Hoodies, Socks, Cosplay, SockProductPage, CosplayProductPage, Homegoods, Lights, Pillows, LightProductPage, PillowProductPage, Vaporwave, VaporwaveProductPage, SadAesthetic, SadAestheticProductPage, NSFW, NSFWProductPage, Kawaii, KawaiiProductPage, Waifu, WaifuProductPage, SenpaiProductPage, Senpai, TechAccessories, AirpodCase, AirpodCaseProductPage, PhoneCase, PhoneCaseProductPage, ByAnime, AttackOnTitan} from './components';
+import {Home, Apparel, HoodieProductPage, TeeShirts, ShirtProductPage, Hoodies, Socks, 
+    Cosplay, SockProductPage, CosplayProductPage, Homegoods, Lights, Pillows, LightProductPage, 
+    PillowProductPage, Vaporwave, VaporwaveProductPage, SadAesthetic, SadAestheticProductPage, 
+    NSFW, NSFWProductPage, Kawaii, KawaiiProductPage, Waifu, WaifuProductPage, SenpaiProductPage, 
+    Senpai, TechAccessories, AirpodCase, AirpodCaseProductPage, PhoneCase, PhoneCaseProductPage, ByAnime, 
+    AttackOnTitan, DarlingInTheFranxx, DemonSlayer, DragonBallZ, HunterXHunter, MyHeroAcademia, MyNeighborTotoro, 
+    Naruto, OnePiece, SailorMoon} from './components';
 import * as Routes from './Constants/Routes';
 import ScrollToTop from './ScrollToTop';
 
@@ -43,7 +49,15 @@ const App = () => {
                 <Route path={Routes.TECHACCESSORIESPHONECASECOLLECTION} component={PhoneCase}/>
                 <Route path={Routes.BYANIMECOLLECTION}  component={ByAnime}/>
                 <Route path={Routes.ATTACKONTITANCOLLECTION} component={AttackOnTitan}/>
-
+                <Route path={Routes.DARLINGINTHEFRANXXCOLLECTION} component={DarlingInTheFranxx}/>
+                <Route path={Routes.DEMONSLAYERCOLLECTION} component={DemonSlayer}/>
+                <Route path={Routes.DRAGONBALLZCOLLECTION} component={DragonBallZ}/>
+                <Route path={Routes.HUNTERXHUNTERCOLLECTION} component={HunterXHunter}/>
+                <Route path={Routes.MYHEROACADEMIACOLLECTION} component={MyHeroAcademia}/>
+                <Route path={Routes.MYNEIGHBORTOTOROCOLLECTION} component={MyNeighborTotoro}/>
+                <Route path={Routes.NARUTOCOLLECTION} component={Naruto}/>
+                <Route path={Routes.ONEPIECECOLLECTION} component={OnePiece}/>
+                <Route path={Routes.SAILORMOONCOLLECTION} component={SailorMoon}/>
             </Switch> 
             </ScrollToTop>
         </Router>
