@@ -1,17 +1,19 @@
+import {useState} from 'react';
 import { apparel, homegoods, lifestyle, techAccessories, byAnime } from './Dropdown';
 import './Nav.css';
 import { Link } from 'react-router-dom';
 import { Dropdown } from 'antd';
 import { DownOutlined, SearchOutlined, HeartFilled, createFromIconfontCN, UserOutlined } from '@ant-design/icons';
-
+import {SearchInput} from './Style';
 const IconFont = createFromIconfontCN({
     scriptUrl: [
       '//at.alicdn.com/t/font_1788044_0dwu4guekcwr.js', //icon-shoppingcart
     ],
   });
   
-const Nav = () => {
-    
+const Nav = ({searchTerm, SetSearchTerm}) => {
+    const [searchActive, SetSearchActive] = useState(false);
+
     return (
         <div className='nav_container' id='product'>
             <Link to='/' className='logo'>atsuko</Link>
@@ -43,12 +45,21 @@ const Nav = () => {
                     </Link>
                 </Dropdown>
             </nav>
-
+            <div className='search'>
+                    <SearchOutlined className='search_icon' onClick={() => SetSearchActive((searchActive) => !searchActive)}/>
+                    <SearchInput 
+                        className="searchInput"
+                        value={searchTerm}
+                        // onChange={({target}) => SetSearchActive(target.value)}
+                        placeholder="Search"
+                        active={searchActive}
+                    />
+                </div>
             <div className='nav_icons'>
-                <UserOutlined className='nav_icon'/>
-                <SearchOutlined className='nav_icon'/>
-                <HeartFilled className='nav_icon'/>
-                <IconFont type="icon-shoppingcart" className='nav_icon'/>
+               
+                <UserOutlined className='nav_icon stay'/>
+                <HeartFilled className='nav_icon stay'/>
+                <IconFont type="icon-shoppingcart" className='nav_icon stay'/>
             </div>
         </div>
     )
