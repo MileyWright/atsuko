@@ -11,8 +11,13 @@ const IconFont = createFromIconfontCN({
     ],
   });
   
-const Nav = ({searchTerm, SetSearchTerm}) => {
+const Nav = () => {
     const [searchActive, SetSearchActive] = useState(false);
+    const [searchTerm, SetSearchTerm] = useState([]);
+
+    const search = (e) => {
+        e.preventDefault();
+    }
 
     return (
         <div className='nav_container' id='product'>
@@ -53,6 +58,7 @@ const Nav = ({searchTerm, SetSearchTerm}) => {
                         // onChange={({target}) => SetSearchActive(target.value)}
                         placeholder="Search"
                         active={searchActive}
+                        onSubmit={search}
                     />
                 </div>
             <div className='nav_icons'>
