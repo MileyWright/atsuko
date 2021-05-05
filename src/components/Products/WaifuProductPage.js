@@ -28,9 +28,9 @@ const WaifuProductPage = () => {
 
     useEffect(() => {
         setFilteredProduct(data.find(item => {
-            return item.id == id
+            return item.id === id
         }))
-    },[id]);
+    },[data, id]);
 
     const handleChange = e => {
         setSize(e.target.value)

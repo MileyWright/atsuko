@@ -1,5 +1,3 @@
-import { faRProject } from '@fortawesome/free-brands-svg-icons';
-
 export { default as Home } from './Home/Home';
 export { default as Apparel } from './Apparel/Apparel.js';
 export { default as Nav } from './Nav/Nav';

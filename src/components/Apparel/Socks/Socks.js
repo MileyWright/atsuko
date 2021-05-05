@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import {Nav, Footer, Card} from '../../index';
 import '../Apparel.css';
 import {apparel} from '../../../seed';

@@ -60,7 +60,7 @@ const Home = () => {
                                     </div>
                             </div>
                         </Link>
-                        <Link to='/collections/accessories' className='grid_item overlay'>
+                        <Link to='/collections/anime-tech-accessories' className='grid_item overlay'>
                             <div>
                                 <img src={accessories} alt='sailor_moon_case'/>
                                     <div className='collection_grid_text-wrapper'>

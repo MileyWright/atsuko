@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import {Nav, Footer, Card} from '../../index';
 import '../Apparel.css';
 import {apparel} from '../../../seed';
@@ -16,10 +16,7 @@ const TeeShirts = () => {
     const [data, setData] = useState(initialState);
     const [minValue, setMinValue] = useState(0);
     const [maxValue, setMaxValue] = useState(numOnEachPage);
-    
-    useEffect(()=> {
-        
-    })
+  
     const filterOnChange = value => { 
         if(value === 'All'){
             return setData(initialState)
