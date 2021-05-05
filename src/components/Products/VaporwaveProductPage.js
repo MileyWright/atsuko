@@ -28,9 +28,9 @@ const VaporwaveProductPage = () => {
 
     useEffect(() => {
         setFilteredProduct(data.find(item => {
-            return item.id == id
+            return item.id === id
         }))
-    },[id]);
+    },[data, id]);
 
     const handleChange = e => {
         setSize(e.target.value)
@@ -72,7 +72,7 @@ const VaporwaveProductPage = () => {
     
     useEffect(() => {
         setStandardShipping({dayName: dayOfTheWeek(standardDay), month: standardMonth, dayNumber: standardDate})
-    }, [standardDay, standardMonth]);
+    }, [standardDate, standardDay, standardMonth]);
 
     useEffect(() => {
         setOvernightShipping({dayName: dayOfTheWeek(overnightDay), month: overnightMonth, dayNumber: overnight.getDate()})
@@ -82,13 +82,13 @@ const VaporwaveProductPage = () => {
         setRandomProduct(combineProduct.sort(() => 0.5 - Math.random()).slice(0, 6));
         const dataCopy = [...data];
         setRandomApparel(dataCopy.sort(() => 0.5 - Math.random()).slice(0,4));
-    }, [filteredProduct]);
+    }, [combineProduct, data, filteredProduct]);
 
     return(
         <>
         <Nav />
         <div className='product_container'>  
-            <img src={filteredProduct.photo} className='product_image'/>
+            <img src={filteredProduct.photo} className='product_image' alt={filteredProduct.name}/>
             <div className='right'>
                 <div className='top_right'>
                     <p>{filteredProduct.name}</p>
