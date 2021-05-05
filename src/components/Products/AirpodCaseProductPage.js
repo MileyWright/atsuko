@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import {apparel, homegoods, techAccessories} from '../../seed';
 import {Nav, Footer, Card} from '../index';
 import {Link} from 'react-router-dom';
-import {Radio} from 'antd';
 import {HeartOutlined} from '@ant-design/icons';
 import ScrollTo from 'react-scroll-into-view';
 import './ProductPage.css';
@@ -15,7 +14,6 @@ const initialState = techAccessories;
 const AirpodCaseProductPage = () => {
     const {id} = useParams();
     const [data] = useState(initialState);
-    const [size, setSize] = useState(null);
     const [standardShipping, setStandardShipping] = useState({dayName:null, month: null, dayNumber: null});
     const [overnightShipping, setOvernightShipping] = useState({dayName:null, month: null, dayNumber: null});
     const [randomProduct, setRandomProduct] = useState([]);
@@ -26,13 +24,9 @@ const AirpodCaseProductPage = () => {
 
     useEffect(() => {
         setFilteredProduct(data.find(item => {
-            return item.id == id
+            return item.id === id
         }))
-    },[id]);
-
-    const handleChange = e => {
-        setSize(e.target.value)
-    };
+    },[data, id]);
 
     const today = new Date();
     var standard = new Date(today);
@@ -70,7 +64,7 @@ const AirpodCaseProductPage = () => {
     
     useEffect(() => {
         setStandardShipping({dayName: dayOfTheWeek(standardDay), month: standardMonth, dayNumber: standardDate})
-    }, [standardDay, standardMonth]);
+    }, [standardDate, standardDay, standardMonth]);
 
     useEffect(() => {
         setOvernightShipping({dayName: dayOfTheWeek(overnightDay), month: overnightMonth, dayNumber: overnight.getDate()})
@@ -80,13 +74,13 @@ const AirpodCaseProductPage = () => {
         setRandomProduct(combineProduct.sort(() => 0.5 - Math.random()).slice(0, 6));
         const dataCopy = [...data];
         setRandomApparel(dataCopy.sort(() => 0.5 - Math.random()).slice(0,4));
-    }, [filteredProduct]);
-   console.log(filteredProduct);
+    }, [combineProduct, data, filteredProduct]);
+
     return(
         <>
         <Nav />
         <div className='product_container'>  
-            <img src={filteredProduct.photo} className='product_image'/>
+            <img src={filteredProduct.photo} className='product_image' alt={filteredProduct.name}/>
             <div className='right'>
                 <div className='top_right'>
                     <p>{filteredProduct.name}</p>
