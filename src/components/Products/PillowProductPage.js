@@ -24,9 +24,9 @@ const PillowProductPage = () => {
 
     useEffect(() => {
         setFilteredProduct(data.find(item => {
-            return item.id === id
+            return item.id == id
         }))
-    },[data, id]);
+    },[id]);
 
     const today = new Date();
     var standard = new Date(today);
@@ -74,7 +74,7 @@ const PillowProductPage = () => {
         setRandomProduct(combineProduct.sort(() => 0.5 - Math.random()).slice(0, 6));
         const dataCopy = [...data];
         setRandomApparel(dataCopy.sort(() => 0.5 - Math.random()).slice(0,4));
-    }, [combineProduct, data, filteredProduct]);
+    }, [filteredProduct]);
 
     return(
         <>

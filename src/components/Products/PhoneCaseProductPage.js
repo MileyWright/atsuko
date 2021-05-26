@@ -26,9 +26,9 @@ const AirpodCaseProductPage = () => {
 
     useEffect(() => {
         setFilteredProduct(data.find(item => {
-            return item.id === id
+            return item.id == id
         }))
-    },[data, id]);
+    },[id]);
 
     const handleChange = e => {
         setSize(e.target.value)
@@ -80,7 +80,7 @@ const AirpodCaseProductPage = () => {
         setRandomProduct(combineProduct.sort(() => 0.5 - Math.random()).slice(0, 6));
         const dataCopy = [...data];
         setRandomApparel(dataCopy.sort(() => 0.5 - Math.random()).slice(0,4));
-    }, [combineProduct, data, filteredProduct]);
+    }, [filteredProduct]);
     return(
         <>
         <Nav />
