@@ -18,6 +18,7 @@
     font-size: 1.3rem;
     line-height: 0.9;
     animation: fade-in 5s ease 1.5s forwards;
+    white-space: nowrap;
 }
 .hero_container .hero_container_title p:first-child{
     font-size: 3.4rem;
@@ -218,4 +219,54 @@
     border-radius: 3px;
     color: #0295e5;
     padding: 6px 10px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1517px) {
+    .hero_container .hero_container_title{
+        padding-left: 10%;
+     }
+    .hero_container > img{
+        width: 50%;
+    }
+}
+ @media only screen and (max-width: 1315px) {
+    .hero_container .hero_container_title p{
+        font-size: 1.2rem;
+        line-height: 0.8;
+    }
+    .hero_container .hero_container_title p:first-child{
+        font-size: 3.0rem;
+    }
+}
+@media only screen and (max-width: 1287px) {
+    .hero_container .hero_container_title p{
+        font-size: 1.1rem;
+        line-height: 0.8;
+    }
+}
+@media only screen and (max-width: 1110px) {
+    .hero_container .hero_container_title{
+        width: 50%;
+    }
+    .hero_container img{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 1095px) {
+    .hero_container .hero_container_title p:first-child{
+        font-size: 2.5rem;
+    }
+}
+@media only screen and (max-width: 958px) {
+    .hero_container .hero_container_title{
+        padding-left: 10%;
+    }
+    .hero_container .hero_container_title p{
+        font-size: 1.0rem;
+        line-height: 0.8;
+    }
+    .hero_container .hero_container_title p:first-child{
+        font-size: 2.5rem;
+    }
 }
