@@ -1,5 +1,6 @@
 .hero_container {
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
+    background-color: red;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -226,10 +227,17 @@
     .hero_container .hero_container_title{
         padding-left: 10%;
      }
-    .hero_container > img{
-        width: 50%;
+    .hero_container img{
+        width: 45%;
     }
 }
+
+@media only screen and (max-width: 1424px) {
+    .hero_container img{
+        padding-right: 5%;
+    }
+}
+
  @media only screen and (max-width: 1315px) {
     .hero_container .hero_container_title p{
         font-size: 1.2rem;
@@ -245,6 +253,7 @@
         line-height: 0.8;
     }
 }
+
 @media only screen and (max-width: 1110px) {
     .hero_container .hero_container_title{
         width: 50%;
@@ -270,3 +279,6 @@
         font-size: 2.5rem;
     }
 }
+/* @media only screen and (max-width: 0px) {
+   
+} */
