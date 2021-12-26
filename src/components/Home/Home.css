@@ -1,6 +1,6 @@
 .hero_container {
-    /* background-color: #f9f9f9; */
-    background-color: red;
+    background-color: #f9f9f9;
+    /* background-color: red; */
     width: 100%;
     display: flex;
     justify-content: center;
