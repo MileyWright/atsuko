@@ -2,7 +2,7 @@ import {useState} from 'react';
 import { apparel, homegoods, lifestyle, techAccessories, byAnime } from './Dropdown';
 import './Nav.css';
 import { Link } from 'react-router-dom';
-import { Dropdown, Drawer, Button } from 'antd';
+import { Dropdown, Drawer, Input } from 'antd';
 import { DownOutlined, SearchOutlined, HeartFilled, createFromIconfontCN, UserOutlined, MenuOutlined } from '@ant-design/icons';
 import {SearchInput} from './Style';
 const IconFont = createFromIconfontCN({
@@ -10,12 +10,13 @@ const IconFont = createFromIconfontCN({
       '//at.alicdn.com/t/font_1788044_0dwu4guekcwr.js', //icon-shoppingcart
     ],
   });
-  
+const { Search } = Input;
 const Nav = () => {
     const [searchActive, SetSearchActive] = useState(false);
     const [searchTerm, SetSearchTerm] = useState([]);
     const [visible, setVisible] = useState(false);
 
+    const onSearch  = e => console.log(e);
     const showDrawer = () => {
         setVisible(true);
     }
@@ -32,7 +33,14 @@ const Nav = () => {
         <div className='nav_container' id='product'>
             <MenuOutlined className='nav_drawer'onClick={showDrawer}/>
             <Drawer placement="left" onClose={onClose} visible={visible}>
-
+                <div className='drawerSearch'>
+                    <Search 
+                        placeholder='Search'
+                        allowClear 
+                        onSearch={onSearch} 
+                        style={{ width: 200 }} 
+                    />
+                </div>
             </Drawer>
             <Link to='/' className='logo'>atsuko</Link>
 

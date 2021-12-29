@@ -7,6 +7,9 @@
 .nav_container .nav_drawer{
     visibility: hidden;
 }
+.ant-drawer-body{
+    margin-top: 13%;
+}
 .nav_container .logo {
     font-family: 'Fredoka One', cursive;
     font-size: 3.4rem;
