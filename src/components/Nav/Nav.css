@@ -4,6 +4,9 @@
     align-items: center;
     background-color: #f9f9f9;
 }
+.nav_container .nav_drawer{
+    visibility: hidden;
+}
 .nav_container .logo {
     font-family: 'Fredoka One', cursive;
     font-size: 3.4rem;
@@ -103,29 +106,89 @@
    
 }
 @media only screen and (max-width: 1130px) {
+    .nav_container .nav_drawer{
+        visibility: inherit;
+        width: 10%;
+        font-size: 1.4rem ;
+    }
     .nav_container .logo{
         font-size: 3.1rem;
+        padding-left: 210px;
+    }
+    .nav_container .nav_links{
+        width: 0;
     }
     .nav_container .nav_link{
-        font-size: 16px;
+        display: none;
     }
     .nav_container .search {
-        padding-left: 180px;
-    }
-    .anticon svg {
-        width: 17px;
+        display: none;
+        width: 0;
     }
     .nav_container .ftuHNr{
         width: 150px;
     }
    
 }
-@media only screen and (max-width: 0px) {
-   
+@media only screen and (max-width: 1059px) {
+    .nav_container .logo{
+        padding-left: 200px;
+    }
+
+} 
+@media only screen and (max-width: 990px) {
+    .nav_container .logo{
+        padding-left: 180px;
+    }
+} 
+@media only screen and (max-width: 913px) {
+    .nav_container .logo{
+        padding-left: 160px;
+    }
+} 
+@media only screen and (max-width: 875px) {
+    .nav_container .logo{
+        padding-left: 150px;
+    }
+} 
+@media only screen and (max-width: 790px) {
+    .nav_container .logo{
+        padding-left: 140px;
+    }
+} 
+@media only screen and (max-width: 745px) {
+    .nav_container .logo{
+        padding-left: 130px;
+    }
+} 
+@media only screen and (max-width: 670px) {
+    .nav_container .logo{
+        padding-left: 110px;
+    }
+} 
+@media only screen and (max-width: 620px) {
+    .nav_container .logo{
+        padding-left: 100px;
+    }
+} 
+@media only screen and (max-width: 588px) {
+    .nav_container .logo{
+        padding-left: 100px;
+    }
+    .nav_container .nav_icons{
+        margin-right: 50px;
+    }
+} 
+@media only screen and (max-width: 565px) {
+    .nav_container .logo{
+        padding-left: 90px;
+    }
+} 
+@media only screen and (max-width: 520px) {
+    .nav_container .logo{
+        padding-left: 80px;
+    }
 } 
 @media only screen and (max-width: 0px) {
-   
-} 
-@media only screen and (max-width: 0px) {
-   
+
 } 

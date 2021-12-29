@@ -2,8 +2,8 @@ import {useState} from 'react';
 import { apparel, homegoods, lifestyle, techAccessories, byAnime } from './Dropdown';
 import './Nav.css';
 import { Link } from 'react-router-dom';
-import { Dropdown } from 'antd';
-import { DownOutlined, SearchOutlined, HeartFilled, createFromIconfontCN, UserOutlined } from '@ant-design/icons';
+import { Dropdown, Drawer, Button } from 'antd';
+import { DownOutlined, SearchOutlined, HeartFilled, createFromIconfontCN, UserOutlined, MenuOutlined } from '@ant-design/icons';
 import {SearchInput} from './Style';
 const IconFont = createFromIconfontCN({
     scriptUrl: [
@@ -14,6 +14,15 @@ const IconFont = createFromIconfontCN({
 const Nav = () => {
     const [searchActive, SetSearchActive] = useState(false);
     const [searchTerm, SetSearchTerm] = useState([]);
+    const [visible, setVisible] = useState(false);
+
+    const showDrawer = () => {
+        setVisible(true);
+    }
+
+    const onClose = () => {
+        setVisible(false);
+    }
 
     const search = (e) => {
         e.preventDefault();
@@ -21,6 +30,10 @@ const Nav = () => {
 
     return (
         <div className='nav_container' id='product'>
+            <MenuOutlined className='nav_drawer'onClick={showDrawer}/>
+            <Drawer placement="left" onClose={onClose} visible={visible}>
+
+            </Drawer>
             <Link to='/' className='logo'>atsuko</Link>
 
             <nav className='nav_links' >
@@ -60,7 +73,7 @@ const Nav = () => {
                         active={searchActive}
                         onSubmit={search}
                     />
-                </div>
+            </div>
             <div className='nav_icons'>
                
                 <UserOutlined className='nav_icon stay'/>
