@@ -47,15 +47,33 @@ const Nav = () => {
                     mode="inline"
                 >
                     <SubMenu key='sub1' title="Shop">
-                    <Menu.ItemGroup key="g1" title="Item 1">
-            <Menu.Item key="1">Option 1</Menu.Item>
-            <Menu.Item key="2">Option 2</Menu.Item>
-          </Menu.ItemGroup>
-          <Menu.ItemGroup key="g2" title="Item 2">
-            <Menu.Item key="3">Option 3</Menu.Item>
-            <Menu.Item key="4">Option 4</Menu.Item>
-          </Menu.ItemGroup>
-        </SubMenu>
+                        <Menu.Item key="1"><Link to='/collections/anime-clothing-apparel'>Best Selling</Link></Menu.Item>
+                        <Menu.Item key="2"><Link to='/collections/anime-tee-shirts'>Tee Shirts</Link></Menu.Item>
+                        <Menu.Item key="3"><Link to='/collections/anime-hoodies-and-sweatshirts'>Hoodies</Link></Menu.Item>
+                        <Menu.Item key="4"><Link to='/collections/anime-socks'>Socks</Link></Menu.Item>
+                    </SubMenu>
+                    <SubMenu key='sub2' title="Accessories">
+                        <Menu.Item key="1"><Link to='/collections/anime-phone-cases'>Phone Cases</Link></Menu.Item>
+                        <Menu.Item key="2"><Link to='/collections/anime-airpod-1-2-pro-cases'>AirPod Cases</Link></Menu.Item>
+                    </SubMenu>
+                    <SubMenu key='sub3' title="Home Goods">
+                        <Menu.Item key="1"><Link to='/collections/anime-clothing-apparel'>Best Selling</Link></Menu.Item>
+                        <Menu.Item key="2"><Link to='/collections/anime-tee-shirts'>Tee Shirts</Link></Menu.Item>
+                        <Menu.Item key="3"><Link to='/collections/anime-hoodies-and-sweatshirts'>Hoodies</Link></Menu.Item>
+                        <Menu.Item key="4"><Link to='/collections/anime-socks'>Socks</Link></Menu.Item>
+                    </SubMenu>
+                    <SubMenu key='sub4' title="Collections">
+                        <Menu.Item key="1"><Link to='/collections/anime-clothing-apparel'>Best Selling</Link></Menu.Item>
+                        <Menu.Item key="2"><Link to='/collections/anime-tee-shirts'>Tee Shirts</Link></Menu.Item>
+                        <Menu.Item key="3"><Link to='/collections/anime-hoodies-and-sweatshirts'>Hoodies</Link></Menu.Item>
+                        <Menu.Item key="4"><Link to='/collections/anime-socks'>Socks</Link></Menu.Item>
+                    </SubMenu>
+                    <SubMenu key='sub5' title="Official Merch">
+                        <Menu.Item key="1"><Link to='/collections/anime-clothing-apparel'>Best Selling</Link></Menu.Item>
+                        <Menu.Item key="2"><Link to='/collections/anime-tee-shirts'>Tee Shirts</Link></Menu.Item>
+                        <Menu.Item key="3"><Link to='/collections/anime-hoodies-and-sweatshirts'>Hoodies</Link></Menu.Item>
+                        <Menu.Item key="4"><Link to='/collections/anime-socks'>Socks</Link></Menu.Item>
+                    </SubMenu>
                 </Menu>
 
             </Drawer>
@@ -64,7 +82,7 @@ const Nav = () => {
             <nav className='nav_links' >
                 <Dropdown overlay={apparel} className='nav_link'>
                     <Link to='/collections/anime-clothing-apparel'>
-                    Apparel <DownOutlined className='arrow'/>
+                    Shop <DownOutlined className='arrow'/>
                     </Link>
                 </Dropdown>
                 <Dropdown overlay={homegoods} className='nav_link'>
@@ -72,19 +90,19 @@ const Nav = () => {
                     Homegoods <DownOutlined className='arrow'/>
                     </Link>
                 </Dropdown>
+                <Dropdown overlay={byAnime} className='nav_link'>
+                    <Link to='/collections/all-anime-merch'>
+                    Brands <DownOutlined className='arrow'/>
+                    </Link>
+                </Dropdown>
                 <Dropdown overlay={lifestyle} className='nav_link'>
                     <Link to='/collections/vaporwave-aesthetic-clothing-tees-hoodies-merch'>
-                    Lifestyle <DownOutlined className='arrow'/>
+                    Collections <DownOutlined className='arrow'/>
                     </Link>
                 </Dropdown>
                 <Dropdown overlay={techAccessories} className='nav_link'>
                     <Link to='/collections/anime-tech-accessories'>
                     Tech Accessories <DownOutlined className='arrow'/>
-                    </Link>
-                </Dropdown>
-                <Dropdown overlay={byAnime} className='nav_link'>
-                    <Link to='/collections/all-anime-merch'>
-                    By Anime <DownOutlined className='arrow'/>
                     </Link>
                 </Dropdown>
             </nav>
