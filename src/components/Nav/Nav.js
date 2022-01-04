@@ -57,22 +57,31 @@ const Nav = () => {
                         <Menu.Item key="2"><Link to='/collections/anime-airpod-1-2-pro-cases'>AirPod Cases</Link></Menu.Item>
                     </SubMenu>
                     <SubMenu key='sub3' title="Home Goods">
-                        <Menu.Item key="1"><Link to='/collections/anime-clothing-apparel'>Best Selling</Link></Menu.Item>
-                        <Menu.Item key="2"><Link to='/collections/anime-tee-shirts'>Tee Shirts</Link></Menu.Item>
-                        <Menu.Item key="3"><Link to='/collections/anime-hoodies-and-sweatshirts'>Hoodies</Link></Menu.Item>
-                        <Menu.Item key="4"><Link to='/collections/anime-socks'>Socks</Link></Menu.Item>
+                        <Menu.Item key="1"><Link to='/collections/anime-homegoods'>All Homegoods</Link></Menu.Item>
+                        <Menu.Item key="2"><Link to='/collections/3d-led-anime-bedroom-lights-lamps'>3D LED Lights</Link></Menu.Item>
+                        <Menu.Item key="3"><Link to='/collections/anime-kawaii-cartoon-bedroom-pillows'>Pillows</Link></Menu.Item>
                     </SubMenu>
                     <SubMenu key='sub4' title="Collections">
-                        <Menu.Item key="1"><Link to='/collections/anime-clothing-apparel'>Best Selling</Link></Menu.Item>
-                        <Menu.Item key="2"><Link to='/collections/anime-tee-shirts'>Tee Shirts</Link></Menu.Item>
-                        <Menu.Item key="3"><Link to='/collections/anime-hoodies-and-sweatshirts'>Hoodies</Link></Menu.Item>
-                        <Menu.Item key="4"><Link to='/collections/anime-socks'>Socks</Link></Menu.Item>
+                        <Menu.Item key="1"><Link to='/collections/sad-aesthetic'>Sad Aesthetic</Link></Menu.Item>
+                        <Menu.Item key="2"><Link to='/collections/vaporwave-aesthetic-clothing-tees-hoodies-merch'>Vaporwave</Link></Menu.Item>
+                        <Menu.Item key="3"><Link to='/collections/nsfw-anime-merch'>NSFW</Link></Menu.Item>
+                        <Menu.Item key="4"><Link to='/collections/kawaii-livestyle-accessories'>Kawaii</Link></Menu.Item>
+                        <Menu.Item key="5"><Link to='/collections/japanese-senpai-shirts-and-hoodies'>Senpai</Link></Menu.Item>
+                        <Menu.Item key="6"><Link to='/collections/japanese-waifu-shirts-and-hoodies'>Waifu</Link></Menu.Item><Menu.Item key="3"><Link to='/collections/nsfw-anime-merch'>NSFW</Link></Menu.Item>
+                        <Menu.Item key="7"><Link to='/collections/anime-weeb-cosplay-accessories'>Cosplay</Link></Menu.Item>
                     </SubMenu>
                     <SubMenu key='sub5' title="Official Merch">
-                        <Menu.Item key="1"><Link to='/collections/anime-clothing-apparel'>Best Selling</Link></Menu.Item>
-                        <Menu.Item key="2"><Link to='/collections/anime-tee-shirts'>Tee Shirts</Link></Menu.Item>
-                        <Menu.Item key="3"><Link to='/collections/anime-hoodies-and-sweatshirts'>Hoodies</Link></Menu.Item>
-                        <Menu.Item key="4"><Link to='/collections/anime-socks'>Socks</Link></Menu.Item>
+                        <Menu.Item key="1"><Link to='/collections/all-anime-merch'>Best Selling</Link></Menu.Item>
+                        <Menu.Item key="2"><Link to='/collections/attack-on-titan-anime-merch'>Attack On Titan</Link></Menu.Item>
+                        <Menu.Item key="3"><Link to='/collections/darling-in-the-franxx-anime-weeb-merch'>Darling In The Franxx</Link></Menu.Item>
+                        <Menu.Item key="4"><Link to='/collections/demon-slayer-anime-merch'>Demon Slayer</Link></Menu.Item>
+                        <Menu.Item key="5"><Link to='/collections/dragon-ball-z-anime-merch'>Dragon Ball Z</Link></Menu.Item>
+                        <Menu.Item key="6"><Link to='/collections/hunter-x-hunter-anime-merch'>Hunter X Hunter</Link></Menu.Item>
+                        <Menu.Item key="7"><Link to='/collections/my-hero-academia-anime-merch'>My Hero Academia</Link></Menu.Item>
+                        <Menu.Item key="8"><Link to='/collections/my-neighbor-totoro-anime-merch'>My Neighbor Totoro</Link></Menu.Item>
+                        <Menu.Item key="9"><Link to='/collections/naruto-anime-merch'>Naruto</Link></Menu.Item>
+                        <Menu.Item key="10"><Link to='/collections/one-piece-anime-merch'>One Piece</Link></Menu.Item>
+                        <Menu.Item key="11"><Link to='/collections/sailor-moon-anime-merch'>Sailor Moon</Link></Menu.Item>
                     </SubMenu>
                 </Menu>
 
