@@ -5,7 +5,7 @@ import {Home, Apparel, HoodieProductPage, TeeShirts, ShirtProductPage, Hoodies, 
     NSFW, NSFWProductPage, Kawaii, KawaiiProductPage, Waifu, WaifuProductPage, SenpaiProductPage, 
     Senpai, TechAccessories, AirpodCase, AirpodCaseProductPage, PhoneCase, PhoneCaseProductPage, ByAnime, 
     AttackOnTitan, DarlingInTheFranxx, DemonSlayer, DragonBallZ, HunterXHunter, MyHeroAcademia, MyNeighborTotoro, 
-    Naruto, OnePiece, SailorMoon} from './components';
+    Naruto, OnePiece, SailorMoon, Search} from './components';
 import * as Routes from './Constants/Routes';
 import ScrollToTop from './ScrollToTop';
 
@@ -58,6 +58,8 @@ const App = () => {
                 <Route path={Routes.NARUTOCOLLECTION} component={Naruto}/>
                 <Route path={Routes.ONEPIECECOLLECTION} component={OnePiece}/>
                 <Route path={Routes.SAILORMOONCOLLECTION} component={SailorMoon}/>
+
+                <Route path={Routes.SEARCH} component={Search}/>
             </Switch> 
             </ScrollToTop>
         </Router>

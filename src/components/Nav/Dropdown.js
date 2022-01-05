@@ -1,6 +1,6 @@
 import { Menu } from 'antd';
 import { Link } from 'react-router-dom';
-export const apparel = (
+export const apparelNav = (
     <Menu>
       <Menu.Item>
         <Link to="/collections/anime-clothing-apparel">
@@ -30,7 +30,7 @@ export const apparel = (
     </Menu>
   );
 
-  export const homegoods = (
+  export const homegoodsNav = (
     <Menu>
       <Menu.Item>
         <Link to="/collections/anime-homegoods">
@@ -49,7 +49,7 @@ export const apparel = (
       </Menu.Item>
     </Menu>
   );
-  export const lifestyle = (
+  export const lifestyleNav = (
     <Menu>
       <Menu.Item>
         <Link to="/collections/sad-aesthetic">
@@ -89,7 +89,7 @@ export const apparel = (
     </Menu>
   );
 
-  export const techAccessories = (
+  export const techAccessoriesNav = (
     <Menu>
       <Menu.Item>
         <Link to="/collections/anime-phone-cases">
@@ -104,7 +104,7 @@ export const apparel = (
     </Menu>
   );
 
-  export const byAnime = (
+  export const byAnimeNav = (
     <Menu>
       <Menu.Item>
         <Link to="/collections/all-anime-merch">

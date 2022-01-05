@@ -7,6 +7,9 @@
 .nav_container .nav_drawer{
     visibility: hidden;
 }
+.ant-input-group-wrapper {
+    padding-left: 10%;
+}
 .ant-drawer-body{
     margin-top: 13%;
 }
