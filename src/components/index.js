@@ -44,3 +44,4 @@ export { default as MyNeighborTotoro } from './ByAnime/MyNeighborTotoro/MyNeighb
 export { default as Naruto } from './ByAnime/Naruto/Naruto';
 export { default as OnePiece } from './ByAnime/OnePiece/OnePiece';
 export { default as SailorMoon } from './ByAnime/SailorMoon/SailorMoon';
+export { default as Search } from './Search/Search';

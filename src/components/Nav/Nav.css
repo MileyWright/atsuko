@@ -7,8 +7,26 @@
 .nav_container .nav_drawer{
     visibility: hidden;
 }
+.ant-input-group-wrapper {
+    padding-left: 10%;
+}
 .ant-drawer-body{
     margin-top: 13%;
+}
+.ant-menu{
+    margin-top: 12%;
+}
+.ant-menu-inline{
+    border-right: none;
+}
+.ant-menu-inline .ant-menu-submenu {
+    padding-bottom: 12px;
+}
+.ant-menu-submenu-title:hover {
+    color: #515151;
+}
+.ant-menu-item:hover, .ant-menu-item-active, .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-submenu-active, .ant-menu-submenu-title:hover {
+    color: #515151;
 }
 .nav_container .logo {
     font-family: 'Fredoka One', cursive;

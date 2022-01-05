@@ -41,3 +41,4 @@ export const MYNEIGHBORTOTOROCOLLECTION = '/collections/my-neighbor-totoro-anime
 export const NARUTOCOLLECTION = '/collections/naruto-anime-merch';
 export const ONEPIECECOLLECTION = '/collections/one-piece-anime-merch';
 export const SAILORMOONCOLLECTION = '/collections/sailor-moon-anime-merch';
+export const SEARCH = '/search';

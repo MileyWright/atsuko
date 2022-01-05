@@ -1,10 +1,15 @@
 import {useState} from 'react';
-import { apparel, homegoods, lifestyle, techAccessories, byAnime } from './Dropdown';
+import { apparelNav, homegoodsNav, lifestyleNav, techAccessoriesNav, byAnimeNav } from './Dropdown';
 import './Nav.css';
 import { Link } from 'react-router-dom';
 import { Dropdown, Drawer, Input, Menu } from 'antd';
 import { DownOutlined, SearchOutlined, HeartFilled, createFromIconfontCN, UserOutlined, MenuOutlined } from '@ant-design/icons';
 import {SearchInput} from './Style';
+import {apparel, homegoods, techAccessories} from '../../seed';
+import { useHistory } from 'react-router-dom';
+
+const combineProduct = apparel.concat(homegoods).concat(techAccessories);
+
 const IconFont = createFromIconfontCN({
     scriptUrl: [
       '//at.alicdn.com/t/font_1788044_0dwu4guekcwr.js', //icon-shoppingcart
@@ -13,11 +18,16 @@ const IconFont = createFromIconfontCN({
 const { Search } = Input;
 const { SubMenu } = Menu;
 const Nav = () => {
+    const history = useHistory();
     const [searchActive, SetSearchActive] = useState(false);
-    const [searchTerm, SetSearchTerm] = useState([]);
     const [visible, setVisible] = useState(false);
 
-    const onSearch  = e => console.log(e);
+    const onSearch  = e => {
+        const filtered = combineProduct.filter((item) =>
+            item.name.toLowerCase().includes(e.toLowerCase())
+        );
+        history.push(`/search?q=${e}`);
+    }
     const showDrawer = () => {
         setVisible(true);
     }
@@ -29,6 +39,7 @@ const Nav = () => {
     const search = (e) => {
         e.preventDefault();
     }
+
 
     return (
         <div className='nav_container' id='product'>
@@ -89,27 +100,27 @@ const Nav = () => {
             <Link to='/' className='logo'>atsuko</Link>
 
             <nav className='nav_links' >
-                <Dropdown overlay={apparel} className='nav_link'>
+                <Dropdown overlay={apparelNav} className='nav_link'>
                     <Link to='/collections/anime-clothing-apparel'>
                     Shop <DownOutlined className='arrow'/>
                     </Link>
                 </Dropdown>
-                <Dropdown overlay={homegoods} className='nav_link'>
+                <Dropdown overlay={homegoodsNav} className='nav_link'>
                     <Link to='/collections/anime-homegoods'>
                     Homegoods <DownOutlined className='arrow'/>
                     </Link>
                 </Dropdown>
-                <Dropdown overlay={byAnime} className='nav_link'>
+                <Dropdown overlay={byAnimeNav} className='nav_link'>
                     <Link to='/collections/all-anime-merch'>
                     Brands <DownOutlined className='arrow'/>
                     </Link>
                 </Dropdown>
-                <Dropdown overlay={lifestyle} className='nav_link'>
+                <Dropdown overlay={lifestyleNav} className='nav_link'>
                     <Link to='/collections/vaporwave-aesthetic-clothing-tees-hoodies-merch'>
                     Collections <DownOutlined className='arrow'/>
                     </Link>
                 </Dropdown>
-                <Dropdown overlay={techAccessories} className='nav_link'>
+                <Dropdown overlay={techAccessoriesNav} className='nav_link'>
                     <Link to='/collections/anime-tech-accessories'>
                     Tech Accessories <DownOutlined className='arrow'/>
                     </Link>
@@ -119,7 +130,7 @@ const Nav = () => {
                     <SearchOutlined className='search_icon' onClick={() => SetSearchActive((searchActive) => !searchActive)}/>
                     <SearchInput 
                         className="searchInput"
-                        value={searchTerm}
+                        // value={query}
                         // onChange={({target}) => SetSearchActive(target.value)}
                         placeholder="Search"
                         active={searchActive}
